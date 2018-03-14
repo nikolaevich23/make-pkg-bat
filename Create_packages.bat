@@ -6,7 +6,7 @@ for /d %%d in (NP???????) do set game=%%d
 
 
 if "%game%" NEQ "" (
-echo ContentID = 000000-%game:~0,9%_00-0000000000000000> package.conf
+echo ContentID = 000000-%game:~0,9%_00-000000000000GAME> package.conf
 echo Klicensee = 0x00000000000000000000000000000000 >> package.conf
 echo DRMType = Free >> package.conf
 echo ContentType = GameExec >> package.conf
@@ -19,7 +19,7 @@ if exist %game%\INSDIR xcopy "%game%\INSDIR\*.*" "%game%_LIC\INSDIR\*.*"
 )
 
 if "%patch%" NEQ "" (
-echo ContentID = 000000-%game:~0,9%_00-0000000000000001 > package.conf
+echo ContentID = 000000-%game:~0,9%_00-00000000000PATCH > package.conf
 echo Klicensee = 0x00000000000000000000000000000000 >> package.conf
 echo DRMType = Free >> package.conf
 echo ContentType = GameData >> package.conf
@@ -30,7 +30,7 @@ psn_package_npdrm.exe -n package.conf %patch%
 )
 
 if exist %game%_LIC (
-echo ContentID = 000000-%game:~0,9%_00-0000000000000002> package.conf
+echo ContentID = 000000-%game:~0,9%_00-0000000000000LIC> package.conf
 echo Klicensee = 0x00000000000000000000000000000000 >> package.conf
 echo DRMType = Free >> package.conf
 echo ContentType = GameExec >> package.conf
