@@ -21,6 +21,6 @@ echo.
 
 for %%f in (*.pkg) do (
 ps3xploit_rifgen_edatresign_x%OS%_mod.exe %%f ps3
-del %%f
+rem del %%f
 )
 
