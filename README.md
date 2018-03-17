@@ -3,7 +3,7 @@ make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) a
 
 ### Usage 
 * Put game inside 
-* run Create_packages.bat
+* run make_pkg.bat
 	
 ### History
 :white_check_mark: add test.bat (test it)
