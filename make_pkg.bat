@@ -19,7 +19,7 @@ if !cat!==DG (
 SET ct=GameExec
 SET pt=HDDGamePatch
 )
-echo ContentID = 000000-!title:~0,9!_00-00000000!dr:~0,8!> package.conf
+echo ContentID = 000000-!title:~0,9!_00-0000000!dr:~0,9!> package.conf
 echo Klicensee = 0x00000000000000000000000000000000 >> package.conf
 echo DRMType = Free >> package.conf
 echo ContentType = !ct! >> package.conf
@@ -42,4 +42,3 @@ RD /S /Q "%%d_LIC"
 )
 )
 del package.conf
-
