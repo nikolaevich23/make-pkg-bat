@@ -1,7 +1,10 @@
-# make-pkg-bat
-make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) 
+# make-pkg-bat v.1.3
+make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modify in1975
 
 ### Usage 
-* Put all files from here in directory with B* and N* directories
+* Put game inside 
 * run Create_packages.bat
 	
+### History
+:white_check_mark: add test.bat (test it)
+:white_check_mark: add resign_all.bat (test it)
