@@ -1,4 +1,5 @@
 @echo off
+cd /d %~dp0
 setlocal enabledelayedexpansion
 for /d %%d in (*) do (
 set dr=%%d
@@ -42,3 +43,5 @@ RD /S /Q "%%d_LIC"
 )
 )
 del package.conf
+
+pause
