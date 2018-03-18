@@ -27,7 +27,7 @@ echo ContentType = !ct! >> package.conf
 echo PackageType = !pt! >> package.conf
 echo InstallDirectory = %%d >> package.conf
 echo PackageVersion = 01.00 >> package.conf
-psn_package_npdrm.exe -n package.conf %%d
+psn_package_npdrm.exe -n -f package.conf %%d
 :: licdir
 if exist %%d_LIC (
 echo ContentID = 000000-!dr:~0,9!_00-0000000000000LIC> package.conf
@@ -37,7 +37,7 @@ echo ContentType = GameExec >> package.conf
 echo PackageType = HDDGamePatch >> package.conf
 echo InstallDirectory = %%d >> package.conf
 echo PackageVersion = 01.00 >> package.conf
-make_package_npdrm_retail.exe -n package.conf !dr!_LIC
+make_package_npdrm_retail.exe -n -f package.conf !dr!_LIC
 RD /S /Q "%%d_LIC"
 )
 )

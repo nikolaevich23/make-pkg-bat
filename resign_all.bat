@@ -3,7 +3,7 @@
 :: --------------------------------------- ::
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
-cd %~dp0
+cd /d %~dp0
 
 :: Change these for your application / manual...
 set OS=32
@@ -17,7 +17,7 @@ echo.
 :: FUNCTIONS ---------------------------------------------------------------
 
 :getos
-  reg Query "HKLM\Hardware\Description\System\CentralProcessor\0" | find /i "x86" > NUL && set OS=32 || set OS=64
+  reg Query "HKLM\Hardware\Description\System\CentralProcessor\0" | find /i "x86" > NUL && set OS=32|| set OS=64
 
 for %%f in (*.pkg) do (
 ps3xploit_rifgen_edatresign_x%OS%_mod.exe %%f ps3
