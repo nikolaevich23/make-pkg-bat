@@ -11,4 +11,4 @@ make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) a
 
 :white_check_mark: add resign_all.bat (test it)
 #### 1.5
-:white_check_mark: ADD new catecory
+:white_check_mark: ADD new category
