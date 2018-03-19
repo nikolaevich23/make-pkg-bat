@@ -16,6 +16,10 @@ if !cat!==HD (
 SET ct=GameExec
 SET pt=HDDGamePatch
 )
+if !cat!==HG (
+SET ct=GameExec
+SET pt=HDDGamePatch
+)
 if !cat!==DG (
 SET ct=GameExec
 SET pt=HDDGamePatch
