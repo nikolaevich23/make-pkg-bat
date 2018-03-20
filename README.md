@@ -1,4 +1,4 @@
-# make-pkg-bat v.1.5
+# make-pkg-bat v.1.5.1
 make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modify in1975
 
 ### Usage 
@@ -11,4 +11,7 @@ make pkg bat make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) a
 
 :white_check_mark: add resign_all.bat (test it)
 #### 1.5
-:white_check_mark: ADD new category
+:white_check_mark: add new category
+
+#### 1.5.1
+:white_check_mark: add color

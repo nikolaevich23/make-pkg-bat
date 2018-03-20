@@ -1,4 +1,5 @@
 @echo off
+TITLE PKG.bat by in1975 
 cd /d %~dp0
 setlocal enabledelayedexpansion
 for /d %%d in (*) do (
@@ -24,8 +25,9 @@ if !cat!==DG (
 SET ct=GameExec
 SET pt=HDDGamePatch
 )
-Echo RUN - Wait... 
-sfoprint "%%d\PARAM.SFO" TITLE
+echo RUN - Wait... | nhcolor 0e
+sfoprint "%%d\PARAM.SFO" TITLE | nhcolor 09
+sfoprint "%%d\PARAM.SFO" TITLE_ID | nhcolor 0b
 echo ContentID = 000000-!title:~0,9!_00-0000000!dr:~0,9!> package.conf
 echo Klicensee = 0x00000000000000000000000000000000 >> package.conf
 echo DRMType = Free >> package.conf
@@ -49,5 +51,3 @@ RD /S /Q "%%d_LIC"
 )
 )
 del package.conf
-
-pause
