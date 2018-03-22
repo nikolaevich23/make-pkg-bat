@@ -19,6 +19,6 @@ make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) a
 #### 1.6
 :white_check_mark: Rewrite some logic bat file
 :white_check_mark: Added manual for pack manuals dir (if you need it)
-:white_uncheck_mark: Remove *lic.pkg. Now create 2 pkg file with licdir
-:white_uncheck_mark: Remove old_create_packages.bat to OLD dir
-:white_uncheck_mark: Remove ps3xploit_rifgen_edatresign v.2.0 to Alt dir
+:negative_squared_cross_mark: Remove *lic.pkg. Now create 2 pkg file with licdir
+:negative_squared_cross_mark: Remove old_create_packages.bat to OLD dir
+:negative_squared_cross_mark: Remove ps3xploit_rifgen_edatresign v.2.0 to Alt dir
