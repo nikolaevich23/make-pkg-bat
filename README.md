@@ -1,6 +1,8 @@
 # make-pkg-bat v.1.6
 make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975
 
+Many thanks to: ErikPshat, hexcsl, YChvanov !
+
 ### Usage 
 * Put game inside folder
 * Run make_pkg.bat
