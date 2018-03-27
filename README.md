@@ -1,4 +1,4 @@
-# make-pkg-bat v.1.6
+# make-pkg-bat v.1.7
 make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975
 
 Many thanks to: ErikPshat, hexcsl, YChvanov !
@@ -28,3 +28,10 @@ Many thanks to: ErikPshat, hexcsl, YChvanov !
 :negative_squared_cross_mark: Remove old_create_packages.bat to OLD dir
 
 :negative_squared_cross_mark: Remove ps3xploit_rifgen_edatresign v.2.0 to Alt dir
+
+#### 1.7
+:white_check_mark: All utilities are assembled into one EXE.
+
+:white_check_mark: Added assembly code for more than two folders.
+
+:white_check_mark: The batch files of the DEBUG package creation and the signed RETAIL (finalized) are combined into one function.
