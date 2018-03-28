@@ -1,7 +1,7 @@
 # MAKE_DEBUG-RETAIL-RIF_PKG v1.8
-make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975
+make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975, ErikPshat.
 
-Many thanks to: ErikPshat, hexcsl, YChvanov !
+Many thanks to: hexcsl, YChvanov !
 
 ###  Credits:               BIG thanks for PS3XPLOIT TEAM
 #### For HAN tools by W, escortd3w, bguerville, habib and Specialy Joonie
