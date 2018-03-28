@@ -13,7 +13,7 @@ Many thanks to: ErikPshat, hexcsl, YChvanov !
 * Put game folders inside directiry
 * Put *.rap files in the RAPS folder
 * Put act.dat and idps.hex in directory
-* Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL.PKG(s) or Make RIF PKG.
+* Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
 	
 ### History:
 #### 1.8
