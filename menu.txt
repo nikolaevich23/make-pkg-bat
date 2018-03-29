@@ -1,0 +1,7 @@
+Make DEBUG PKG(s)  - not signed                
+
+Make RETAIL PKG(s) - signed debug              
+
+Make RIF PKG - from act.dat & idps.hex & rap   
+
+Quit
