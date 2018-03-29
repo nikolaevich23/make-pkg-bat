@@ -9,11 +9,20 @@ Many thanks to: hexcsl, YChvanov !
 #### For PSPx Team for this utility: in1975, hexcsl, Alex_1985, ErikPshat
 --------------------------------------------------------------------
 
-### Usage: 
-* Put game folders inside directiry
+### Usage: English
+* Delete 4 testing folders from release
+* Put the game folders next to the program
 * Put *.rap files in the RAPS folder
-* Put act.dat and idps.hex in directory
+* Put act.dat and idps.hex in the same directory
 * Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
+
+### Usage: Русский
+* Удалите из папки релиза все 4 папки, которые там лежат для демонстрации работы программы.
+* Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
+* Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
+* Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
+* Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
+  (имейте в виду, что на создание RETAIL пакета требуется почти в 2 раза больше времени)
 	
 ### History:
 #### 1.8
