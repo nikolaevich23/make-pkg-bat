@@ -10,19 +10,19 @@ Many thanks to: hexcsl, YChvanov !
 --------------------------------------------------------------------
 
 ### Usage: English
-* Delete 4 testing folders from release
-* Put the game folders next to the program
-* Put *.rap files in the RAPS folder
-* Put act.dat and idps.hex in the same directory
-* Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
+1. Delete 4 testing folders from release 
+2. Put the game folders next to the program 
+3. Put *.rap files in the RAPS folder
+4. Put act.dat and idps.hex in the same directory
+5. Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
 
 ### Использование: Русский
-* Удалите из папки релиза все 4 папки, которые там лежат для демонстрации работы программы.
-* Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
-* Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
-* Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
-* Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
-* (имейте в виду, что на создание RETAIL пакета требуется почти в 2 раза больше времени)
+1. Удалите из папки релиза все 4 папки, которые там лежат для демонстрации работы программы.
+2. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
+3. Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
+4. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
+5. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
+  (имейте в виду, что на создание RETAIL пакета требуется почти в 2 раза больше времени)
 --------------------------------------------------------------------
 	
 ### History:
