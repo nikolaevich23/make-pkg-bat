@@ -1,4 +1,4 @@
-# MAKE_DEBUG-RETAIL-RIF_PKG v1.8
+# MAKE_PKG_HAN_TOOLS v1.8
 make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975, ErikPshat.
 
 Many thanks to: hexcsl, YChvanov !
