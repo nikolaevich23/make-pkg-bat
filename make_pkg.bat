@@ -14,16 +14,16 @@ echo. =  (name of game folder specifies to name of directory on PS3)  =
 echo. =                                                               =
 echo. =                          --- RUS ---                          =
 echo. =                                                               =
-echo. =  Положите для подписывания в эту директорию следующие папки:  =
-echo. =  (имя папки игры определяет имя директории установки на PS3)  =
+echo. =  ┬П┬о┬л┬о┬ж┬и├в┬е ┬д┬л├п ┬п┬о┬д┬п┬и├б├л┬в┬а┬н┬и├п ┬в ├н├в├г ┬д┬и├а┬е┬к├в┬о├а┬и├о ├б┬л┬е┬д├г├о├й┬и┬е ┬п┬а┬п┬к┬и:  =
+echo. =  (┬и┬м├п ┬п┬а┬п┬к┬и ┬и┬г├а├л ┬о┬п├а┬е┬д┬е┬л├п┬е├в ┬и┬м├п ┬д┬и├а┬е┬к├в┬о├а┬и┬и ├г├б├в┬а┬н┬о┬в┬к┬и ┬н┬а PS3)  =
 echo. =                                                               =
 echo. =================================================================
 echo. =                                                               =
-echo. =   ╔═══════════╦═══════════════╦═══════════════╦═══════════╗   =
-echo. =   ║ BXXS12345 ║ BXXS12345GAME ║ BXXS12345DATA ║ NPXX12345 ║   =
-echo. =   ╚═══════════╩═══════════════╬═══════════════╩═══════════╝   =
-echo. =                               ║                               =
-echo. =   containing folders ^& files  ║  содержащие папки и файлы     =
+echo. =   ├Й├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Л├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Л├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Л├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н┬╗   =
+echo. =   ┬║ BXXS12345 ┬║ BXXS12345GAME ┬║ BXXS12345DATA ┬║ NPXX12345 ┬║   =
+echo. =   ├И├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├К├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├О├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├К├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н├Н┬╝   =
+echo. =                               ┬║                               =
+echo. =   containing folders ^& files  ┬║  ├б┬о┬д┬е├а┬ж┬а├й┬и┬е ┬п┬а┬п┬к┬и ┬и ├д┬а┬й┬л├л     =
 echo. =                                                               =
 echo. =               USRDIR TROPDIR LICDIR C00 HTMLDIR               =
 echo. =        EBOOT.BIN PARAM.SFO ICON0.PNG PIC0.PNG LIC.EDAT        =
@@ -45,13 +45,13 @@ echo ===========================================
 if exist *.pkg (
 echo.
 echo.There are old *.pkg files in the folder, do not forget to take them, move it to the folder BACKUP...|nhcolor 06
-echo.В папке остались старые файлы *.pkg, не забывайте их забирать, перемещаем в папку BACKUP...|nhcolor 06
+echo.тАЪ ┬п┬а┬п┬к┬е ┬о├б├в┬а┬л┬и├б├м ├б├в┬а├а├л┬е ├д┬а┬й┬л├л *.pkg, ┬н┬е ┬з┬а┬б├л┬в┬а┬й├в┬е ┬и├е ┬з┬а┬б┬и├а┬а├в├м, ┬п┬е├а┬е┬м┬е├й┬а┬е┬м ┬в ┬п┬а┬п┬к├г BACKUP...|nhcolor 06
 if not exist BACKUP md BACKUP
 move *.pkg BACKUP
 echo.
 pause
 )
-:: Делаем выбор между DEBUG или RETAIL или RIF Generator.
+:: тАЮ┬е┬л┬а┬е┬м ┬в├л┬б┬о├а ┬м┬е┬ж┬д├г DEBUG ┬и┬л┬и RETAIL ┬и┬л┬и RIF Generator.
 echo.
 echo. Making the choice between DEBUG or RETAIL or RIFGEN | nhcolor 0E
 echo.
@@ -169,9 +169,9 @@ echo. =                Then press any key to continue                 =
 echo. =                                                               =
 echo. =                          --- RUS ---                          =
 echo. =                                                               =
-echo. =         Пожалуйста, положите файл(ы) RAP в папку RAPS         =
-echo. =  Не забудьте положить файл(ы) ACT.DAT и IDPS.HEX в эту папку  =
-echo. =         Затем нажмите любую клавишу, чтобы продолжить         =
+echo. =         ┬П┬о┬ж┬а┬л├г┬й├б├в┬а, ┬п┬о┬л┬о┬ж┬и├в┬е ├д┬а┬й┬л(├л) RAP ┬в ┬п┬а┬п┬к├г RAPS         =
+echo. =  ┬Н┬е ┬з┬а┬б├г┬д├м├в┬е ┬п┬о┬л┬о┬ж┬и├в├м ├д┬а┬й┬л(├л) ACT.DAT ┬и IDPS.HEX ┬в ├н├в├г ┬п┬а┬п┬к├г  =
+echo. =         тАб┬а├в┬е┬м ┬н┬а┬ж┬м┬и├в┬е ┬л├о┬б├г├о ┬к┬л┬а┬в┬и├и├г, ├з├в┬о┬б├л ┬п├а┬о┬д┬о┬л┬ж┬и├в├м         =
 echo. =                                                               =
 echo. =================================================================
 echo.
@@ -223,4 +223,4 @@ echo For PSPx Team for this utility: in1975, hexcsl, Alex_1985, ErikPshat | nhco
 echo -------------------------------------------------------------------- | nhcolor 09
 echo.
 pause
-del /q /a:h make_pkg.bat nhcolor.exe
+del /q /a:h make_pkg.bat nhcolor.exe database
