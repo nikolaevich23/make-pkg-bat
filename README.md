@@ -1,4 +1,4 @@
-# MAKE_PKG_HAN_TOOLS v1.8
+# MAKE_PKG_HAN_TOOLS v1.9
 make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975, ErikPshat.
 
 Many thanks to: hexcsl, YChvanov !
@@ -10,22 +10,28 @@ Many thanks to: hexcsl, YChvanov !
 --------------------------------------------------------------------
 
 ### Usage: English
-1. Delete 4 testing folders from release 
-2. Put the game folders next to the program 
-3. Put *.rap files in the RAPS folder
-4. Put act.dat and idps.hex in the same directory
-5. Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
+1. Put the game folders next to the program 
+2. Put *.rap files in the RAPS folder
+3. Put act.dat and idps.hex in the same directory
+4. Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
+
+For test you can load v.1.8 with 4 folders
 
 ### Использование: Русский
-1. Удалите из папки релиза все 4 папки, которые там лежат для демонстрации работы программы.
-2. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
-3. Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
-4. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
-5. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
-   - _(имейте в виду, что на создание RETAIL пакета требуется почти в 2 раза больше времени)_
+1. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
+2. Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
+3. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
+4. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
+   - _(имейте в виду, что на создание RETAIL пакета требуется чуть больше времени)_
+   
+Для тестов можете скачать версию 1.8 - там 4 папки, которые там лежат для демонстрации работы программы.
 --------------------------------------------------------------------
 	
 ### History:
+
+#### 1.9
+:white_check_mark: Add database for create *.rap file. Just put psn *.pkg file same directory, run tools and Make RIF PKG - from act.dat & idps.hex & rap
+
 #### 1.8
 :white_check_mark: Python is no longer needed
 
