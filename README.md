@@ -1,4 +1,4 @@
-# MAKE_PKG_HAN_TOOLS v1.9
+# MAKE_PKG_HAN_TOOLS (see releases)
 make pkg bat made by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and modified by in1975, ErikPshat.
 
 Many thanks to: hexcsl, YChvanov !
@@ -27,6 +27,10 @@ For test you can load v.1.8 with 4 folders
 --------------------------------------------------------------------
 	
 ### History:
+
+#### 2.0
+:white_check_mark: Add new tools: try fix CFW pkg
+:white_check_mark: Cleanup github files (now all in releases)
 
 #### 1.9
 :white_check_mark: Add database for create *.rap file. Just put psn *.pkg file same directory, run tools and Make RIF PKG - from act.dat & idps.hex & rap
