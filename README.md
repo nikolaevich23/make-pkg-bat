@@ -10,18 +10,18 @@ Many thanks to: hexcsl, YChvanov !
 --------------------------------------------------------------------
 
 ### Usage: English
-1. Put the game folders next to the program 
-2. Put *.rap files in the RAPS folder
-3. Put act.dat and idps.hex in the same directory
-4. Run program EXE and select the desired action - Make DEBUG PKG(s) or Make RETAIL PKG(s) or Make RIF PKG.
+1. Put the game folders next to the program. 
+2. Put *.pkg CWF files in the folder to try fix it.
+3. Put act.dat and idps.hex in the same directory.
+4. Run program EXE and select the desired action.
 
 For test you can load v.1.8 with 4 folders
 
 ### Использование: Русский
 1. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
-2. Положите файлы *.rap в папку "RAPS", если их нужно подписать и упаковать в PKG для активации PSN-игры.
+2. Положите файлы *.pkg для CFW в папку если их нужно пропатчить для активации PSN-игры.
 3. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
-4. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или RIF PKG.
+4. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или FIX PKG или RIF PKG.
    - _(имейте в виду, что на создание RETAIL пакета требуется чуть больше времени)_  
 Для тестов можете скачать версию 1.8 - там 4 папки, которые там лежат для демонстрации работы программы.
 --------------------------------------------------------------------
@@ -30,6 +30,7 @@ For test you can load v.1.8 with 4 folders
 
 #### 2.0
 :white_check_mark: Add new tools: try fix CFW pkg
+
 :white_check_mark: Cleanup github files (now all in releases)
 
 #### 1.9
