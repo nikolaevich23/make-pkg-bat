@@ -27,6 +27,18 @@ For test you can load v.1.8 with 4 folders
 --------------------------------------------------------------------
 	
 ### History:
+#### 2.2
+:white_check_mark: Add logs / Добавлены логи.
+
+:white_check_mark: New interface / Добавлен новый интерфейс.
+
+:white_check_mark: New option - sign pkg / Добавлена опция подписывания всех пкг.
+
+:white_check_mark: Fix owerwrite param.sfo / Поправлена паковка - больше версию парам.сфо не переписывает. Нужно тестирование - будут ли проблемы из-за этого?
+
+:white_check_mark: Add Checks / Добавлены проверки
+
+:white_check_mark: Little more / Еще по мелочи.
 
 #### 2.0
 :white_check_mark: Add new tools: try fix CFW pkg
