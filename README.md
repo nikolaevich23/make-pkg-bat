@@ -30,6 +30,8 @@ For test you can load v.1.8 with 4 folders
 #### 2.2
 :white_check_mark: Add logs / Добавлены логи.
 
+:white_check_mark: Auto find *.rap for pkg in option "RIF PKG"/ Новая функция - автоматически находит RAP в базе пснстаф, просто положите пкг рядом и выберите опцию "RIF PKG"
+
 :white_check_mark: New interface / Добавлен новый интерфейс.
 
 :white_check_mark: New option - sign pkg / Добавлена опция подписывания всех пкг.
