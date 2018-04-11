@@ -27,6 +27,9 @@ For test you can load v.1.8 with 4 folders
 --------------------------------------------------------------------
 	
 ### History:
+#### 2.2.2
+:white_check_mark: New name file / Немного по другому именуются файлы
+
 #### 2.2
 :white_check_mark: Add logs / Добавлены логи.
 
