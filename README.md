@@ -27,6 +27,12 @@ For test you can load v.1.8 with 4 folders
 --------------------------------------------------------------------
 	
 ### History:
+
+### 2.3 
+:white_check_mark: Old metod pack - 3 pkg file / В связи с проблеммами в установке возвращена упаковка в 3 файла.
+
+:white_check_mark: Return to menu at end operation / Возвращает в меню по выполнению операции (если понадобиться выполнить несколько)
+
 #### 2.2.2
 :white_check_mark: New name file / Немного по другому именуются файлы
 
