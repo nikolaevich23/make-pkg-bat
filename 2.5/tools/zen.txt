@@ -1,0 +1,165 @@
+Usage:
+  zenity.exe [OPTION...]
+
+Help Options:
+  -h, --help                                        Show help options
+  --help-all                                        Show all help options
+  --help-general                                    Show general options
+  --help-calendar                                   Show calendar options
+  --help-entry                                      Show text entry options
+  --help-error                                      Show error options
+  --help-info                                       Show info options
+  --help-file-selection                             Show file selection options
+  --help-list                                       Show list options
+  --help-progress                                   Show progress options
+  --help-question                                   Show question options
+  --help-warning                                    Show warning options
+  --help-scale                                      Show scale options
+  --help-text-info                                  Show text information options
+  --help-color-selection                            Show color selection options
+  --help-password                                   Show password dialog options
+  --help-forms                                      Show forms dialog options
+  --help-misc                                       Show miscellaneous options
+  --help-gtk                                        Show GTK+ Options
+
+General options
+  --title=TITLE                                     Set the dialog title
+  --window-icon=ICONPATH                            Set the window icon
+  --width=WIDTH                                     Set the width
+  --height=HEIGHT                                   Set the height
+  --timeout=TIMEOUT                                 Set dialog timeout in seconds
+  --ok-label=TEXT                                   Sets the label of the Ok button
+  --cancel-label=TEXT                               Sets the label of the Cancel button
+  --modal                                           Set the modal hint
+
+Calendar options
+  --text=TEXT                                       Set the dialog text
+  --day=DAY                                         Set the calendar day
+  --month=MONTH                                     Set the calendar month
+  --year=YEAR                                       Set the calendar year
+  --date-format=PATTERN                             Set the format for the returned date
+
+Text entry options
+  --text=TEXT                                       Set the dialog text
+  --entry-text=TEXT                                 Set the entry text
+  --hide-text                                       Hide the entry text
+
+Error options
+  --text=TEXT                                       Set the dialog text
+  --icon-name=ICON-NAME                             Set the dialog icon
+  --no-wrap                                         Do not enable text wrapping
+  --no-markup                                       Do not enable pango markup
+
+Info options
+  --text=TEXT                                       Set the dialog text
+  --icon-name=ICON-NAME                             Set the dialog icon
+  --no-wrap                                         Do not enable text wrapping
+  --no-markup                                       Do not enable pango markup
+
+File selection options
+  --filename=FILENAME                               Set the filename
+  --multiple                                        Allow multiple files to be selected
+  --directory                                       Activate directory-only selection
+  --save                                            Activate save mode
+  --separator=SEPARATOR                             Set output separator character
+  --confirm-overwrite                               Confirm file selection if filename already exists
+  --file-filter=NAME | PATTERN1 PATTERN2 ...        Sets a filename filter
+
+List options
+  --text=TEXT                                       Set the dialog text
+  --column=COLUMN                                   Set the column header
+  --checklist                                       Use check boxes for first column
+  --radiolist                                       Use radio buttons for first column
+  --imagelist                                       Use an image for first column
+  --separator=SEPARATOR                             Set output separator character
+  --multiple                                        Allow multiple rows to be selected
+  --editable                                        Allow changes to text
+  --print-column=NUMBER                             Print a specific column (Default is 1. 'ALL' can be used to print all columns)
+  --hide-column=NUMBER                              Hide a specific column
+  --hide-header                                     Hides the column headers
+
+Progress options
+  --text=TEXT                                       Set the dialog text
+  --percentage=PERCENTAGE                           Set initial percentage
+  --pulsate                                         Pulsate progress bar
+  --auto-close                                      Dismiss the dialog when 100% has been reached
+  --auto-kill                                       Kill parent process if Cancel button is pressed
+  --no-cancel                                       Hide Cancel button
+
+Question options
+  --text=TEXT                                       Set the dialog text
+  --icon-name=ICON-NAME                             Set the dialog icon
+  --no-wrap                                         Do not enable text wrapping
+  --no-markup                                       Do not enable pango markup
+
+Warning options
+  --text=TEXT                                       Set the dialog text
+  --icon-name=ICON-NAME                             Set the dialog icon
+  --no-wrap                                         Do not enable text wrapping
+  --no-markup                                       Do not enable pango markup
+
+Scale options
+  --text=TEXT                                       Set the dialog text
+  --value=VALUE                                     Set initial value
+  --min-value=VALUE                                 Set minimum value
+  --max-value=VALUE                                 Set maximum value
+  --step=VALUE                                      Set step size
+  --print-partial                                   Print partial values
+  --hide-value                                      Hide value
+
+Text information options
+  --filename=FILENAME                               Open file
+  --editable                                        Allow changes to text
+  --font=TEXT                                       Set the text font
+  --checkbox=TEXT                                   Enable an I read and agree checkbox
+
+Color selection options
+  --color=VALUE                                     Set the color
+  --show-palette                                    Show the palette
+
+Password dialog options
+  --username                                        Display the username option
+
+Forms dialog options
+  --add-entry=Field name                            Add a new Entry in forms dialog
+  --add-password=Field name                         Add a new Password Entry in forms dialog
+  --add-calendar=Calendar field name                Add a new Calendar in forms dialog
+  --add-list=List field and header name             Add a new List in forms dialog
+  --list-values=List of values separated by |       List of values for List
+  --column-values=List of values separated by |     List of values for columns
+  --show-header                                     Show the columns header
+  --text=TEXT                                       Set the dialog text
+  --separator=SEPARATOR                             Set output separator character
+  --forms-date-format=PATTERN                       Set the format for the returned date
+
+Miscellaneous options
+  --about                                           About zenity
+  --version                                         Print version
+
+GTK+ Options
+  --class=CLASS                                     Program class as used by the window manager
+  --name=NAME                                       Program name as used by the window manager
+  --gdk-debug=FLAGS                                 GDK debugging flags to set
+  --gdk-no-debug=FLAGS                              GDK debugging flags to unset
+  --gtk-module=MODULES                              Load additional GTK+ modules
+  --g-fatal-warnings                                Make all warnings fatal
+  --gtk-debug=FLAGS                                 GTK+ debugging flags to set
+  --gtk-no-debug=FLAGS                              GTK+ debugging flags to unset
+
+Application Options:
+  --calendar                                        Display calendar dialog
+  --entry                                           Display text entry dialog
+  --error                                           Display error dialog
+  --info                                            Display info dialog
+  --file-selection                                  Display file selection dialog
+  --list                                            Display list dialog
+  --progress                                        Display progress indication dialog
+  --question                                        Display question dialog
+  --warning                                         Display warning dialog
+  --scale                                           Display scale dialog
+  --text-info                                       Display text information dialog
+  --color-selection                                 Display color selection dialog
+  --password                                        Display password dialog
+  --forms                                           Display forms dialog
+  --display=DISPLAY                                 X display to use
+

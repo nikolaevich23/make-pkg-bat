@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+    <View id="package_link_game">
+        <Attributes>
+            <Table key="pkg_main">
+                <Pair key="icon_rsc"><String>tex_album_icon</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemAlbum</String></Pair>
+                <Pair key="title"><String>? Install Packages From Webserver</String></Pair>
+                <Pair key="info"><String>D:\00\ps3tools\make-pkg-bat.git\trunk\2.5 on http://10.5.1.197:8486/</String></Pair>
+                <Pair key="ingame"><String>disable</String></Pair>
+            </Table>
+        </Attributes>
+        <Items>
+            <Query
+                class="type:x-xmb/folder-pixmap"
+                key="pkg_main"
+                attr="pkg_main"
+                src="#pkg_items"/>
+        </Items>
+    </View>
+    <View id="pkg_items">
+        <Attributes>
+			<Table key="server_setup">
+				<Pair key="icon"><String>/dev_hdd0/game/PKGLINKER/USRDIR/icons/setup.png</String></Pair>
+				<Pair key="title"><String>Server Setup</String></Pair>
+				<Pair key="info"><String>Update List, Rescan and Other Server Controls</String></Pair>
+			</Table>
+        </Attributes>
+        <Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="server_setup"
+				attr="server_setup"
+				src="xmb://localhost/dev_hdd0/game/PKGLINKER/USRDIR/server_setup.xml#server_setup_items"/>
+        </Items>
+    </View>
+
+</XMBML>

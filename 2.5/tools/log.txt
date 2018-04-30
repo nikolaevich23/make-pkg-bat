@@ -1,0 +1,178 @@
+
+Package Configuration:
+
+ContentID        = 2PATCH-PKGLINKER_00-PKGLINKER0000000
+Klicensee        = 0x00000000000000000000000000000000
+DRMType          = Free
+ContentType      = GameData
+PackageType      = DiscGamePatch (without USRDIR/EBOOT.BIN)
+PackageFlag      = RenameDirectory (during install for consistency)
+InstallDirectory = PKGLINKER
+PackageVersion   = 01.00
+# TITLE_ID       : PKGLINKER
+# CONTENT_ID     : 2PATCH-PKGLINKER_00-PKGLINKER0000000
+# CATEGORY       : GD
+# VERSION        : 01.00
+# APP_VER        : 01.00
+# PS3_SYSTEM_VER : 03.4000
+# QA_Digest      : 0x2ADC675FA3302FF695D6B23C7172EBDA
+# Packaged by    : MODDED V1.0 - Original Rev. 9998  !!ONLY FOR INTERNAL USE!!
+# !!!CAUTION!!!  : This package was created using informal options.
+# !!!CAUTION!!!  : Please check intents and confirm to technical support.
+
+Allocating disk space for the package: 102,400 bytes.
+Generate Package : "2PATCH-PKGLINKER_00-PKGLINKER0000000.pkg"
+
+ Entry list: [14 entries]
+   raw data: PARAM.SFO
+   raw data; ICON0.PNG
+  directory: USRDIR
+  directory: USRDIR/icons
+   raw data: USRDIR/icons/Refresh_Package_List.PNG
+   raw data: USRDIR/icons/download.png
+   raw data: USRDIR/icons/local_han_enabler.png
+   raw data: USRDIR/icons/server_info.png
+   raw data: USRDIR/icons/server_rescan.png
+   raw data: USRDIR/icons/server_stop.png
+   raw data: USRDIR/icons/setup.png
+   raw data: USRDIR/local_ps3xploit.xml
+   raw data: USRDIR/package_link.xml
+   raw data: USRDIR/server_setup.xml
+
+Notice: raw data is NOT protected by DRM.
+        please use NPDRM EDATA if you need to protect.
+
+Notice: Patch package should be same ID and types with the original package.
+        please double check it because it can violate DRM protection.
+
+----------------PS3XPLOIT RESIGNER v2----------------
+HAN v3 tools brought you by W, escortd3w, bguerville, habib
+Special thanks to Joonie for testing this tool
+-----------------------------------------------------
+size:0000000000019000
+making backup
+decrypting debug pkg
+encrypting retail pkg
+PS3LOGO.DAT
+PARAM.SFO
+ICON0.PNG
+USRDIR
+USRDIR/icons
+USRDIR/icons/Refresh_Package_List.PNG
+USRDIR/icons/download.png
+USRDIR/icons/local_han_enabler.png
+USRDIR/icons/server_info.png
+USRDIR/icons/server_rescan.png
+USRDIR/icons/server_stop.png
+USRDIR/icons/setup.png
+USRDIR/local_ps3xploit.xml
+USRDIR/package_link.xml
+USRDIR/server_setup.xml
+len_dec_name=10
+header[i].fname_offset=1e0
+header[i].file_off=390
+header[i].file_size=1400
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=10
+header[i].fname_offset=1f0
+header[i].file_off=1790
+header[i].file_size=458
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=10
+header[i].fname_offset=200
+header[i].file_off=1bf0
+header[i].file_size=d4c
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=10
+header[i].fname_offset=210
+header[i].file_off=2940
+header[i].file_size=0
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=10
+header[i].fname_offset=220
+header[i].file_off=2940
+header[i].file_size=0
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=30
+header[i].fname_offset=230
+header[i].file_off=2940
+header[i].file_size=1061
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=260
+header[i].file_off=39b0
+header[i].file_size=633
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=30
+header[i].fname_offset=280
+header[i].file_off=3ff0
+header[i].file_size=2fa5
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=2b0
+header[i].file_off=6fa0
+header[i].file_size=2750
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=2d0
+header[i].file_off=96f0
+header[i].file_size=2823
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=2f0
+header[i].file_off=bf20
+header[i].file_size=2af2
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=310
+header[i].file_off=ea20
+header[i].file_size=85a
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=330
+header[i].file_off=f280
+header[i].file_size=15e8
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=350
+header[i].file_off=10870
+header[i].file_size=2825
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+len_dec_name=20
+header[i].fname_offset=370
+header[i].file_off=130a0
+header[i].file_size=10c7
+number_files=f
+key: 2E7B71D7C9C9A14EA3221F188828B8F8
+iv: 0E54728C9BA096D44D82A49DAEE5E98A
+pkg signed!
+D:\PSPX\tools\2PATCH-PKGLINKER_00-PKGLINKER0000000_sign.pkg
+Перемещено файлов:         1.
