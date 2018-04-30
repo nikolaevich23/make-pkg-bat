@@ -30,6 +30,7 @@ For test you can load v.1.8 with 4 folders
 
 #### 2.5
 :white_check_mark: Add create pkg_list.pkg (analog pkg linker) and run server / Добавлена новая опция - создания пкг листа (аналог пкг линкера) и запуск сервера (hfs.exe)
+
 :white_check_mark: New port.ini file for edit port / Добавлен файл port.ini для конфигурирования порта для hfs. 
 
 #### 2.4.2 
