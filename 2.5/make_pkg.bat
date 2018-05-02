@@ -1,9 +1,10 @@
 :: --------------------------------------- ::
 :: Created mod by In1975 for site pspx.ru  ::
-:: Modded by YChvanov & rupor & ErikPshat  ::
+:: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-TITLE -= MAKE PKG HAN TOOLS v2.5 =-= by PSPx Team =-
+set bt=MAKE PKG HAN TOOLS v2.5
+TITLE -= %bt% =-= by PSPx Team =-
 ::
 rem for /f "tokens=*" %%B in (%sfxcmd%) do cd /d %%~dpB
 setlocal enabledelayedexpansion
@@ -14,20 +15,20 @@ set OS=x64& if "%PROCESSOR_ARCHITECTURE%"=="x86" (
 if not defined PROCESSOR_ARCHITEW6432 set OS=x86
 )
 Echo %TIME% -------------------------------- >log.txt
-Echo MAKE PKG HAN TOOLS v2.5 -= by PSPx Team =- >>log.txt
+Echo %bt% -= by PSPx Team =- >>log.txt
 Echo for site pspx.ru				>>log.txt
 Echo %OS% bit. 					>>log.txt
 Echo -------------------------------------------- >>log.txt
 
 :: Делаем выбор между опциями.
 :menu                                                                                                                                                                            
-for /f %%i in ('%tls%\zenity --list --width=420 --height=300 --radiolist --title="%OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 1 "Make DEBUG PKG - not signed" FALSE 2 "Make RETAIL PKG - signed debug" FALSE 3 "Try fix PSN PKG CFW (if game have update)" FALSE 4 "Make RIF PKG from act.dat & idps.hex & rap" FALSE 5 "Just sign PKG" FALSE 6 "Create list pkg and run hfs" FALSE 0 "Exit"') do goto %%i
+for /f %%i in ('%tls%\zenity --list --width=420 --height=300 --radiolist --title="%bt%. %OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 1 "Make DEBUG PKG - not signed" FALSE 2 "Make RETAIL PKG - signed debug" FALSE 3 "Try fix PSN PKG CFW (if game have update)" FALSE 4 "Make RIF PKG from act.dat & idps.hex & rap" FALSE 5 "Just sign PKG" FALSE 6 "Create list pkg and run hfs" FALSE 0 "Exit"') do goto %%i
 if %ERRORLEVEL% == 0 goto :end                                                                                                                             
 goto :eof
                                                                                            
 :movepkg
 if exist *.pkg (
-%tls%\zenity --text-info --timeout=3 --title="%OS% bit. Move File" --filename=%tls%\move.txt --height=187 --width=461
+%tls%\zenity --text-info --timeout=3 --title="%bt%. %OS% bit. Move File" --filename=%tls%\move.txt --height=187 --width=461
 if not exist BACKUP md BACKUP
 move *.pkg BACKUP >>log.txt
 )
@@ -92,14 +93,14 @@ del /q %conf%
 goto :eof
 
 :1
-%tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%OS% bit. Info"
+%tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%bt%. %OS% bit. Info"
 if %ERRORLEVEL% == 1 goto :end
 call :movepkg
 call :makepkg
 goto :end
 
 :2
-%tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%OS% bit. Info"
+%tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%bt%. %OS% bit. Info"
 if %ERRORLEVEL% == 1 goto :end
 call :movepkg
 call :makepkg
@@ -137,7 +138,7 @@ call :5
 goto :end
 
 :notfind
-%tls%\zenity --error --text="Not find act.dat, idps.hex or *.pkg" --title="%OS% bit. Not find file" --height=40 --width=320
+%tls%\zenity --error --text="Not find act.dat, idps.hex or *.pkg" --title="%bt%. %OS% bit. Not find file" --height=40 --width=320
 goto end
 
 :4
@@ -169,7 +170,7 @@ echo.
 if exist RAPS\*.rap (
 set rap=RAPS\*.rap
 ) else (
-%tls%\zenity --error --text="Not find RAP in database" --title="%OS% bit. Not find RAP" --height=40 --width=320
+%tls%\zenity --error --text="Not find RAP in database" --title="%bt%. %OS% bit. Not find RAP" --height=40 --width=320
 goto :end
 )
 if exist %tls%\exdata del /q %tls%\exdata\*.*
@@ -231,7 +232,7 @@ goto :end
 echo -= DONE =- >>log.txt
 Echo %TIME% -------------------------------- >>log.txt
 echo			-= DONE =- |%col% 0A 
-%tls%\zenity --text-info --timeout=3 --title="%OS% bit. END" --filename=%tls%\end.txt --height=227 --width=500
+%tls%\zenity --text-info --timeout=3 --title="%bt%. %OS% bit. END" --filename=%tls%\end.txt --height=227 --width=500
 echo.
 echo -------------------BIG thanks for PS3XPLOIT TEAM-------------------- |%col% 09
 echo For HAN tools by W, escortd3w, bguerville, habib and Specialy Joonie |%col% 06
