@@ -1,7 +1,7 @@
 # MAKE_PKG_HAN_TOOLS (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
 make pkg bat made by Alex_1985 and modified by in1975, ErikPshat.
 
-Many thanks to: hexcsl, YChvanov !
+Many thanks to: hexcsl!
 
 ###  Credits:               BIG thanks for PS3XPLOIT TEAM
 #### For HAN tools by W, escortd3w, bguerville, habib and Specialy Joonie
@@ -27,6 +27,11 @@ For test you can load v.1.8 with 4 folders
 --------------------------------------------------------------------
 	
 ### History:
+
+#### 2.6 
+:white_check_mark: Remove fake rap from database / Удалены фейки *.rap из базы данных. База сокращена. Изменена работа с извлечением *.rap 
+
+:white_check_mark: Some fix / Небольшие правки
 
 #### 2.5
 :white_check_mark: Add create pkg_list.pkg (analog pkg linker) and run server / Добавлена новая опция - создания пкг листа (аналог пкг линкера) и запуск сервера (hfs.exe)
