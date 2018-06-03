@@ -28,6 +28,17 @@ For test you can load v.1.8 with 4 folders
 	
 ### History:
 
+#### 2.7 
+:white_check_mark: Remove dubble rap from database / Удалены дубликаты *.rap из базы данных. 
+
+:white_check_mark: Add convert disc game (analog PS3GameConvert_v0.91) / Добавлено конвертирование дисковых игр (аналогично  PS3GameConvert_v0.91, только умеет качать апдейты к играм, проверять есть ли в патче все системные файлы, которые есть в игре)
+
+:white_check_mark: Add RegExp name for directory / Добавлена возможность паковать директории в нижнем регистре (будьте внимательны, если в системных файлах регистр другой - игра не заработает)
+
+:white_check_mark: Some change menu / Небольшое изменение меню.
+
+:white_check_mark: Some fix / Небольшие правки
+
 #### 2.6 
 :white_check_mark: Remove fake rap from database / Удалены фейки *.rap из базы данных. База сокращена. Изменена работа с извлечением *.rap 
 
