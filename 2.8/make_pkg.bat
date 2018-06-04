@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.7
+set bt=MAKE PKG HAN TOOLS v2.8
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -152,15 +152,15 @@ for %%x in (*.pkg) do (
 if exist %tls%\PARAM.SFO (
 for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%tls%\PARAM.SFO" TITLE_ID`) do set title=%%s
 %tls%\wget -C on -nc -O %tls%\ver.xml https://a0.ww.np.dl.playstation.net/tpl/np/!title!/!title!-ver.xml -o wget-log.txt
-for /f "usebackq delims=" %%a in (`powershell -ex bypass %tls%\dwn.ps1 '%tls%'`) do echo.%%~a >%tls%\dwn.txt
-set /p dst=<%tls%\dwn.txt
-echo Downloading Patch for !title!        please wait...|%col% 09
-%tls%\wget --input-file=%tls%\dwn.txt -C on -c -nc
-find "File not found" < %tls%\dwn.txt && goto not_update 
-)
+set /p dst=<%tls%\ver.xml
 if not defined dst (
 :not_update
 echo Not find game update. Sorry...|%col% 0B
+)
+for /f "usebackq delims=" %%a in (`powershell -ex bypass %tls%\dwn.ps1 '%tls%'`) do echo.%%~a >%tls%\dwn.txt
+echo Downloading Patch for !title!        please wait...|%col% 09
+%tls%\wget --input-file=%tls%\dwn.txt -C on -c -nc
+find "File not found" < %tls%\dwn.txt && goto not_update 
 )
 )                                                                                                   
 call :4
@@ -260,16 +260,28 @@ start /B %hs%
 goto :end
 
 :7
-for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-column=2 --title="%bt%. %OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 71 "ISO image" FALSE 72 "folder PS3_GAME" FALSE 0 "Exit"') do goto %%i
+for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-column=2 --title="%bt%. %OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 71 "ISO image" FALSE 72 "folder PS3_GAME" FALSE 73 "Check Path exist for Game" FALSE MENU "Back to menu" FALSE 0 "Exit"') do goto %%i
 if %ERRORLEVEL% == 0 goto :end
 
 :dwnl
 if exist *.xml del /q *.xml
 if exist %tls%\dwn.txt del /q %tls%\dwn.txt
-
 %tls%\wget -C on -nc -O %tls%\ver.xml https://a0.ww.np.dl.playstation.net/tpl/np/!title!/!title!-ver.xml -o wget-log.txt
+set /p dst=<%tls%\ver.xml
+if not defined dst (
+:not_update
+echo Not find game update. Sorry...|%col% 0B
+echo Not find game update. Sorry...>%tls%\dwn.txt 
+goto :fl 
+)
 for /f "usebackq delims=" %%a in (`powershell -ex bypass %tls%\dwn.ps1 '%tls%'`) do echo.%%~a >>%tls%\dwn.txt
-set /p dst=<%tls%\dwn.txt
+if %flag%==0 (
+:fl
+%tls%\zenity --text-info --filename=%tls%\dwn.txt --height=351 --width=500 --title="%bt%. %OS% bit. URL for Path:" --ok-label="Back to Menu" --cancel-label="Exit"
+if %ERRORLEVEL% == 0 goto :menu
+if %ERRORLEVEL% == 1 goto :end
+goto :eof
+)
 echo Downloading Patch for !title!        please wait...|%col% 09
 %tls%\wget --input-file=%tls%\dwn.txt -C on -c -nc
 find "File not found" < %tls%\dwn.txt && goto :not_update 
@@ -421,6 +433,15 @@ goto :check
 for /f %%i in ('%tls%\zenity --file-selection --title="Select folder PS3_GAME" --directory') do set PS3GAME=%%i
 set DEST=%CD%
 goto :check
+
+:73
+for /f "delims=," %%i in ('%tls%\zenity --forms --title="Check Path" --width=310 --text="Enter ID" --separator="," --add-entry="ID"') do set title=%%i
+if %ERRORLEVEL% == 0 (
+set flag=0 
+goto :dwnl
+)
+if %ERRORLEVEL% == 1 goto :7
+goto :end
 
 :0
 :end
