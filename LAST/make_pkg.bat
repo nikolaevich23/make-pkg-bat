@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.8.1
+set bt=MAKE PKG HAN TOOLS v2.9t
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -282,6 +282,7 @@ for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-
 if %ERRORLEVEL% == 0 goto :end
 
 :dwnl
+set dst=
 if exist %tls%\*.xml del /q %tls%\*.xml
 if exist %tls%\dwn.txt del /q %tls%\dwn.txt
 echo https://a0.ww.np.dl.playstation.net/tpl/np/!title!/!title!-ver.xml
@@ -297,10 +298,11 @@ for /f "usebackq delims=" %%a in (`powershell -ex bypass %tls%\dwn.ps1 '%tls%'`)
 
 if %flag%==0 (
 :fl
+rd /q /s %cd%\TEMP
 %tls%\zenity --text-info --filename=%tls%\dwn.txt --height=351 --width=500 --title="%bt%. %OS% bit. URL for Path:" --ok-label="Back to Menu" --cancel-label="Exit"
-if %ERRORLEVEL% == 0 goto :menu
-if %ERRORLEVEL% == 1 goto :end
-goto :end
+if %ERRORLEVEL% ==0 goto menu
+if %ERRORLEVEL% ==1 goto end
+goto :eof
 )
 echo Downloading Patch for !title!        please wait...|%col% 09
 %tls%\wget --input-file=%tls%\dwn.txt -C on -c -nc
@@ -426,6 +428,7 @@ call :nm %%a
 set var=!file_name!!file_ext!
 findstr /i /c:"!var!" ulist.txt >nul || echo !var! >> nofind.txt
 )
+del /q list.txt ulist.txt
 goto :mn
 
 :nm
@@ -453,6 +456,7 @@ goto :check
 :72
 for /f %%i in ('%tls%\zenity --file-selection --title="Select folder PS3_GAME" --directory') do set PS3GAME=%%i
 set DEST=%CD%
+set flag=1
 goto :check
 
 :73
