@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ
-For /L %%C in (0,1,25) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+?[]{}- ="\|/<>¹;,.
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000
+For /L %%C in (0,1,55) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
@@ -68,9 +68,7 @@ for /d %%d in (*) do (
 if exist %%d\PARAM.SFO (
 set str=%%d0000000
 set dir=!str:~0,16!
-set dir=!dir:-=0!
-set dir=!dir:_=0!
-set dir=!dir:?=0!
+set dir=!dir::=0!
 Call :Case dir U
 for /f "usebackq tokens=3" %%a in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE_ID`) do set title=%%a
 for /f "usebackq tokens=3" %%b in (`%tls%\sfoprint "%%d\PARAM.SFO" CATEGORY`) do set cat=%%b
@@ -78,10 +76,7 @@ for /f "usebackq tokens=3" %%c in (`%tls%\sfoprint "%%d\PARAM.SFO" APP_VER`) do 
 for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE`) do set tname=%%s
 set "tname=!tname!0%%d0000000"
 set tname=!tname:~0,16!
-set tname=!tname: =0!
-set tname=!tname:-=0!
-set tname=!tname:_=0!
-set tname=!tname:?=0!
+set tname=!tname::=0!
 Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
