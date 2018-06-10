@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.9t
+set bt=MAKE PKG HAN TOOLS v2.8.2
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -23,9 +23,10 @@ Echo -------------------------------------------- >>log.txt
 if exist %tls%\param.sfo del /q %tls%\param.sfo
 
 :: Делаем выбор между опциями.
-:menu                                                                                                                                                                            
+:menu   
+if exist %cd%\TEMP rd /q /s %cd%\TEMP
 for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-column=2 --title="%bt%. %OS% bit. Choose tools." --column="#" --column="#" --column="Description" TRUE 1 "Make DEBUG PKG - not signed" FALSE 2 "Make RETAIL PKG - signed debug" FALSE 4 "Make RIF PKG from act.dat & idps.hex & rap" FALSE 3 "Try fix PSN PKG CFW (if game have update)" FALSE 7 "Convert Disc Game" FALSE 5 "Just sign PKG" FALSE 6 "Create pkg list and run hfs server" FALSE 0 "Exit"') do goto %%i
-if %ERRORLEVEL% == 0 goto :end                                                                                                                             
+if !ERRORLEVEL!==1 goto :end                                                                                                                             
 goto :eof
                                                                                            
 :movepkg
@@ -69,10 +70,19 @@ set str=%%d0000000
 set dir=!str:~0,16!
 set dir=!dir:-=0!
 set dir=!dir:_=0!
+set dir=!dir:?=0!
 Call :Case dir U
 for /f "usebackq tokens=3" %%a in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE_ID`) do set title=%%a
 for /f "usebackq tokens=3" %%b in (`%tls%\sfoprint "%%d\PARAM.SFO" CATEGORY`) do set cat=%%b
 for /f "usebackq tokens=3" %%c in (`%tls%\sfoprint "%%d\PARAM.SFO" APP_VER`) do set apver=%%c 
+for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE`) do set tname=%%s
+set "tname=!tname!0%%d0000000"
+set tname=!tname:~0,16!
+set tname=!tname: =0!
+set tname=!tname:-=0!
+set tname=!tname:_=0!
+set tname=!tname:?=0!
+Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
 set n1=00ELSE
@@ -122,7 +132,7 @@ echo !ct! !DRM!
 %tls%\sfoprint "%%d\PARAM.SFO" APP_VER |%col% 0B
 echo FOLDER : %%d |%col% 09
 echo Making DEBUG PKG. WAIT... |%col% 0A
-echo ContentID = !n1!-!dir:~0,9!_00-!dir! > %conf%                                             
+echo ContentID = !n1!-!dir:~0,9!_00-!tname! > %conf%                                             
 echo Klicensee = 0x00000000000000000000000000000000 >> %conf%
 echo DRMType = !DRM! >> %conf%
 echo ContentType = !ct! >> %conf%
@@ -142,15 +152,15 @@ goto :eof
 
 :1
 %tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%bt%. %OS% bit. Info"
-if %ERRORLEVEL% == 1 goto :end
-call :movepkg
+if !ERRORLEVEL!==1 goto :end
+rem call :movepkg
 call :makepkg
 goto :end
 
 :2
 %tls%\zenity --text-info --filename=%tls%\make.txt --height=351 --width=461 --title="%bt%. %OS% bit. Info"
-if %ERRORLEVEL% == 1 goto :end
-call :movepkg
+if !ERRORLEVEL!==1 goto :end
+rem call :movepkg
 call :makepkg
 for %%I in (*.pkg) do (
 echo Signing DEBUG PKG to RETAIL... |%col% 0A
@@ -194,8 +204,6 @@ goto end
 :start
 if not exist act.dat goto :notfind
 if not exist idps.hex goto :notfind
-rem if not exist *.pkg goto :notfind
-rem %tls%\zenity --text-info --filename=%tls%\rap.txt --height=351 --width=461 --title="%OS% bit. Info"
 :: Create RAP from base
 if not exist RAPS md RAPS
 for %%x in (*.pkg) do (
@@ -241,7 +249,7 @@ echo Creating DEBUG PKG from RIF and ACT.DAT     please wait...|%col% 0B
 %tls%\make_package_license -c %CID% %tls%\exdata %CID%.pkg >>log.txt
 
 %tls%\zenity --question --ok-label="YES" --cancel-label="NO" --text="Sign PKG?"
-if %ERRORLEVEL% == 1 goto no
+if !ERRORLEVEL!==1 goto no
 :yes
 echo Creating RETAIL PKG from DEBUG PKG|%col% 0B
 echo | %tls%\ps3xploit_rifgen_edatresign %CID%.pkg ps3 >>log.txt && del /q %CID%.pkg >>log.txt
@@ -279,7 +287,7 @@ goto :end
 
 :7
 for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-column=2 --title="%bt%. %OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 71 "ISO image" FALSE 72 "folder PS3_GAME" FALSE 73 "Check Path exist for Game" FALSE MENU "Back to menu" FALSE 0 "Exit"') do goto %%i
-if %ERRORLEVEL% == 0 goto :end
+if !ERRORLEVEL!==1 goto :end
 
 :dwnl
 set dst=
@@ -288,21 +296,20 @@ if exist %tls%\dwn.txt del /q %tls%\dwn.txt
 echo https://a0.ww.np.dl.playstation.net/tpl/np/!title!/!title!-ver.xml
 %tls%\wget -C on -nc -O %tls%\ver.xml https://a0.ww.np.dl.playstation.net/tpl/np/!title!/!title!-ver.xml -o wget-log.txt
 set /p dst=<%tls%\ver.xml
-if not defined dst (
+if not Defined dst (
 :not_update
 echo Not find game update. Sorry...|%col% 0B
 echo Not find game update. Sorry...>%tls%\dwn.txt 
+set flag=0
 goto :fl 
 )
 for /f "usebackq delims=" %%a in (`powershell -ex bypass %tls%\dwn.ps1 '%tls%'`) do echo.%%~a >>%tls%\dwn.txt
-
-if %flag%==0 (
 :fl
-rd /q /s %cd%\TEMP
+if %flag%==0 (
 %tls%\zenity --text-info --filename=%tls%\dwn.txt --height=351 --width=500 --title="%bt%. %OS% bit. URL for Path:" --ok-label="Back to Menu" --cancel-label="Exit"
-if %ERRORLEVEL% ==0 goto menu
-if %ERRORLEVEL% ==1 goto end
-goto :eof
+if !ERRORLEVEL!==0 goto :menu
+if !ERRORLEVEL!==1 goto :end
+goto :end
 )
 echo Downloading Patch for !title!        please wait...|%col% 09
 %tls%\wget --input-file=%tls%\dwn.txt -C on -c -nc
@@ -311,6 +318,7 @@ goto :eof
 
 :conv
 set NAME=!title!
+if %flag%==0 exit
 
 :directory
 :: Создаем список файлов и каталогов папки USRDIR. Нужно для make_npdata
@@ -411,7 +419,7 @@ xcopy /y "%DEST%\%NAME%\USRDIR\EBOOT*.BIN" "%DEST%\%DIRNAME%\USRDIR\"
 for /f "delims=" %%a in ('dir /ad/b/s "%DEST%\%DIRNAME%\USRDIR"') do dir/b "%%a"|>nul find/v "" || echo %NAME%>"%%a\%NAME%.txt"
 
 :: Удаляем папку PS3_GAME от ISO-образа
-rd /q /s %cd%\TEMP
+if exist %cd%\TEMP rd /q /s %cd%\TEMP
 goto :end
 
 :check
@@ -437,10 +445,12 @@ set file_name=%~n1
 exit /b
 
 :mn
-if exist nofind.txt %tls%\zenity --text-info --title="%bt%. %OS% bit. No find this file in path! Exit or Try convert ?" --filename=nofind.txt --height=400 --width=510 --ok-label="Try convert" --cancel-label="Exit"
-if %ERRORLEVEL% == 0 goto :conv
-if %ERRORLEVEL% == 1 goto :end
-goto :end
+if exist nofind.txt (
+%tls%\zenity --text-info --title="%bt%. %OS% bit. No find this file in path! Exit or Try convert ?" --filename=nofind.txt --height=400 --width=510 --ok-label="Try convert" --cancel-label="Exit"
+if !ERRORLEVEL!==1 goto :conv
+if !ERRORLEVEL!==0 goto :end
+)
+goto :conv
 
 :71
 for /f %%i in ('%tls%\zenity --file-selection --title="Select a ISO-File" --file-filter="*.iso"') do set iso=%%i
@@ -461,11 +471,12 @@ goto :check
 
 :73
 for /f "delims=," %%i in ('%tls%\zenity --forms --title="Check Path" --width=310 --text="Enter ID" --separator="," --add-entry="ID"') do set title=%%i
-if %ERRORLEVEL% == 0 (
+if !ERRORLEVEL!==0 (
 set flag=0 
+Call :Case title U
 goto :dwnl
 )
-if %ERRORLEVEL% == 1 goto :7
+if !ERRORLEVEL!==1 goto :7
 goto :end
 
 :0
