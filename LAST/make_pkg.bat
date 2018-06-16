@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz!"#$%&()*+,-./:;<=>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°±µ¶·¸¹º
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ00000000000000000000000000000000000000000000000000
-For /L %%C in (0,1,76) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz!"#$%&()*+,-./:;<=>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°±µ¶·¸¹º~
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000
+For /L %%C in (0,1,77) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
