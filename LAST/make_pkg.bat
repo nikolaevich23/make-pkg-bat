@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz!"#$%&()*+,-./:;<=>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°±µ¶·¸¹º~
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000
-For /L %%C in (0,1,77) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz!"#$%&()*+,-./:;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ00000000000000000000000000000000000000000000000000000
+For /L %%C in (0,1,79) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
@@ -77,8 +77,6 @@ for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE`) do se
 set "tname=!tname!0%%d0000000"
 set tname=!tname:~0,16!
 set tname=!tname::=0!
-set tname=!tname:`=0!
-set tname=!tname:'=0!
 Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
@@ -140,6 +138,23 @@ echo PackageVersion = !apver! >> %conf%
 start %tls%\wbs "Creating DEBUG PKG..." "Please wait, the Debug PKG is being created..."  /marquee
 
 cmd /c "%tls%\psn_package_npdrm.exe -n -f %conf% %%d" >>log.txt
+if !ERRORLEVEL! NEQ 0 (
+set tname=CHANGENAME000000
+echo CHANGE ContentID = !n1!-!title:~0,9!_00-!tname! 
+echo FOLDER : %%d |%col% 09
+echo Making DEBUG PKG. WAIT... |%col% 0A
+echo ContentID = !n1!-!dir:~0,9!_00-!tname! > %conf%                                             
+echo Klicensee = 0x00000000000000000000000000000000 >> %conf%
+echo DRMType = !DRM! >> %conf%
+echo ContentType = !ct! >> %conf%
+if Defined tid echo TitleID = !tid! >> %conf%
+if Defined pt echo PackageType = !pt! >> %conf%
+echo InstallDirectory = %%d >> %conf%
+echo PackageVersion = !apver! >> %conf%
+start %tls%\wbs "Creating DEBUG PKG..." "Please wait, the Debug PKG is being created..."  /marquee
+cmd /c "%tls%\psn_package_npdrm.exe -n -f %conf% %%d" >>log.txt
+)
+
 %tls%\wbs "Creating DEBUG PKG..." "Done. Debug PKG created for $sec seconds" /Stop /timeout:3
 
 del /q %conf%
