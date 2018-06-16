@@ -79,7 +79,6 @@ set tname=!tname:~0,16!
 set tname=!tname::=0!
 set tname=!tname:`=0!
 set tname=!tname:'=0!
-
 Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
@@ -431,15 +430,14 @@ findstr /M /B /S /C:"SCE" !PS3GAME!\*.BIN !PS3GAME!\*.SELF !PS3GAME!\*.SPRX >lis
 findstr /M /B /S /C:"SCE" !UPGAME!\*.BIN !UPGAME!\*.SELF !UPGAME!\*.SPRX >ulist.txt
 for /f "tokens=*" %%a in (list.txt) do (
 call :nm %%a
-set var=!file_name!!file_ext!
+set var=!fn!
 findstr /i /c:"!var!" ulist.txt >nul || echo !var! >> nofind.txt
 )
 del /q list.txt ulist.txt
 goto :mn
 
 :nm
-set file_ext=%~x1
-set file_name=%~n1
+set fn=%~nx1
 exit /b
 
 :mn
