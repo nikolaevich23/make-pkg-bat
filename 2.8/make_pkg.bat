@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.8.2
+set bt=MAKE PKG HAN TOOLS v2.8.3
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz!"#$%&()*+,-./:;<=>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°±µ¶·¸¹º~
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000
-For /L %%C in (0,1,77) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz !"#$%&()*+,-./:;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000000
+For /L %%C in (0,1,80) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
@@ -66,7 +66,7 @@ Exit /B
 :makepkg
 for /d %%d in (*) do (
 if exist %%d\PARAM.SFO (
-set str=%%d0000000
+set str=%%d000000000000000
 set dir=!str:~0,16!
 set dir=!dir::=0!
 Call :Case dir U
@@ -74,11 +74,9 @@ for /f "usebackq tokens=3" %%a in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE_ID`) do
 for /f "usebackq tokens=3" %%b in (`%tls%\sfoprint "%%d\PARAM.SFO" CATEGORY`) do set cat=%%b
 for /f "usebackq tokens=3" %%c in (`%tls%\sfoprint "%%d\PARAM.SFO" APP_VER`) do set apver=%%c 
 for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE`) do set tname=%%s
-set "tname=!tname!0%%d0000000"
+set "tname=!tname!0%%d000000000000000"
 set tname=!tname:~0,16!
 set tname=!tname::=0!
-set tname=!tname:`=0!
-set tname=!tname:'=0!
 Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
@@ -140,6 +138,23 @@ echo PackageVersion = !apver! >> %conf%
 start %tls%\wbs "Creating DEBUG PKG..." "Please wait, the Debug PKG is being created..."  /marquee
 
 cmd /c "%tls%\psn_package_npdrm.exe -n -f %conf% %%d" >>log.txt
+if !ERRORLEVEL! NEQ 0 (
+set tname=CHANGENAME000000
+echo CHANGE ContentID = !n1!-!title:~0,9!_00-!tname! 
+echo FOLDER : %%d |%col% 09
+echo Making DEBUG PKG. WAIT... |%col% 0A
+echo ContentID = !n1!-!dir:~0,9!_00-!tname! > %conf%                                             
+echo Klicensee = 0x00000000000000000000000000000000 >> %conf%
+echo DRMType = !DRM! >> %conf%
+echo ContentType = !ct! >> %conf%
+if Defined tid echo TitleID = !tid! >> %conf%
+if Defined pt echo PackageType = !pt! >> %conf%
+echo InstallDirectory = %%d >> %conf%
+echo PackageVersion = !apver! >> %conf%
+start %tls%\wbs "Creating DEBUG PKG..." "Please wait, the Debug PKG is being created..."  /marquee
+cmd /c "%tls%\psn_package_npdrm.exe -n -f %conf% %%d" >>log.txt
+)
+
 %tls%\wbs "Creating DEBUG PKG..." "Done. Debug PKG created for $sec seconds" /Stop /timeout:3
 
 del /q %conf%
@@ -260,9 +275,12 @@ goto :eof
 echo Signing PKG to RETAIL... |%col% 0A
 if not exist *.pkg echo Not find PKG... Exit |%col% 0B
 for %%I in (*.pkg) do (
-echo | %tls%\ps3xploit_rifgen_edatresign %%I ps3 >>log.txt
-ren %%~nI.pkg_signed.pkg %%~nI_sign.pkg >>log.txt
-del /q %%I >>log.txt
+set tmpname=%%~nI
+Call :Case tmpname U
+ren "%%I" !tmpname!.pkg >>log.txt
+echo | %tls%\ps3xploit_rifgen_edatresign !tmpname!.pkg ps3 >>log.txt
+ren !tmpname!.pkg_signed.pkg !tmpname!_sign.pkg >>log.txt
+del /q !tmpname!.pkg >>log.txt
 )
 goto :eof
 
