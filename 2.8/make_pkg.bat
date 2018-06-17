@@ -276,11 +276,11 @@ echo Signing PKG to RETAIL... |%col% 0A
 if not exist *.pkg echo Not find PKG... Exit |%col% 0B
 for %%I in (*.pkg) do (
 set tmpname=%%~nI
-Call :Case tmpname U
-ren "%%I" !tmpname!.pkg >>log.txt
-echo | %tls%\ps3xploit_rifgen_edatresign !tmpname!.pkg ps3 >>log.txt
-ren !tmpname!.pkg_signed.pkg !tmpname!_sign.pkg >>log.txt
-del /q !tmpname!.pkg >>log.txt
+rem ren "%%I" !tmpname!.pkg >>log.txt
+echo | %tls%\ps3xploit_rifgen_edatresign "%%I" ps3 >>log.txt
+set tmp2=!tmpname: =-!
+ren "!tmpname!.pkg_signed.pkg" "!tmp2!_sign.pkg" >>log.txt
+del /q "!tmpname!.pkg" >>log.txt
 )
 goto :eof
 
