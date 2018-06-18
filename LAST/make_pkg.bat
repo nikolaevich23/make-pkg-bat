@@ -278,7 +278,7 @@ for %%I in (*.pkg) do (
 set tmpname=%%~nI
 rem ren "%%I" !tmpname!.pkg >>log.txt
 echo | %tls%\ps3xploit_rifgen_edatresign "%%I" ps3 >>log.txt
-set tmp2=!tmpname: =-!
+set "tmp2=!tmpname: =-!"
 ren "!tmpname!.pkg_signed.pkg" "!tmp2!_sign.pkg" >>log.txt
 del /q "!tmpname!.pkg" >>log.txt
 )
@@ -290,7 +290,7 @@ set curd=%cd%
 package_link_maker.exe
 cd %tls%
 call :makepkg
-rem call :5
+call :5
 move /Y %tls%\*.pkg %curd%\Package_List.pkg >>log.txt
 cd %curd%
 if exist port.ini (set /p port=<port.ini) else (set port=80)
