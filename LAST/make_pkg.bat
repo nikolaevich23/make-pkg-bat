@@ -290,7 +290,7 @@ set curd=%cd%
 package_link_maker.exe
 cd %tls%
 call :makepkg
-call :5
+rem call :5
 move /Y %tls%\*.pkg %curd%\Package_List.pkg >>log.txt
 cd %curd%
 if exist port.ini (set /p port=<port.ini) else (set port=80)
