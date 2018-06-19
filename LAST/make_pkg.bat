@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.8.3
+set bt=MAKE PKG HAN TOOLS v2.9
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -294,7 +294,8 @@ call :5
 move /Y %tls%\*.pkg %curd%\Package_List.pkg >>log.txt
 cd %curd%
 if exist port.ini (set /p port=<port.ini) else (set port=80)
-set hs=.\\tools\hfs.exe -c port=%port% .\\tools\PS3Xploit_files\ .\\tools\icons .\\tools\flags
+if exist ip.ini (set /p ips=<ip.ini) else (set ips=)
+set hs=.\\tools\hfs.exe -c ip=%ips%\nport=%port% .\\tools\PS3Xploit_files\ .\\tools\icons .\\tools\flags
 for %%j in (*.pkg) do set hs=!hs! .\\%%j
 echo Run Server... |%col% 05
 start /B %hs%

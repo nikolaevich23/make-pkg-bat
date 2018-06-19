@@ -1,0 +1,13 @@
+﻿  Please, put to sign into this folder the following folders:  
+  (name of game folder specifies to name of directory on PS3)  
+                                                               
+  Положите для подписывания в эту директорию аналогичные папки:  
+  (имя папки игры определяет имя директории установки на PS3)
+
+    BXXS12345 | BXXS12345GAME | BXXS12345DATA | NPXX12345   
+                                                            
+   containing folders & files  |  содержащие папки и файлы   
+                                                             
+               USRDIR TROPDIR LICDIR C00 HTMLDIR             
+        EBOOT.BIN PARAM.SFO ICON0.PNG PIC0.PNG LIC.EDAT      
+        ICON1.PAM PARAM.HIP  PIC1.PNG PIC2.PNG SND0.AT3      
