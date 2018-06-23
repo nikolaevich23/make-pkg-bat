@@ -26,9 +26,8 @@ For test you can load v.1.8 with 4 folders
 Для тестов можете скачать версию 1.8 - там 4 папки, которые там лежат для демонстрации работы программы.
 --------------------------------------------------------------------
 ### Requirements
-For old version Windows need [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
-
-Для старых версий Windows требуется [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
++ For old version Windows need [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
++ Для старых версий Windows требуется [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
 	
 ### History:
 
