@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.9
+set bt=MAKE PKG HAN TOOLS v2.9.1
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz !"#$%&()*+,-./:;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000000
-For /L %%C in (0,1,80) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz !"#$%&()*+,-/;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ0000000000000000000000000000000000000000000000000000
+For /L %%C in (0,1,78) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
@@ -77,6 +77,7 @@ for /f "usebackq tokens=3" %%s in (`%tls%\sfoprint "%%d\PARAM.SFO" TITLE`) do se
 set "tname=!tname!0%%d000000000000000"
 set tname=!tname:~0,16!
 set tname=!tname::=0!
+set tname=!tname:.=0!
 Call :Case tname U
 if not defined apver set apver=1.00
 Set DRM=Free
