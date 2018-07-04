@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.9.1
+set bt=MAKE PKG HAN TOOLS v2.9.2
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
@@ -18,7 +18,7 @@ if not defined PROCESSOR_ARCHITEW6432 set OS=x86
 Echo %TIME% -------------------------------- >log.txt
 Echo %bt% -= by PSPx Team =- >>log.txt
 Echo for site pspx.ru				>>log.txt
-Echo %OS% bit. 					>>log.txt
+Echo %OS% bit. Run from: "%CD%"			>>log.txt
 Echo -------------------------------------------- >>log.txt
 if exist %tls%\param.sfo del /q %tls%\param.sfo
 
