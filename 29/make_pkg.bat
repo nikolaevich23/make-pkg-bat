@@ -55,9 +55,9 @@ if "!case%~2%symb%!"=="" (
 goto :newsymbol
  
 :FillSlovar
-Set AlphabetL=abcdefghijklmnopqrstuvwxyz !"#$%&()*+,-/;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'
-Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ0000000000000000000000000000000000000000000000000000
-For /L %%C in (0,1,78) do (
+Set AlphabetL=abcdefghijklmnopqrstuvwxyz !"#$%&()*+,-/;<>?[\]^_„†‡‰•–™¡¢¤¦§¨©ª¬¯°µ¶·¸¹º~+-`'©®
+Set AlphabetU=ABCDEFGHIJKLMNOPQRSTUVWXYZ000000000000000000000000000000000000000000000000000000
+For /L %%C in (0,1,80) do (
   set caseU!AlphabetL:~%%C,1!=!AlphabetU:~%%C,1!
   set caseL!AlphabetU:~%%C,1!=!AlphabetL:~%%C,1!
 )
@@ -286,9 +286,21 @@ del /q "!tmpname!.pkg" >>log.txt
 goto :eof
 
 :6
+for /f %%i in ('%tls%\zenity --list --width=375 --height=323 --radiolist --hide-column=2 --title="%bt%. %OS% bit. Choose tools" --column="#" --column="#" --column="Description" TRUE 61 "ENG Menu" FALSE 62 "RUS Menu" FALSE MENU "Back to menu" FALSE 0 "Exit"') do goto %%i
+if !ERRORLEVEL!==1 goto :end
+
+:61
+set pklm=package_link_maker_en.exe  
+goto :63
+
+:62
+set pklm=package_link_maker_ru.exe  
+goto :63
+
+:63
 echo Create Pkg List... |%col% 0A
 set curd=%cd%
-package_link_maker.exe
+%pklm%
 cd %tls%
 call :makepkg
 call :5
