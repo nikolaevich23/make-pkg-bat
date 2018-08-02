@@ -3,7 +3,7 @@
 :: Modded by & rupor & ErikPshat           ::
 :: --------------------------------------- ::
 @echo off
-set bt=MAKE PKG HAN TOOLS v2.9.2
+set bt=MAKE PKG HAN TOOLS v2.9.3
 TITLE -= %bt% =-= by PSPx Team =-
 ::
 chcp 1251 >NUL
