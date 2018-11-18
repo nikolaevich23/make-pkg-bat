@@ -31,6 +31,14 @@ For test you can load v.1.8 with 4 folders
 	
 ### History:
 
+#### 3.0
+:white_check_mark: New interface / Новый интерфейс
+:white_check_mark: Help / Справка
+:white_check_mark: Ability to work in directories with spaces and Russian characters / Возможность работы в директориях с пробелами и русскими символами
+:white_check_mark: The ip.ini and port.ini files are combined in the config.ini 
+/ Файлы ip.ini и port.ini объеденены в config.ini
+:white_check_mark: Other edits / Другие правки 
+
 #### 2.9
 :white_check_mark: Add chose IP / Добавлен выбор IP для создания pkg linker.pkg и сервера
 
