@@ -1,5 +1,5 @@
 # MAKE_PKG_HAN_TOOLS (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
-make pkg bat made by Alex_1985 and modified by in1975, ErikPshat.
+make pkg bat made by in1975, ErikPshat.
 
 Many thanks to: hexcsl!
 
