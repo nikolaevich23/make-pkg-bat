@@ -6,7 +6,7 @@ Many thanks to: hexcsl!
 ###  Credits:               BIG thanks for PS3XPLOIT TEAM
 #### For HAN tools by W, escortd3w, bguerville, habib and Specialy Joonie
 #### For RESIGNER ACT.DAT/RIF/ENC/EDAT/CONFIG PS2/PSX/PSP content for PS3
-#### For PSPx Team for this utility: in1975, hexcsl, Alex_1985, ErikPshat
+#### For PSPx Team for this utility: in1975, hexcsl, ErikPshat
 --------------------------------------------------------------------
 
 ### Usage: English
