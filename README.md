@@ -1,12 +1,12 @@
 # MAKE_PKG_HAN_TOOLS (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
-make pkg bat made by in1975, ErikPshat.
+make pkg bat made by in1975.
 
-Many thanks to: hexcsl!
+Many thanks to: hexcsl, BaseD and ErikPshat!
 
 ###  Credits:               BIG thanks for PS3XPLOIT TEAM
 #### For HAN tools by W, escortd3w, bguerville, habib and Specialy Joonie
 #### For RESIGNER ACT.DAT/RIF/ENC/EDAT/CONFIG PS2/PSX/PSP content for PS3
-#### For PSPx Team for this utility: in1975, hexcsl, ErikPshat
+#### For PSPx Team for this utility: in1975, hexcsl, BaseD, ErikPshat
 --------------------------------------------------------------------
 
 ### Usage: English
