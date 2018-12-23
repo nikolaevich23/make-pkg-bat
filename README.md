@@ -1,4 +1,4 @@
-# MAKE_PKG_HAN_TOOLS (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
+# MPHT (Make Pkg Han Tools) (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
 make pkg bat made by in1975.
 
 Many thanks to: hexcsl, BaseD and ErikPshat!
