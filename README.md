@@ -31,6 +31,9 @@ For test you can load v.1.8 with 4 folders
 	
 ### History:
 
+#### 3.0.3
+:white_check_mark: Added refresh button / Добавлена кнопка обновить
+
 #### 3.0.2
 :white_check_mark: IP detection without the need to restart / Определение IP без необходимости перезапуска.
 
