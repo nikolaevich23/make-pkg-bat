@@ -31,6 +31,12 @@ For test you can load v.1.8 with 4 folders
 	
 ### History:
 
+#### 3.0.2
+:white_check_mark: IP detection without the need to restart / Определение IP без необходимости перезапуска.
+
+#### 3.0.1
+:white_check_mark: Other edits / Другие правки 
+
 #### 3.0
 :white_check_mark: New interface / Новый интерфейс
 
