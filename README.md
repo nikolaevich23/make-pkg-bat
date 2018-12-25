@@ -21,9 +21,7 @@ For test you can load v.1.8 with 4 folders
 1. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
 2. Положите файлы *.pkg для CFW в папку если их нужно пропатчить для активации PSN-игры (нужны апдейты к игре)
 3. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
-4. Запустите программу и выберите необходимое действие - Создать DEBUG PKG или RETAIL PKG или FIX PKG или RIF PKG.
-   - _(имейте в виду, что на создание RETAIL пакета требуется чуть больше времени)_  
-Для тестов можете скачать версию 1.8 - там 4 папки, которые там лежат для демонстрации работы программы.
+4. Запустите программу и выберите необходимое действие.
 --------------------------------------------------------------------
 ### Requirements
 + For old version Windows need [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
