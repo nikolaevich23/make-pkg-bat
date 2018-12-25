@@ -15,8 +15,6 @@ Many thanks to: hexcsl, BaseD and ErikPshat!
 3. Put act.dat and idps.hex in the same directory.
 4. Run program EXE and select the desired action.
 
-For test you can load v.1.8 with 4 folders
-
 ### Использование: Русский
 1. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
 2. Положите файлы *.pkg для CFW в папку если их нужно пропатчить для активации PSN-игры (нужны апдейты к игре)
