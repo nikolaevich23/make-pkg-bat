@@ -1,5 +1,5 @@
-# MPHT (Make Pkg Han Tools) (see [releases](https://github.com/nikolaevich23/make-pkg-bat/releases))
-make pkg bat made by in1975.
+# MPHT (Make Pkg Han Tools)
+make pkg made by in1975 and other.
 
 Many thanks to: hexcsl, BaseD and ErikPshat!
 
