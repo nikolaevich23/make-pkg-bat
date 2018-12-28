@@ -22,7 +22,7 @@ Add(ButtonRush,11616974,105,602)
 {
  Left=15
  Top=220
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -59,7 +59,7 @@ Add(ButtonRush,14349947,70,252)
 {
  Left=15
  Top=60
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -96,7 +96,7 @@ Add(ButtonRush,14819043,98,434)
 {
  Left=15
  Top=100
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -134,7 +134,7 @@ Add(ButtonRush,5604813,420,91)
 {
  Left=15
  Top=140
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -162,7 +162,7 @@ Add(ButtonRush,268577,427,259)
 {
  Left=15
  Top=180
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -199,7 +199,7 @@ Add(ButtonRush,5721681,399,434)
 {
  Left=15
  Top=260
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -215,7 +215,7 @@ Add(ButtonRush,5721681,399,434)
  ColorToOver=-16777214
  GradientStyleOver=0
  ColorShadowDis=8421504
- Caption="7. Создать pakage_list и запустить сервер "
+ Caption="7. Создать package_list и запустить сервер "
  HAlign=0
  Glyphs=[]
  Point(onMouseEnter)
@@ -289,11 +289,11 @@ Add(LineBreakEx,7214816,273,434)
 Add(LineBreakEx,10642298,273,602)
 {
 }
-Add(GLabel,11772850,924,7)
+Add(GLabel,11772850,959,7)
 {
  Left=15
  Top=300
- Width=130
+ Width=90
  Height=28
  Color=-16777203
  Font=[Tahoma,10,1,0,204]
@@ -311,11 +311,11 @@ Add(GLabel,11772850,924,7)
  Point(doColor)
  MakeTrans(Caption)
 }
-Add(GLabel,14171711,931,112)
+Add(GLabel,14171711,966,112)
 {
- Left=145
+ Left=105
  Top=300
- Width=170
+ Width=120
  Height=28
  Color=-16777203
  Font=[Arial,12,1,0,204]
@@ -324,6 +324,7 @@ Add(GLabel,14171711,931,112)
  ColorHover=255
  Caption=""
  AutoSize=1
+ Alignment=2
  VAlignment=0
  DepthShadow=1
  FonGradient=0
@@ -331,11 +332,12 @@ Add(GLabel,14171711,931,112)
  DepthGrad=50
  Antialiased=0
  Point(doColor)
+ link(Text,1853776:Var3,[(972,96)])
 }
-Add(Host,6003462,798,42)
+Add(Host,6003462,833,42)
 {
 }
-Add(Ini,9528604,763,105)
+Add(Ini,9528604,798,105)
 {
  FileName="config.ini"
  Section="ip"
@@ -346,7 +348,7 @@ Add(Ini,9528604,763,105)
  Point(doClearAll)
  link(onSectionNames,6667612:doRead,[])
 }
-Add(Ini,6667612,847,112)
+Add(Ini,6667612,882,112)
 {
  FileName="config.ini"
  Section="ip"
@@ -356,24 +358,25 @@ Add(Ini,6667612,847,112)
  Point(doSectionNames)
  Point(doClearAll)
  link(onResult,14171711:doText,[])
- link(Value,6003462:LoacalIP,[(874,93)(811,93)])
+ link(Value,1853776:Var2,[])
 }
-Add(Hub,11065466,728,49)
+Add(Hub,11065466,763,49)
 {
  InCount=2
- OutCount=3
+ OutCount=4
  link(onEvent1,6003462:doIPByHost,[])
- link(onEvent2,9528604:doSectionNames,[(749,62)(749,125)])
- link(onEvent3,4594940:In,[(752,69)(752,76)])
+ link(onEvent2,9528604:doSectionNames,[(784,62)(784,125)])
+ link(onEvent3,4594940:In,[(787,69)(787,76)])
+ link(onEvent4,8381860:doEvent2,[(801,76)(801,153)])
 }
 Add(InfoTip,3367426,672,0)
 {
  Info=#8:IP адрес|
  Font=[MS Sans Serif,12,1,0,1]
- Width=295
+ Width=351
  Height=165
 }
-Add(MainForm,12151591,1127,70)
+Add(MainForm,12151591,1288,70)
 {
  Left=50
  Top=100
@@ -388,6 +391,7 @@ Add(MainForm,12151591,1127,70)
  TransparentColor=-16777213
  Position=1
  Point(doColor)
+ link(onDeactivate,8147362:In,[(1374,83)(1374,69)])
  link(onCreate,8051018:doEvent1,[])
 }
 Add(LineBreakEx,16651841,728,532)
@@ -480,21 +484,22 @@ Add(StrCat,16352698,413,35)
  MakeTrans(Str2)
  link(onStrCat,5250214:doWork,[])
 }
-Add(LineBreak,1582549,679,49)
+Add(LineBreak,5154400,714,49)
 {
  link(Out,11065466:doEvent1,[])
- Primary=[4272780,595,42]
+ Primary=[4272780,721,42]
 }
-Add(LineBreak,175387,798,133)
+Add(LineBreak,805375,756,140)
 {
- link(Out,6667612:doWrite,[(838,139)(838,125)])
- Primary=[8147362,371,-70]
+ link(Out,8381860:doEvent1,[])
+ Primary=[8147362,574,-77]
 }
-Add(Version,3365791,1099,7)
+Add(Version,3365791,1260,7)
 {
- Version="3.0.2"
+ Version="3.0.4"
  Description="-= Make pkg han tool =-"
  InternalName="-= Make pkg han tool =-"
+ E-mail="in1975@ya.ru"
 }
 Add(WinExec,8553954,1022,525)
 {
@@ -514,9 +519,9 @@ Add(LineBreakEx,13972144,1043,300)
 }
 Add(RichEdit,513742,1302,532)
 {
- Left=330
+ Left=335
  Top=21
- Width=445
+ Width=440
  Height=347
  Color=15780518
  Font=[Times New Roman,9,1,0,204]
@@ -525,13 +530,14 @@ Add(RichEdit,513742,1302,532)
  Ctl3D=0
  Name="Консоль"
  ModeSp=3
- Strings=#37:             MAKE PKG HAN TOOLS 3.0.2|48:________________________________________________|0:|0:|
+ Strings=#37:             MAKE PKG HAN TOOLS 3.0.4|48:________________________________________________|0:|0:|
  ScrollBars=2
  ReadOnly=0
  HideFrames=0
  CanDragOle=1
  InsertCRLF=1
  Point(doColor)
+ link(onChange,10969069:doBetween,[(1346,538)(1346,570)(1206,570)(1206,601)])
  link(Color,2027317:Var,[])
 }
 Add(ConvertorEx,690554,728,588)
@@ -539,13 +545,13 @@ Add(ConvertorEx,690554,728,588)
  Mode=10
  link(onResult,14631311:doBetween,[])
 }
-Add(LineBreakEx,1799443,1260,56)
+Add(LineBreakEx,1799443,1421,56)
 {
  Caption="MInitBmp"
 }
-Add(Hub,15674606,1239,84)
+Add(Hub,15674606,1400,84)
 {
- link(onEvent1,1799443:doWork,[(1260,90)])
+ link(onEvent1,1799443:doWork,[(1421,90)])
  link(onEvent2,4272780:In,[])
 }
 Add(ProgressBarRush,2204639,868,574)
@@ -559,10 +565,10 @@ Add(ProgressBarRush,2204639,868,574)
  RoundHeight=2
  Point(doColor)
 }
-Add(InfoTip,11409660,973,0)
+Add(InfoTip,11409660,1134,0)
 {
  Info=#5:Фишки|
- Width=421
+ Width=435
  Height=165
 }
 Add(Hub,12560109,154,70)
@@ -571,14 +577,14 @@ Add(Hub,12560109,154,70)
  OutCount=1
  link(onEvent1,9465862:doStrCat,[(192,76)(192,83)])
 }
-Add(TrayIcon,5361154,1351,84)
+Add(TrayIcon,5361154,1512,84)
 {
  Text="Готово"
  Title="make pkg"
  Point(doShowBallonTip)
  Point(doHint)
  MakeTrans(Text)
- link(onClick,5361154:doShow,[(1395,90)(1395,78)(1339,78)(1339,90)])
+ link(onClick,5361154:doShow,[(1556,90)(1556,78)(1500,78)(1500,90)])
 }
 Add(HubEx,869172,196,266)
 {
@@ -589,16 +595,16 @@ Add(HubEx,2224817,126,259)
  Angle=3
  link(onEvent,5750879:doStrCat,[(130,230)])
 }
-Add(LineBreak,977341,1281,112)
+Add(LineBreak,16461068,1442,112)
 {
  link(Out,5361154:doHint,[])
- Primary=[8337777,-357,455]
+ Primary=[8337777,-518,455]
 }
 Add(GLabel,13791859,966,280)
 {
  Left=15
  Top=340
- Width=130
+ Width=90
  Height=28
  Color=-16777203
  Font=[Tahoma,10,1,0,204]
@@ -619,9 +625,9 @@ Add(GLabel,13791859,966,280)
 }
 Add(GLabel,9516142,966,238)
 {
- Left=145
+ Left=105
  Top=340
- Width=80
+ Width=120
  Height=28
  Color=-16777203
  Font=[Arial,12,1,0,204]
@@ -631,6 +637,7 @@ Add(GLabel,9516142,966,238)
  ColorHover=255
  Caption=""
  AutoSize=1
+ Alignment=2
  VAlignment=0
  DepthShadow=1
  FonGradient=0
@@ -639,10 +646,10 @@ Add(GLabel,9516142,966,238)
  Antialiased=0
  Point(doColor)
 }
-Add(LineBreak,4530745,693,217)
+Add(LineBreak,11067665,693,217)
 {
  link(Out,7931353:doEvent1,[])
- Primary=[4594940,70,-147]
+ Primary=[4594940,105,-147]
 }
 Add(InfoTip,3356079,672,182)
 {
@@ -651,7 +658,7 @@ Add(InfoTip,3356079,672,182)
  Width=351
  Height=144
 }
-Add(ChildFormEx,545702,1197,84)
+Add(ChildFormEx,545702,1358,84)
 {
  link(onEnd,15674606:doEvent1,[])
 }
@@ -983,27 +990,27 @@ BEGIN_SDK
    link(onEvent3,13103810:In,[])
    link(onEvent4,2344149:In,[])
   }
-  Add(LineBreak,7672123,105,70)
+  Add(LineBreak,5144723,105,70)
   {
    link(Out,14938098:doSetTheme,[(158,76)(158,104)])
    Primary=[1929658,273,420]
   }
-  Add(LineBreak,2333177,140,238)
+  Add(LineBreak,14836572,140,238)
   {
    link(Out,8834790:doSetTheme,[])
    Primary=[301344,238,259]
   }
-  Add(LineBreak,8695154,35,266)
+  Add(LineBreak,15031229,35,266)
   {
    link(Out,9668916:doSetTheme,[])
    Primary=[13103810,343,238]
   }
-  Add(LineBreak,15017379,28,455)
+  Add(LineBreak,9812453,28,455)
   {
    link(Out,207919:doSetTheme,[])
    Primary=[2344149,350,56]
   }
-  Add(LineBreak,9715902,301,490)
+  Add(LineBreak,8533509,301,490)
   {
    link(Out,3912325:doEvent1,[])
    Primary=[12875360,-266,-462]
@@ -1048,13 +1055,13 @@ Add(HubEx,14095683,798,357)
 {
  link(onEvent,699495:doShellExec,[])
 }
-Add(LineBreak,3810042,686,357)
+Add(LineBreak,6630727,686,357)
 {
  Caption="форум"
  link(Out,8235748:doData,[])
  Primary=[4830357,672,-35]
 }
-Add(LineBreak,9126,693,399)
+Add(LineBreak,13059779,693,399)
 {
  Caption="игры"
  link(Out,4656256:doData,[])
@@ -1072,6 +1079,7 @@ Add(IndexToChanel,1527168,1190,259)
  Count=14
  Data=Integer(1)
  link(onEvent2,5774005:In,[])
+ link(onEvent3,14806913:doSwitch,[(1248,279)(1248,412)])
  link(onEvent4,15019758:In,[])
  link(onEvent6,11315057:doData,[(1294,300)(1294,209)])
  link(onEvent7,807344:doEvent1,[])
@@ -1081,12 +1089,12 @@ Add(IndexToChanel,1527168,1190,259)
  link(onEvent12,5641235:doEvent1,[(1234,342)(1234,374)(1171,374)(1171,405)])
  link(onEvent14,16453520:doWork1,[(1234,356)(1234,377)(1122,377)(1122,398)])
 }
-Add(LineBreak,12657303,672,588)
+Add(LineBreak,12644405,672,588)
 {
  link(Out,690554:doConvert,[])
  Primary=[7981491,427,-21]
 }
-Add(LineBreak,5068594,1148,567)
+Add(LineBreak,12001666,1148,567)
 {
  Caption="clear"
  link(Out,4253140:doEvent1,[])
@@ -1118,7 +1126,7 @@ Add(ButtonRush,3352433,70,70)
 {
  Left=15
  Top=20
- Width=300
+ Width=305
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -1160,9 +1168,9 @@ BEGIN_SDK
   }
   Add(Panel,1494575,105,42)
   {
-   Left=133
+   Left=115
    Top=340
-   Width=182
+   Width=211
    Height=28
    Color=15780518
    Visible=1
@@ -1207,8 +1215,8 @@ BEGIN_SDK
   }
   Add(ButtonRush,15403095,42,161)
   {
-   Left=97
-   Width=85
+   Left=117
+   Width=90
    Height=28
    Font=[Tahoma,10,1,0,204]
    Cursor=2
@@ -1234,12 +1242,13 @@ BEGIN_SDK
   Add(Edit,5011149,238,42)
   {
    Left=4
-   Width=88
+   Width=108
    Height=28
    Font=[Arial,12,1,0,204]
    Cursor=16
    KeyPreview=1
    Text=""
+   Alignment=2
    MaxLenField=8
    link(onChange,16105306:doValue,[])
   }
@@ -1263,9 +1272,9 @@ Add(HubEx,13753692,896,238)
 }
 Add(ButtonRush,9283463,741,238)
 {
- Left=230
+ Left=231
  Top=340
- Width=85
+ Width=90
  Height=28
  Font=[Tahoma,10,1,0,204]
  Cursor=2
@@ -1333,10 +1342,10 @@ Add(Application,9869308,1519,224)
 {
  Wait=1
 }
-Add(LineBreak,15191514,980,98)
+Add(LineBreak,6854915,1141,98)
 {
  link(Out,753852:doEvent2,[])
- Primary=[12663987,532,217]
+ Primary=[12663987,371,217]
 }
 Add(Hub,807344,1337,301)
 {
@@ -1354,10 +1363,8 @@ Add(Hub,2777862,1435,322)
 }
 Add(Hub,5380195,1169,259)
 {
- OutCount=3
  link(onEvent1,1527168:doEvent,[])
  link(onEvent2,6728992:doCheckIdx,[(1195,272)(1195,278)(1115,278)(1115,285)])
- link(onEvent3,14806913:doSwitch,[(1249,279)(1249,412)])
 }
 Add(StrCat,14471042,791,273)
 {
@@ -1370,10 +1377,10 @@ Add(Hub,7931353,784,217)
  link(onEvent1,2955559:doWork2,[(795,223)(795,251)])
  link(onEvent2,14471042:doStrCat,[(810,230)(810,254)(779,254)(779,279)])
 }
-Add(Translator,15454710,1057,7)
+Add(Translator,15454710,1218,7)
 {
  Lang="en"
- LangWords=['2. Создать подписанный PKG'="2. Make RETAIL PKG",'7. Создать pakage_list и запустить сервер '="7. Create pkg list and run hfs server",'IP адрес :'="IP adress:",'Создать не подписанный PKG'="Make DEBUG PKG",' для запуска в DEBUG HAN'=" for run in Debug HAN",'Создать подписанный PKG'="Make RETAIL PKG",' для запуска в HAN'=" for run in HAN",'Создать RIF'="Make RIF PKG ",' из файлов act.dat и idps.hex и из базы rap'=" from base act.dat and idps.hex and rap base",'Подписать все PKG'="Just sign All PKG",' которые находятся в директории'=" in dir",'Создать лист PKG'="Create pkg list",' на основе *.pkg файлов которые лежат рядом и запустить локальный сервер'=" and run hfs server",'Сконвертировать дисковую игру'="Convert Disc Game",' при наличии патча к игре'=" if have path",'Попробовать пофиксить CFW игру из PSN'="Try fix PSN PKG CFW ",' при наличии патча к игре.'=" (if game have update)",'Порт :'="Port:",'1. Создать не подписанный PKG'="1. Make DEBUG PKG ",'Изменить'="Change",'6. Подписать все *.PKG'="6. Just sign All PKG",'3. Создать RIF'="3. Make RIF PKG ",'4. Попробовать пофиксить CFW игру'="4. Try fix PSN PKG CFW",'5. Сконвертировать дисковую игру'="5. Convert Disc Game",'Выберите папку игры PS3_GAME для конвертации'="Chose dir PS3_GAME for conversion",'Подписать все PKG'="Sign All *.pkg",'Проверить наличие патча'="To check availability patch",'Меню конвертации'="Conversion Menu",'Образ диска ISO'="ISO image",'Открыть образ диска ISO'="Open ISO image",'Подписать все PKG'="Sign All pkg",'Выберите папку игры PS3_GAME для конвертации'="Chose PS3_GAME dir",'Выберите PS3_GAME'="Chose PS3_GAME",'PS3_GAME папка'="PS3_GAME DIR",'Назад в меню'="Back to menu",'Сохранить'="Save",' из файлов act.dat, idps.hex и из базы rap'="from act.da",' idps.hex and rap base",''О программе'''="About",'Скачиваю патч: '="dowload path",'Сбросить настройки'="Reset settings",'Цвет окна'="The color of a window",'Фон'="Background",'Консоль'="Console",'Статус бар'="Status bar",'Прогресс'="Progress",'Цвет Текста'="Text color",'Цвет кнопок'="Color buttons",'Текст'="Text",'Рамка'="Frame",'Фон 2'="Background 2",'Текст 2'="Text 2",'Рамка 2'="Frame 2",'Сбросить настройки по умолчанию?'="Reset settings ?",'Готово'="Done"]
+ LangWords=['2. Создать подписанный PKG'="2. Make RETAIL PKG",'7. Создать pakage_list и запустить сервер '="7. Create pkg list and run hfs server",'IP адрес :'="IP adress:",'Создать не подписанный PKG'="Make DEBUG PKG",' для запуска в DEBUG HAN'=" for run in Debug HAN",'Создать подписанный PKG'="Make RETAIL PKG",' для запуска в HAN'=" for run in HAN",'Создать RIF'="Make RIF PKG ",' из файлов act.dat и idps.hex и из базы rap'=" from base act.dat and idps.hex and rap base",'Подписать все PKG'="Just sign All PKG",' которые находятся в директории'=" in dir",'Создать лист PKG'="Create pkg list",' на основе *.pkg файлов которые лежат рядом и запустить локальный сервер'=" and run hfs server",'Сконвертировать дисковую игру'="Convert Disc Game",' при наличии патча к игре'=" if have path",'Попробовать пофиксить CFW игру из PSN'="Try fix PSN PKG CFW ",' при наличии патча к игре.'=" (if game have update)",'Порт :'="Port:",'1. Создать не подписанный PKG'="1. Make DEBUG PKG ",'Изменить'="Change",'6. Подписать все *.PKG'="6. Just sign All PKG",'3. Создать RIF'="3. Make RIF PKG ",'4. Попробовать пофиксить CFW игру'="4. Try fix PSN PKG CFW",'5. Сконвертировать дисковую игру'="5. Convert Disc Game",'Выберите папку игры PS3_GAME для конвертации'="Chose dir PS3_GAME for conversion",'Подписать все PKG'="Sign All *.pkg",'Проверить наличие патча'="To check availability patch",'Меню конвертации'="Conversion Menu",'Образ диска ISO'="ISO image",'Открыть образ диска ISO'="Open ISO image",'Подписать все PKG'="Sign All pkg",'Выберите папку игры PS3_GAME для конвертации'="Chose PS3_GAME dir",'Выберите PS3_GAME'="Chose PS3_GAME",'PS3_GAME папка'="PS3_GAME DIR",'Назад в меню'="Back to menu",'Сохранить'="Save",' из файлов act.dat, idps.hex и из базы rap'="from act.da",' idps.hex and rap base",''О программе'''="About",'Скачиваю патч: '="dowload path",'Сбросить настройки'="Reset settings",'Цвет окна'="The color of a window",'Фон'="Background",'Консоль'="Console",'Статус бар'="Status bar",'Прогресс'="Progress",'Цвет Текста'="Text color",'Цвет кнопок'="Color buttons",'Текст'="Text",'Рамка'="Frame",'Фон 2'="Background 2",'Текст 2'="Text 2",'Рамка 2'="Frame 2",'Сбросить настройки по умолчанию?'="Reset settings ?",'Готово'="Done",'7. Создать package_list и запустить сервер '="Create package_list and run hfs",'Обновить'="Refresh"]
  Place=1
  Key="config.ini"
  Section="Main"
@@ -1408,26 +1415,25 @@ Add(StrList,8319746,490,504)
 {
  Strings=#9:Настройки|19:<1>Очистить консоль|4:Логи|19:<39>Настройка цвета|4:Язык|11:<43>Русский|11:<44>English|6:Помощь|11:<38>Справка|9:<14>Форум|11:<14>Закачка|14:<41>Обновление|1:-|15:<42>О программе|
 }
-Add(LineBreak,14070322,1134,336)
+Add(LineBreak,5595767,1134,336)
 {
  Type=1
  link(Data,6728992:Array,[])
  Primary=[3419426,-567,238]
 }
-Add(Hub,8051018,1169,84)
+Add(Hub,8051018,1330,84)
 {
  OutCount=4
  link(onEvent1,545702:doLoadFromStream,[])
- link(onEvent2,2362230:In,[(1211,97)(1211,111)])
- link(onEvent3,8371605:In,[(1193,104)(1193,132)])
- link(onEvent4,8147362:In,[(1195,111)(1195,90)(1157,90)(1157,69)])
+ link(onEvent2,2362230:In,[(1372,97)(1372,111)])
+ link(onEvent3,8371605:In,[(1354,104)(1354,132)])
 }
-Add(LineBreak,6399003,1428,224)
+Add(LineBreak,12623841,1428,224)
 {
  link(Out,11279295:doRead,[(1464,230)(1464,237)])
- Primary=[2362230,-189,-119]
+ Primary=[2362230,-28,-119]
 }
-Add(LineBreak,2464429,336,525)
+Add(LineBreak,3926439,336,525)
 {
  link(Out,15656678:doCase,[])
  Primary=[16219496,1169,-315]
@@ -1438,7 +1444,7 @@ Add(Case,15656678,378,525)
  link(onNextCase,711905:doWork2,[(415,531)(415,571)])
  link(onTrue,711905:doWork1,[(415,538)(415,564)])
 }
-Add(LineBreak,13741209,707,448)
+Add(LineBreak,15244299,707,448)
 {
  Caption="хелп"
  link(Out,12336689:doRead,[(754,454)(754,447)])
@@ -1518,7 +1524,7 @@ BEGIN_SDK
    Font=[Algerian,14,0,16711935,0]
    ColorShadow=-16777209
    ColorHover=65280
-   Caption="MAKE PKG HAN TOOL v.3.0.1"
+   Caption="MAKE PKG HAN TOOL"
    AutoSize=1
    Alignment=2
    VAlignment=0
@@ -1607,7 +1613,7 @@ Add(MultiStrData,3194627,1253,697)
  Direct=1
  link(onPart1,13979603:In,[])
 }
-Add(StatusBarEx,13778332,483,753)
+Add(StatusBarEx,13778332,504,746)
 {
  SizeGrip=1
  TextAlign=1
@@ -1620,9 +1626,9 @@ Add(StatusBarEx,13778332,483,753)
  Panels=#13:Прогресс =150|12:Скачано =100|3:=50|13:Скорость =100|3:=70|10:Размер =90|4:=100|0:|0:|0:|
  Point(doPosPBar)
  Point(doVisible)
- link(Text,2688232:Data,[(489,727)(408,727)(408,809)(447,809)])
+ link(Text,2688232:Data,[(510,720)(429,720)(429,802)(468,802)])
 }
-Add(ChanelToIndex,2688232,441,753)
+Add(ChanelToIndex,2688232,462,746)
 {
  Count=7
  Point(Data)
@@ -1641,13 +1647,13 @@ Add(BlockFind,7544853,1092,711)
  link(onSearch,7249798:In,[])
  link(onEndSearch,5885694:doCompare,[(1136,724)(1136,731)])
 }
-Add(MultiStrPart,11180403,630,865)
+Add(MultiStrPart,11180403,644,879)
 {
  Char=","
  Count=4
- link(onSplit,4751007:doString,[(674,871)(674,895)(618,895)(618,920)])
+ link(onSplit,4751007:doString,[(688,885)(688,909)(632,909)(632,934)])
 }
-Add(FormatStr,4751007,630,914)
+Add(FormatStr,4751007,644,928)
 {
  DataCount=4
  Mask="%1%2%3%4"
@@ -1778,16 +1784,16 @@ Add(Hub,8889090,854,760)
  OutCount=1
  link(onEvent1,6488617:In,[(880,766)(880,770)(842,770)(842,759)])
 }
-Add(LineBreak,1810238,567,732)
+Add(LineBreak,10910537,567,732)
 {
  link(Out,15491903:doEvent1,[])
- Primary=[8493099,112,182]
+ Primary=[8493099,126,196]
 }
-Add(LineBreak,11675014,287,805)
+Add(LineBreak,2671286,308,798)
 {
  Caption="размер"
- link(Out,2688232:doWork7,[(390,811)(390,801)])
- Primary=[6488617,595,-52]
+ link(Out,2688232:doWork7,[(411,804)(411,794)])
+ Primary=[6488617,574,-45]
 }
 Add(InfoTip,14237063,567,662)
 {
@@ -1878,24 +1884,24 @@ Add(Hub,15491903,616,732)
  link(onEvent1,16776915:doOperation,[(648,738)(648,745)])
  link(onEvent2,12467587:doOperation,[(644,745)(644,710)])
 }
-Add(LineBreak,5007532,567,865)
+Add(LineBreak,11445137,581,879)
 {
  Caption="байт"
  link(Out,4520853:doWork2,[])
- Primary=[7249798,581,-154]
+ Primary=[7249798,567,-168]
 }
-Add(InfoTip,13604043,560,837)
+Add(InfoTip,13604043,574,851)
 {
  Info=#15:Размер в байтах|
  Font=[MS Sans Serif,12,1,0,1]
  Width=162
  Height=123
 }
-Add(InfoTip,8112873,266,676)
+Add(InfoTip,8112873,273,676)
 {
  Info=#16:Панель прогресса|
  Font=[MS Sans Serif,12,1,0,1]
- Width=295
+ Width=281
  Height=179
 }
 Add(StrCat,359317,1204,683)
@@ -1905,26 +1911,26 @@ Add(StrCat,359317,1204,683)
  link(onStrCat,8716968:doEvent2,[(1244,689)(1244,545)])
  link(Str2,7700349:Result,[(1217,671)(1185,671)(1185,706)(1154,706)])
 }
-Add(If_else,2329363,385,710)
+Add(If_else,2329363,406,703)
 {
- link(onFalse,13778332:doPosPBar,[(527,723)(527,773)])
- link(Op1,7952447:Value1,[(391,698)(363,698)(363,744)(335,744)])
- link(Op2,7952447:Value2,[(398,698)(370,698)(370,744)(342,744)])
+ link(onFalse,13778332:doPosPBar,[(548,716)(548,766)])
+ link(Op1,7952447:Value1,[(412,691)(384,691)(384,737)(356,737)])
+ link(Op2,7952447:Value2,[(419,691)(391,691)(391,737)(363,737)])
 }
-Add(If_else,6540598,399,815)
+Add(If_else,6540598,420,808)
 {
- link(onFalse,2688232:doWork5,[(464,828)(464,839)(429,839)(429,787)])
- link(Op1,2034634:Value1,[(405,761)(398,761)(398,811)(377,811)])
- link(Op2,2034634:Value2,[(412,761)(405,761)(405,811)(384,811)])
+ link(onFalse,2688232:doWork5,[(485,821)(485,832)(450,832)(450,780)])
+ link(Op1,2034634:Value1,[(426,754)(419,754)(419,804)(398,804)])
+ link(Op2,2034634:Value2,[(433,754)(426,754)(426,804)(405,804)])
 }
-Add(StrMask,5265295,329,767)
+Add(StrMask,5265295,350,760)
 {
  Mask="???#*"
- link(onTrue,2034634:doValue,[(349,780)(349,773)])
+ link(onTrue,2034634:doValue,[(370,773)(370,766)])
 }
-Add(MemFIFO,2034634,371,767)
+Add(MemFIFO,2034634,392,760)
 {
- link(onData,6540598:doCompare,[(436,773)(436,821)])
+ link(onData,6540598:doCompare,[(457,766)(457,814)])
 }
 Add(ConvertorEx,6702232,112,704)
 {
@@ -1941,50 +1947,50 @@ Add(StrCat,3504874,175,740)
  Str2="%"
  link(onStrCat,5185838:In,[])
 }
-Add(MultiStrData,4253600,112,825)
+Add(MultiStrData,4253600,112,846)
 {
  Char="/"
  Direct=1
- link(onPart2,346382:doValue,[(156,838)(156,825)])
+ link(onPart2,346382:doValue,[(156,859)(156,846)])
 }
-Add(Memory,346382,168,819)
+Add(Memory,346382,168,840)
 {
- link(onData,7363037:doData,[(212,825)(212,860)(156,860)(156,881)])
+ link(onData,7363037:doData,[(212,846)(212,881)(156,881)(156,902)])
 }
-Add(LineBreak,8998263,28,825)
+Add(LineBreak,872185,28,846)
 {
  Caption="скорость"
  link(Out,4253600:doSplit,[])
- Primary=[8185162,1232,-93]
+ Primary=[8185162,1232,-114]
 }
-Add(LineBreak,13846099,252,770)
+Add(LineBreak,11912473,273,763)
 {
  Caption="скорость"
- link(Out,5265295:doCompare,[(318,776)(318,773)])
- Primary=[453649,-63,105]
+ link(Out,5265295:doCompare,[(339,769)(339,766)])
+ Primary=[453649,-84,133]
 }
-Add(InfoTip,16040554,21,798)
+Add(InfoTip,16040554,21,819)
 {
  Info=#19:Скорость скачивания|
  Font=[MS Sans Serif,12,1,0,1]
  Width=246
  Height=130
 }
-Add(LineBreak,5912336,28,704)
+Add(LineBreak,11138329,28,704)
 {
  Caption="прогресс"
  link(Out,9430107:doWork2,[])
  Primary=[13979603,1267,-7]
 }
-Add(LineBreak,9576712,273,749)
+Add(LineBreak,1563661,294,742)
 {
- link(Out,2688232:doWork3,[(369,755)(369,773)])
- Primary=[5185838,-42,-9]
+ link(Out,2688232:doWork3,[(390,748)(390,766)])
+ Primary=[5185838,-63,-2]
 }
-Add(LineBreak,11457072,273,707)
+Add(LineBreak,8389016,294,700)
 {
  link(Out,6551175:doWork2,[])
- Primary=[4344519,-70,-2]
+ Primary=[4344519,-91,5]
 }
 Add(InfoTip,9391597,21,672)
 {
@@ -1993,10 +1999,10 @@ Add(InfoTip,9391597,21,672)
  Width=246
  Height=123
 }
-Add(DoData,7363037,161,875)
+Add(DoData,7363037,161,896)
 {
  link(onEventData,453649:In,[])
- link(Data,346382:Value,[(167,870)(174,870)])
+ link(Data,346382:Value,[(167,891)(174,891)])
 }
 Add(LineBreakEx,516664,966,693)
 {
@@ -2042,9 +2048,9 @@ Add(LineBreakEx,9213505,595,238)
 {
  Caption="-"
 }
-Add(MemFIFO,7952447,329,700)
+Add(MemFIFO,7952447,350,693)
 {
- link(onData,2329363:doCompare,[(373,706)(373,716)])
+ link(onData,2329363:doCompare,[(394,699)(394,709)])
 }
 Add(MultiElementEx,5641235,1183,399)
 {
@@ -2062,7 +2068,7 @@ BEGIN_SDK
   }
   Add(DoData,5260467,136,125)
   {
-   Data=String(https://github.com/nikolaevich23/make-pkg-bat/raw/master/setup.exe)
+   Data=String(https://github.com/nikolaevich23/make-pkg-bat/raw/master/ver.txt)
    link(onEventData,12943608:GetURLSize,[(175,131)(175,125)])
   }
   Add(FileAttributes,5395122,367,34)
@@ -2075,7 +2081,7 @@ BEGIN_SDK
   }
   Add(StrCat,7947497,287,105)
   {
-   Str2="setup.exe"
+   Str2="ver.txt"
    link(onStrCat,5395122:doRead,[(343,111)(343,40)])
    link(Str1,15152328:CurrentDir,[(293,124)(268,124)])
   }
@@ -2111,7 +2117,7 @@ BEGIN_SDK
   }
   Add(EventFromData,11095537,392,98)
   {
-   link(Data,5395122:FileSize,[(398,75)(394,75)])
+   link(Data,5395122:DateModify,[(398,82)(387,82)])
   }
   Add(DoData,2859367,136,251)
   {
@@ -2158,28 +2164,28 @@ BEGIN_SDK
   {
   }
 END_SDK
-Add(LineBreak,14307309,980,112)
+Add(LineBreak,1466361,1141,112)
 {
- link(Out,753852:doEvent3,[(1023,118)(1023,111)])
- Primary=[157600,259,322]
+ link(Out,753852:doEvent3,[(1184,118)(1184,111)])
+ Primary=[157600,98,322]
 }
-Add(HubEx,4520853,609,865)
+Add(HubEx,4520853,623,879)
 {
  link(onEvent,11180403:doSplit,[])
 }
-Add(LineBreak,2528389,273,728)
+Add(LineBreak,3441119,294,721)
 {
- link(Out,6551175:doWork3,[(316,734)])
- Primary=[6223101,959,-322]
+ link(Out,6551175:doWork3,[(337,727)])
+ Primary=[6223101,938,-315]
 }
 Add(HubEx,9430107,98,704)
 {
  link(onEvent,6702232:doConvert,[])
 }
-Add(HubEx,6551175,312,707)
+Add(HubEx,6551175,333,700)
 {
  Angle=3
- link(onEvent,7952447:doValue,[(316,706)])
+ link(onEvent,7952447:doValue,[(337,699)])
 }
 Add(ChildForm,9890502,1092,861)
 {
@@ -2527,22 +2533,22 @@ BEGIN_SDK
      OutCount=1
      link(onEvent1,15226850:doData,[])
     }
-    Add(LineBreak,11588366,490,329)
+    Add(LineBreak,7663824,490,329)
     {
      link(Out,12881647:doEvent2,[])
      Primary=[13520297,-427,-203]
     }
-    Add(LineBreak,5012818,490,511)
+    Add(LineBreak,8807451,490,511)
     {
      link(Out,4395277:doEvent2,[])
      Primary=[304842,-427,-378]
     }
-    Add(LineBreak,11440477,525,280)
+    Add(LineBreak,15768886,525,280)
     {
      link(Out,11884574:doSelectColor,[])
      Primary=[10865198,-490,-231]
     }
-    Add(LineBreak,5015831,525,448)
+    Add(LineBreak,12002802,525,448)
     {
      link(Out,7571357:doSelectColor,[])
      Primary=[13392864,-490,-392]
@@ -2644,42 +2650,42 @@ BEGIN_SDK
    Default=Integer(15780518)
    link(onData,12502199:doEvent1,[(859,328)(859,335)])
   }
-  Add(LineBreak,1331532,469,161)
+  Add(LineBreak,16759202,469,161)
   {
    link(Out,4238924:doValue,[])
    Primary=[10065142,917,-28]
   }
-  Add(LineBreak,10830392,777,322)
+  Add(LineBreak,3421219,777,322)
   {
    link(Out,5264675:doValue,[])
    Primary=[1740037,728,-168]
   }
-  Add(LineBreak,16625225,455,329)
+  Add(LineBreak,3465484,455,329)
   {
    link(Out,12459283:doValue,[])
    Primary=[10538990,1015,-182]
   }
-  Add(LineBreak,8531939,784,161)
+  Add(LineBreak,9386892,784,161)
   {
    link(Out,6771406:doValue,[])
    Primary=[10863779,644,-21]
   }
-  Add(LineBreak,6537785,707,28)
+  Add(LineBreak,8892881,707,28)
   {
    link(Out,6339323:doWork1,[])
    Primary=[6403257,-91,147]
   }
-  Add(LineBreak,3547530,672,35)
+  Add(LineBreak,3312129,672,35)
   {
    link(Out,6339323:doWork2,[])
    Primary=[13544393,245,147]
   }
-  Add(LineBreak,6758482,637,42)
+  Add(LineBreak,13156117,637,42)
   {
    link(Out,6339323:doWork3,[])
    Primary=[12011473,-21,294]
   }
-  Add(LineBreak,562497,602,49)
+  Add(LineBreak,1721643,602,49)
   {
    link(Out,6339323:doWork4,[])
    Primary=[9966227,294,280]
@@ -2690,7 +2696,7 @@ BEGIN_SDK
    link(onEvent1,6403257:In,[])
    link(onEvent2,3661014:In,[])
   }
-  Add(LineBreak,1856769,448,217)
+  Add(LineBreak,9118491,448,217)
   {
    link(Out,238968:doRead,[])
    Primary=[9870944,-280,-70]
@@ -2701,7 +2707,7 @@ BEGIN_SDK
    Width=281
    Height=158
   }
-  Add(LineBreak,2340644,742,210)
+  Add(LineBreak,14534243,742,210)
   {
    link(Out,10976251:doRead,[])
    Primary=[12824094,-574,-56]
@@ -2718,7 +2724,7 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,13544393:In,[])
   }
-  Add(LineBreak,14639813,455,385)
+  Add(LineBreak,11717295,455,385)
   {
    link(Out,5360076:doRead,[])
    Primary=[1581449,-287,-224]
@@ -2735,7 +2741,7 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,12011473:In,[])
   }
-  Add(LineBreak,10047918,756,364)
+  Add(LineBreak,5542811,756,364)
   {
    link(Out,7892727:doRead,[])
    Primary=[3193779,-588,-196]
@@ -2772,22 +2778,22 @@ BEGIN_SDK
    link(onEvent1,12502199:doEvent2,[(894,370)(894,356)(856,356)(856,342)])
    link(onEvent2,699843:In,[])
   }
-  Add(LineBreak,6157329,1274,133)
+  Add(LineBreak,53628,1274,133)
   {
    link(Out,3991701:doWork1,[])
    Primary=[8736113,-679,91]
   }
-  Add(LineBreak,5064482,1274,140)
+  Add(LineBreak,16100660,1274,140)
   {
    link(Out,3991701:doWork2,[])
    Primary=[11852139,-372,77]
   }
-  Add(LineBreak,12663341,1274,147)
+  Add(LineBreak,1542004,1274,147)
   {
    link(Out,3991701:doWork3,[])
    Primary=[7690046,-686,245]
   }
-  Add(LineBreak,11693029,1274,154)
+  Add(LineBreak,11610344,1274,154)
   {
    link(Out,3991701:doWork4,[])
    Primary=[699843,-378,217]
@@ -2808,27 +2814,27 @@ BEGIN_SDK
    link(onEvent10,10426858:In,[])
    link(onEvent11,7509820:In,[])
   }
-  Add(LineBreak,16232724,427,231)
+  Add(LineBreak,9828142,427,231)
   {
    link(Out,1232573:doWork2,[])
    Primary=[1509699,-210,21]
   }
-  Add(LineBreak,3856865,742,224)
+  Add(LineBreak,12800417,742,224)
   {
    link(Out,2968347:doWork2,[])
    Primary=[10310942,-525,35]
   }
-  Add(LineBreak,14958678,420,392)
+  Add(LineBreak,10945859,420,392)
   {
    link(Out,7892525:doWork2,[])
    Primary=[8401836,-203,-126]
   }
-  Add(LineBreak,3609826,693,371)
+  Add(LineBreak,11387999,693,371)
   {
    link(Out,11495592:doWork2,[])
    Primary=[5765693,-476,-98]
   }
-  Add(LineBreak,8089846,63,98)
+  Add(LineBreak,12746927,63,98)
   {
    link(Out,13332163:doColor,[])
    Primary=[3661014,553,84]
@@ -2877,7 +2883,7 @@ BEGIN_SDK
   {
    Wait=1
   }
-  Add(LineBreak,3119100,987,28)
+  Add(LineBreak,7225877,987,28)
   {
    link(Out,8939779:onEvent2,[])
    Primary=[2309448,-777,420]
@@ -3039,13 +3045,13 @@ BEGIN_SDK
      DarkClrBack=12632256
     }
   END_SDK
-  Add(LineBreak,317411,21,35)
+  Add(LineBreak,15698106,21,35)
   {
    Type=1
    link(Data,8939779:Data1,[])
    Primary=[16143661,1337,343]
   }
-  Add(LineBreak,12346959,1358,469)
+  Add(LineBreak,11334715,1358,469)
   {
    Type=1
    link(Data,10659433:Var2,[])
@@ -3068,17 +3074,17 @@ BEGIN_SDK
    Default=Real(0)
    link(onData,3624685:doEvent1,[(573,496)(573,517)])
   }
-  Add(LineBreak,291420,462,518)
+  Add(LineBreak,10725543,462,518)
   {
    link(Out,3624685:doEvent2,[])
    Primary=[2266956,973,-112]
   }
-  Add(LineBreak,9556576,462,539)
+  Add(LineBreak,12895543,462,539)
   {
    link(Out,11394380:doRead,[])
    Primary=[15726332,-294,-364]
   }
-  Add(LineBreak,10450248,392,546)
+  Add(LineBreak,2888779,392,546)
   {
    link(Out,15481355:doWork2,[])
    Primary=[15076695,-175,-266]
@@ -3094,12 +3100,12 @@ BEGIN_SDK
    link(onEvent1,3624685:doEvent3,[(584,545)(584,531)])
    link(onEvent2,10610731:In,[])
   }
-  Add(LineBreak,7258614,1225,35)
+  Add(LineBreak,3961090,1225,35)
   {
    link(Out,8939779:onEvent3,[])
    Primary=[10815937,-595,476]
   }
-  Add(LineBreak,14510096,1309,406)
+  Add(LineBreak,5809974,1309,406)
   {
    link(Out,14217182:doWork1,[])
    Primary=[10610731,-721,140]
@@ -3112,12 +3118,12 @@ BEGIN_SDK
    link(onEvent3,4180262:In,[(67,174)(67,188)])
    link(onEvent4,14364506:In,[])
   }
-  Add(LineBreak,8796184,476,490)
+  Add(LineBreak,15091570,476,490)
   {
    link(Out,758868:doValue,[])
    Primary=[13134998,938,-77]
   }
-  Add(LineBreak,7876560,1309,420)
+  Add(LineBreak,2887327,1309,420)
   {
    link(Out,14217182:doWork3,[])
    Primary=[8297381,-1064,-259]
@@ -3153,28 +3159,28 @@ BEGIN_SDK
   {
    link(Data,14217182:Var1,[])
   }
-  Add(LineBreak,7855182,1323,469)
+  Add(LineBreak,13320339,1323,469)
   {
    Type=1
    link(Data,10659433:Var1,[(1329,453)])
    Primary=[14926879,-511,7]
   }
-  Add(LineBreak,3995702,1190,42)
+  Add(LineBreak,1380541,1190,42)
   {
    link(Out,8939779:onEvent4,[])
    Primary=[10276833,210,378]
   }
-  Add(LineBreak,4720390,1225,49)
+  Add(LineBreak,1499525,1225,49)
   {
    link(Out,8939779:onEvent5,[])
    Primary=[6716291,175,378]
   }
-  Add(LineBreak,4583783,798,560)
+  Add(LineBreak,9274672,798,560)
   {
    link(Out,7305539:doRead,[])
    Primary=[5753984,-630,-378]
   }
-  Add(LineBreak,6813426,728,504)
+  Add(LineBreak,4429404,728,504)
   {
    link(Out,5412926:doEvent1,[(758,510)])
    Primary=[4528104,-511,-217]
@@ -3184,7 +3190,7 @@ BEGIN_SDK
    link(onEvent1,6693237:doData,[])
    link(onEvent2,4605483:doWork1,[(822,517)])
   }
-  Add(LineBreak,11066074,1309,434)
+  Add(LineBreak,5215833,1309,434)
   {
    link(Out,14217182:doWork2,[(1352,440)(1352,419)])
    Primary=[14212393,-406,126]
@@ -3195,7 +3201,7 @@ BEGIN_SDK
    Width=288
    Height=158
   }
-  Add(LineBreak,12191590,1274,175)
+  Add(LineBreak,14317822,1274,175)
   {
    link(Out,3991701:doWork7,[])
    Primary=[4180262,-1190,7]
@@ -3373,12 +3379,12 @@ BEGIN_SDK
      link(onPart5,11033918:In,[])
      link(onPart6,15793079:In,[])
     }
-    Add(LineBreak,2958662,868,77)
+    Add(LineBreak,13720932,868,77)
     {
      link(Out,5863685:onEvent2,[(960,83)(960,34)])
      Primary=[3584980,-308,448]
     }
-    Add(LineBreak,7590837,742,21)
+    Add(LineBreak,4339880,742,21)
     {
      link(Out,5863685:onEvent1,[])
      Primary=[1275343,-126,434]
@@ -3399,7 +3405,7 @@ BEGIN_SDK
     {
      link(Data,12043778:CurrentColor,[(274,263)(253,263)])
     }
-    Add(LineBreak,15010227,266,350)
+    Add(LineBreak,2814015,266,350)
     {
      Type=1
      link(Data,6064196:Var2,[(272,340)(274,340)])
@@ -3409,7 +3415,7 @@ BEGIN_SDK
     {
      link(Data,14097571:CurrentColor,[])
     }
-    Add(LineBreak,2845902,371,259)
+    Add(LineBreak,12305027,371,259)
     {
      Type=1
      link(Data,6734646:Var3,[(377,243)])
@@ -3419,7 +3425,7 @@ BEGIN_SDK
     {
      link(Data,4758797:CurrentColor,[(469,215)(483,215)])
     }
-    Add(LineBreak,14915080,448,259)
+    Add(LineBreak,6642556,448,259)
     {
      Type=1
      link(Data,9143454:Var3,[(454,243)])
@@ -3429,7 +3435,7 @@ BEGIN_SDK
     {
      link(Data,1210136:CurrentColor,[(554,225)(603,225)])
     }
-    Add(LineBreak,9852078,497,266)
+    Add(LineBreak,13196431,497,266)
     {
      Type=1
      link(Data,12212847:Var1,[(503,258)(517,258)(517,250)])
@@ -3439,7 +3445,7 @@ BEGIN_SDK
     {
      link(Data,9320223:CurrentColor,[(624,232)(722,232)])
     }
-    Add(LineBreak,12177536,588,273)
+    Add(LineBreak,15484659,588,273)
     {
      Type=1
      link(Data,1677478:Var1,[(594,257)])
@@ -3449,7 +3455,7 @@ BEGIN_SDK
     {
      link(Data,16174019:CurrentColor,[(694,243)(841,243)])
     }
-    Add(LineBreak,10246271,658,280)
+    Add(LineBreak,12280825,658,280)
     {
      Type=1
      link(Data,3364290:Var1,[(664,264)])
@@ -3467,62 +3473,62 @@ BEGIN_SDK
      OutCount=1
      link(onEvent1,3231427:doEvent3,[(283,412)(283,489)])
     }
-    Add(LineBreak,270571,210,182)
+    Add(LineBreak,12055164,210,182)
     {
      link(Out,12043778:doSelectColor,[(244,188)(244,186)])
      Primary=[13701184,-56,-77]
     }
-    Add(LineBreak,5143885,315,168)
+    Add(LineBreak,2309632,315,168)
     {
      link(Out,14097571:doSelectColor,[])
      Primary=[1433321,-161,-56]
     }
-    Add(LineBreak,2004620,434,168)
+    Add(LineBreak,13637206,434,168)
     {
      link(Out,4758797:doSelectColor,[(470,174)(470,173)])
      Primary=[12390034,-280,-49]
     }
-    Add(LineBreak,7593323,560,182)
+    Add(LineBreak,1259991,560,182)
     {
      link(Out,1210136:doSelectColor,[(594,188)(594,186)])
      Primary=[8868803,-406,-56]
     }
-    Add(LineBreak,703227,798,175)
+    Add(LineBreak,183425,798,175)
     {
      link(Out,16174019:doSelectColor,[(832,181)(832,179)])
      Primary=[15793079,-644,-35]
     }
-    Add(LineBreak,12732111,679,189)
+    Add(LineBreak,434054,679,189)
     {
      link(Out,9320223:doSelectColor,[(713,195)(713,193)])
      Primary=[11033918,-525,-56]
     }
-    Add(LineBreak,3418628,203,406)
+    Add(LineBreak,1596195,203,406)
     {
      link(Out,15395227:doEvent1,[])
      Primary=[2219675,672,-238]
     }
-    Add(LineBreak,307825,203,413)
+    Add(LineBreak,4072392,203,413)
     {
      link(Out,15395227:doEvent2,[])
      Primary=[5736550,553,-231]
     }
-    Add(LineBreak,12478085,203,420)
+    Add(LineBreak,6354917,203,420)
     {
      link(Out,15395227:doEvent3,[])
      Primary=[13720938,434,-245]
     }
-    Add(LineBreak,6548654,203,427)
+    Add(LineBreak,4339949,203,427)
     {
      link(Out,15395227:doEvent4,[])
      Primary=[9498503,315,-266]
     }
-    Add(LineBreak,12690514,196,434)
+    Add(LineBreak,15981654,196,434)
     {
      link(Out,15395227:doEvent5,[])
      Primary=[11921809,203,-273]
     }
-    Add(LineBreak,11404970,196,441)
+    Add(LineBreak,10482872,196,441)
     {
      link(Out,15395227:doEvent6,[])
      Primary=[8029742,91,-266]
@@ -3636,12 +3642,12 @@ BEGIN_SDK
      DarkClrBack=12632256
     }
   END_SDK
-  Add(LineBreak,2457364,1190,56)
+  Add(LineBreak,15156038,1190,56)
   {
    link(Out,8939779:onEvent6,[])
    Primary=[14572300,245,203]
   }
-  Add(LineBreak,15165608,1302,259)
+  Add(LineBreak,10912577,1302,259)
   {
    link(Out,4180757:doWork1,[])
    Primary=[6451709,-1085,35]
@@ -3662,22 +3668,22 @@ BEGIN_SDK
   {
    Default=Integer(0)
   }
-  Add(LineBreak,15717924,1050,518)
+  Add(LineBreak,4138795,1050,518)
   {
    link(Out,10719212:doValue,[])
    Primary=[5615013,364,-238]
   }
-  Add(LineBreak,3448180,1029,567)
+  Add(LineBreak,3825363,1029,567)
   {
    link(Out,12946904:doRead,[])
    Primary=[11685984,-861,-378]
   }
-  Add(LineBreak,11748724,1029,574)
+  Add(LineBreak,14473599,1029,574)
   {
    link(Out,12946904:doWrite,[])
    Primary=[9434324,-812,-273]
   }
-  Add(LineBreak,5648057,1274,266)
+  Add(LineBreak,9487567,1274,266)
   {
    link(Out,4180757:doWork2,[])
    Primary=[11028705,-147,301]
@@ -3692,12 +3698,12 @@ BEGIN_SDK
    link(onEvent1,5096532:In,[])
    link(onEvent2,15211790:In,[(1487,293)(1487,300)])
   }
-  Add(LineBreak,10220389,56,259)
+  Add(LineBreak,7064351,56,259)
   {
    link(Out,14529595:doSetTheme,[])
    Primary=[5096532,1442,21]
   }
-  Add(LineBreak,1059433,28,406)
+  Add(LineBreak,2170758,28,406)
   {
    link(Out,13482790:doSetTheme,[(60,412)(60,433)])
    Primary=[15211790,1470,-112]
@@ -3764,32 +3770,32 @@ BEGIN_SDK
    link(onEvent1,7166041:doClear,[(795,531)(795,517)])
    link(onEvent2,4605483:doWork2,[])
   }
-  Add(LineBreak,3845041,392,182)
+  Add(LineBreak,11541933,392,182)
   {
    link(Out,8548729:doEvent1,[])
    Primary=[204071,-63,252]
   }
-  Add(LineBreak,16591131,392,357)
+  Add(LineBreak,2317601,392,357)
   {
    link(Out,165637:doEvent1,[(428,363)(428,356)])
    Primary=[4507037,-63,84]
   }
-  Add(LineBreak,15564610,385,511)
+  Add(LineBreak,13227501,385,511)
   {
    link(Out,14911180:doEvent1,[])
    Primary=[16358728,-56,-63]
   }
-  Add(LineBreak,585064,672,182)
+  Add(LineBreak,14248828,672,182)
   {
    link(Out,14705399:doEvent1,[])
    Primary=[9893287,-343,273]
   }
-  Add(LineBreak,7495960,672,343)
+  Add(LineBreak,8636202,672,343)
   {
    link(Out,10906978:doEvent1,[])
    Primary=[10170415,-343,119]
   }
-  Add(LineBreak,3208268,665,525)
+  Add(LineBreak,7819525,665,525)
   {
    link(Out,8810619:doEvent1,[])
    Primary=[2710823,-336,-56]
@@ -3852,32 +3858,32 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,9096745:In,[])
   }
-  Add(LineBreak,1800230,966,210)
+  Add(LineBreak,11505553,966,210)
   {
    link(Out,14266917:doEvent1,[])
    Primary=[4214975,-637,266]
   }
-  Add(LineBreak,12684938,1022,238)
+  Add(LineBreak,1088161,1022,238)
   {
    link(Out,9759321:doRead,[])
    Primary=[4017861,-854,-42]
   }
-  Add(LineBreak,1449523,1022,252)
+  Add(LineBreak,7355796,1022,252)
   {
    link(Out,13375749:doWork2,[])
    Primary=[11373770,-805,56]
   }
-  Add(LineBreak,2382599,1071,189)
+  Add(LineBreak,5445255,1071,189)
   {
    link(Out,6827120:doValue,[])
    Primary=[12444413,315,-28]
   }
-  Add(LineBreak,9225148,560,56)
+  Add(LineBreak,3896904,560,56)
   {
    link(Out,6339323:doWork5,[])
    Primary=[9096745,644,154]
   }
-  Add(LineBreak,604716,1274,161)
+  Add(LineBreak,5641250,1274,161)
   {
    link(Out,3991701:doWork5,[])
    Primary=[11732965,-84,84]
@@ -3925,43 +3931,43 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,10556499:In,[])
   }
-  Add(LineBreak,15806672,1274,168)
+  Add(LineBreak,13972678,1274,168)
   {
    link(Out,3991701:doWork6,[])
    Primary=[11068001,-84,245]
   }
-  Add(LineBreak,5050952,525,63)
+  Add(LineBreak,3318001,525,63)
   {
    link(Out,6339323:doWork6,[])
    Primary=[10556499,679,315]
   }
-  Add(LineBreak,12573427,973,378)
+  Add(LineBreak,11303565,973,378)
   {
    link(Out,3558077:doEvent1,[])
    Primary=[8190629,-644,105]
   }
-  Add(LineBreak,1178859,1057,406)
+  Add(LineBreak,12876393,1057,406)
   {
    link(Out,8294936:doRead,[])
    Primary=[13731538,-889,-203]
   }
-  Add(LineBreak,6178811,1022,420)
+  Add(LineBreak,5736669,1022,420)
   {
    link(Out,11853123:doWork2,[])
    Primary=[10426858,-805,-105]
   }
-  Add(LineBreak,1226060,49,168)
+  Add(LineBreak,11316433,49,168)
   {
    link(Out,16422405:doEraseSection,[(81,174)(81,167)])
    Primary=[3611248,161,259]
   }
-  Add(LineBreak,10860020,105,84)
+  Add(LineBreak,9206556,105,84)
   {
    Caption="closed"
    link(Out,13332163:doClose,[])
    Primary=[7509820,112,238]
   }
-  Add(LineBreak,15163298,147,259)
+  Add(LineBreak,12982052,147,259)
   {
    link(Out,16245816:doEvent2,[])
    Primary=[14364506,-84,-84]
@@ -4002,7 +4008,7 @@ BEGIN_SDK
    Width=288
    Height=130
   }
-  Add(LineBreak,557054,1085,357)
+  Add(LineBreak,6773299,1085,357)
   {
    link(Out,10428995:doValue,[])
    Primary=[3299995,343,-189]
@@ -4018,31 +4024,31 @@ Add(MT_IndexToChanel,13487263,1183,812)
  link(onEvent5,12725695:In,[])
  link(onEvent6,8908853:In,[])
 }
-Add(LineBreak,12845453,1043,847)
+Add(LineBreak,8473586,1043,847)
 {
  Caption="skin"
  link(Out,9890502:doWork1,[(1084,853)(1084,867)])
  Primary=[15019758,266,-567]
 }
-Add(LineBreak,6027309,1001,140)
+Add(LineBreak,2687217,1155,140)
 {
  Caption="color"
- link(Out,13676182:doEvent1,[(1048,146)(1048,139)])
- Primary=[7710479,245,672]
+ link(Out,13676182:doEvent1,[(1202,146)(1202,139)])
+ Primary=[7710479,91,672]
 }
-Add(LineBreak,12665710,728,546)
+Add(LineBreak,6326078,728,546)
 {
  Caption="color"
  link(Out,1675013:doColor,[(781,552)(781,545)])
  Primary=[11714552,518,280]
 }
-Add(LineBreak,16363111,1253,567)
+Add(LineBreak,6973798,1253,567)
 {
  Caption="color"
  link(Out,513742:doColor,[(1296,573)(1296,559)])
  Primary=[16766180,35,252]
 }
-Add(LineBreak,938697,805,616)
+Add(LineBreak,14528864,805,616)
 {
  Caption="color"
  link(Out,2204639:doColor,[(855,622)(855,587)])
@@ -4055,36 +4061,36 @@ Add(InfoTip,11987349,1001,788)
  Width=351
  Height=228
 }
-Add(LineBreak,7494729,1015,854)
+Add(LineBreak,1456968,1015,854)
 {
  Caption="skin"
  link(Out,9890502:doWork2,[(1070,860)(1070,874)])
- Primary=[8371605,189,-728]
+ Primary=[8371605,350,-728]
 }
-Add(LineBreak,982441,980,84)
+Add(LineBreak,11773668,1141,84)
 {
- link(Out,753852:doEvent1,[(1023,90)(1023,97)])
- Primary=[15898166,224,784]
+ link(Out,753852:doEvent1,[(1184,90)(1184,97)])
+ Primary=[15898166,63,784]
 }
-Add(Hub,753852,1036,91)
+Add(Hub,753852,1197,91)
 {
  InCount=4
  OutCount=1
  link(onEvent1,12151591:doClose,[])
 }
-Add(LineBreak,4320769,1092,917)
+Add(LineBreak,15119185,1092,917)
 {
  Caption="color "
  Type=1
  link(Data,9890502:Var1,[])
  Primary=[2027317,217,-413]
 }
-Add(LineBreak,7560956,1302,602)
+Add(LineBreak,10567016,1316,616)
 {
  Caption="color t"
  Type=1
- link(Data,513742:Text,[])
- Primary=[12264501,-210,217]
+ link(Data,513742:Text,[(1322,590)(1308,590)])
+ Primary=[12264501,-224,203]
 }
 Add(Hub,8716968,1253,532)
 {
@@ -4092,7 +4098,7 @@ Add(Hub,8716968,1253,532)
  OutCount=1
  link(onEvent1,513742:doAdd,[])
 }
-Add(LineBreak,2580532,1183,546)
+Add(LineBreak,12073886,1183,546)
 {
  Caption="color t"
  link(Out,8716968:doEvent3,[])
@@ -4100,17 +4106,17 @@ Add(LineBreak,2580532,1183,546)
 }
 Add(Hub,4253140,1211,567)
 {
- InCount=2
+ InCount=3
  OutCount=1
  link(onEvent1,513742:doClear,[(1263,573)(1263,545)])
 }
-Add(LineBreak,5682161,1148,588)
+Add(LineBreak,9944449,1148,588)
 {
  Caption="color t"
  link(Out,4253140:doEvent2,[(1205,594)(1205,580)])
  Primary=[3246412,56,294]
 }
-Add(LineBreak,12872408,735,560)
+Add(LineBreak,4803857,735,560)
 {
  Caption="color t"
  link(Out,1675013:doFont,[(795,566)(795,552)])
@@ -4128,49 +4134,49 @@ Add(Hub,2620494,1176,938)
  link(onEvent7,6689360:In,[])
  link(onEvent8,16265540:In,[])
 }
-Add(LineBreak,7942752,56,609)
+Add(LineBreak,11520405,56,609)
 {
  Caption="colork"
  link(Out,11616974:doSetTheme,[(102,615)(102,608)])
  Primary=[2880182,1155,329]
 }
-Add(LineBreak,4731162,350,259)
+Add(LineBreak,946606,350,259)
 {
  Caption="colork"
  link(Out,9356062:doEvent1,[(412,265)(412,275)(380,275)(380,286)])
  Primary=[74776,861,686]
 }
-Add(LineBreak,4519969,350,399)
+Add(LineBreak,8841664,350,399)
 {
  Caption="colork"
  link(Out,5721681:doSetTheme,[(396,405)(396,440)])
  Primary=[4714401,861,553]
 }
-Add(LineBreak,16084537,42,406)
+Add(LineBreak,2457600,42,406)
 {
  Caption="colork"
  link(Out,14819043:doSetTheme,[(95,412)(95,440)])
  Primary=[3383150,1169,553]
 }
-Add(LineBreak,9464691,28,224)
+Add(LineBreak,10302643,28,224)
 {
  Caption="colork"
  link(Out,14349947:doSetTheme,[(67,230)(67,258)])
  Primary=[16682081,1183,742]
 }
-Add(LineBreak,10475368,28,42)
+Add(LineBreak,4024180,28,42)
 {
  Caption="colork"
  link(Out,3352433:doSetTheme,[(67,48)(67,76)])
  Primary=[3547262,1183,931]
 }
-Add(LineBreak,8954966,364,133)
+Add(LineBreak,4050320,364,133)
 {
  Caption="colork"
  link(Out,5604813:doSetTheme,[(417,139)(417,97)])
  Primary=[6689360,847,847]
 }
-Add(LineBreak,9808559,679,287)
+Add(LineBreak,533948,679,287)
 {
  Caption="colork"
  link(Out,4462221:doEvent1,[])
@@ -4178,8 +4184,10 @@ Add(LineBreak,9808559,679,287)
 }
 Add(Hub,4462221,742,287)
 {
+ OutCount=3
  link(onEvent1,9283463:doSetTheme,[(768,293)(768,269)(729,269)(729,244)])
  link(onEvent2,2955559:doWork4,[(808,300)(808,265)])
+ link(onEvent3,5912607:In,[(766,307)(766,314)])
 }
 Add(MenuEx,6728992,1127,258)
 {
@@ -4215,23 +4223,23 @@ Add(BitmapArray,2782144,1127,202)
 {
  Bitmaps=['Файл'=[ZIP3610000078DAED96AD8F1A4118C6DFCAFE07953DD74ACC25B5C84B6A2AB1C853CDAAE62CA9684815A96836279A6C1D884B16D164CF5CB2274806B10908124E20469C1881188198BECFCC6C6E815D2865AF35B07932C0ECFC9EF78B0DCDF7E72FC9BECE596F58AFBC5ED06BB7E1F78B2FE3AFB79F7A6B32355FF45DD0BBCF219D7D4BACEAF6035F2C0DB5C69A2EEE14358673E7F5A55F8B1FF889D4D49186AE1E9C8299A1CBA9F36CFE5274769D52E3476AD743FCC0C6F970A628627E00FE625DD677E1F6DA539FE360E2F263EDF200FFE25651FB764EA9F1BCC76A75B98E5DBFE2DE3C9F5DFCF6C850E346DA1AF5F4D3F9AD75E972E828F71E7EC827EF5115FF32D3DC53696BD4E71CBA7A5BF045BCBD4C5277AAEC77E087ECB38F1F700F3FDC690AEE2509E6F74A045E7F3627330E6992258ECF79209EABB1ACF400BFC373D21E1BDB07CC69BC3214F1B9D00BFC8873D3594466C6CA4212D39402AE67CCF727BC8FD82AF93C8B819F45DC873EC067629C70DE4CFB64162C193BB10FF2015F7A7ED92C811FFA99477DDB197C9415EA86DC11BBD1D2C50EA9C40AF9CC99AF988F78308365FC486FCF206A0BAFE46B9792516CFB0A965E0866B3F484959279602FCDFE2BC7DFEC03F8A8773E233D3F2FC8450C43AE75646B839EF6EE8553E6678DEB23947639ACB47D8FE7D8263FF13DCCFB89F8A341DFCE8A8D0FB5B78AAC9F1AC7A44611A59C0B3C706F6B9052F3A78B61EBD956E063453D2C5BA6057689B0FF38B1ABBCE952F031289D1FE48A6703661273A7C1C6393577F1E73E768D0B9F85BB8725AE3BA5FCA207E6C4D61C6CF46C299D669E595CC187F7D29D017FDF73349799F139EE97F5C87D363DFCDCA017FBD85BD7B0C50CCE01BF2BF860CD3DE0E7D998D583D9450FC54CE3F9106A9D7BB0DF5FB38B1E2BE33CF25EDADF923E9EBD562BE15648CBFAD8458FA2FEF432E5B2FF8D4CF57E28C29DFB4EE2E97FD6DE7BF7C5200E5A8FF13DA40E75E67B4C1D9EC3777F1DC4B3FB56C5F02F7D3763F81FBE279D7452FDFA0D7515E225],'Новый'=[ZIP3610000078DACD96BD8BD44018C65FC13FC03FE14A956BDDC2520B7141AEB0BE4A2BB7922D2CAEB049E7967BD8A4924BA15E0491881F17440F830A8E5C61C043574F90F851C42E85459C6736334C92C9D75EEE74C28FDDCDEEF33ECFFB4E36E4CC85C151126BC039CE3996718496E65F64DFEB2BCD0ECFB23A936A47E0D894C621255140C9CCE77894842EC7A198D99CA92209ED1A3DE3DAAC46E8697ABD8641EF3A5C1F71BDA9865BA851A14F34BDE823C8FA28D728EA99E7529A265A86FA1C457DC8F5BFFFF077499CEF43E5F0D53C4149EF7B993EC96ACC2A6ACC7354E9F3350CF3C43C3845FD4CD3AB1A5C9FCB31CB7284067D90D7176BCC0929E2FAC02FE78F0C7A354F0E32040EDFB7E984BC89D55A2F6AF07D8D18237F32A6D8E338430AAC514E1F33BF520FA29051305DA33418139B8E735AE9AFE66E00FED033DB2A69A53E6679704E9EC7FEFAD65A599996190E870AACBD1FBF8C7CF9FE933E7CFD463B1F3F8B579C13F79434ED853A7F78C3F74DB82B90FE7D6668F2BEEB6FD393D74CF8E3B3FE9B3E32D4F9C317FE3283DE7F1F19DAF47EFBE97301FC71DEF4FB453334F52EBD910379FAF4AFBBE6E135BAB14EEB9B0F0EBD77003FF8CB0C7DFBD77983D56BD705D2BF78DD1F64EFBA3F3839382D38ACDE75FF5367CFD19DAD1782A513CB82BE7B7FB7FB4960CA007FF9F9E295ABB47279A472F4D13B7C1FBF7A2B3065B0EF3FA2F3AB9704980132210350CF9607E8AF2373C8BDE99AC3B4EFEEB3970A6468BA2EE4BE6375CD51E57FEBE196627BE77D2B7F59AF6B0EB9642DF8C1F7E63D8F261B9BE27D1B6F53CD457260CFA5B7A46E064DF3ADCAD1A491F75A803CFBB9D71473B4BD36658EAA192CF25F5B5453CCD0E7F35E971CFFCA7F3F33FC1FF90B05A9A4B4],'Открыть'=[ZIP3610000078DABD966F485B5718C69F64A394519DB6B3C6A89D7FBAE2A68E8ACCE1562A4D679B566C21D5E636ADD022953A9321A42812412D4A4B2DD242409108D2A0B4345AA4AD54DC35E26CD420C228EDD81FFC9A8FFDE8C7BB734E92BB6B726E72B3AAF7F2707373CEFBFE9EF3DE3727D7545FF529D8514554429411910E05E181C8B8F29022A7C1E5D12489731ADC01ED8AC961F004983C9284B6F7C9F5B547C47EE7445CBC2BB4C572B84209B429C1F46A332EBE706203D5E27B16DFFF2181480E93F8212EDEF42AC4724C9078F7566259C4106CE2869C83C6D375D1EB83ADF01A12C9162079C85519DF1F896F1337219131AAADC83556740D526C3C59DBF94048AEA51629E33D645D0F38E2F159BCA207E8BDC459A73C9748ED88E6A0B5E771947D067858045373F85E394E7328C5EB733907273E7E9E87F37D642C49BC722EEF5E2DBF9A0FDE7CF95E52173DFE39AF97F5D7393DDE99F5F8FD8C1EC19FF4583EA58358A36363CEAFB04D8EE2F0336A6A6A82EDAA0D827005D6CB97D1D8D8989099881FD59FC4C3DBB33A6CD4EAB17A5ACFE5FF5C045CCA0D7B10AE84D95AB989D851FD4DF48759C76AC1E3B7902DB7DE10E9D314B85AF9722DCEF1F937BE04CCD9BBCF2F2A2A6252B2DB89AE1D014E1F064AD353F7A0851DE576767632293D388E02D63CE0E417C0B1033BCB8FE54663941E5A49EF5948EFFD700828FC6C67F86ADCB4B43426A5879B85A4F77280EF3281BCFDC03EBD760FB1EC645CA5941E68EF5590978FC384FF0952E7AB718D462397CDF3407BEFE03EC5FF8506B61A571004984C26949595713D1CCCCC44B6211BF947F2B779488F79E74AC68FE50E0F8FA0EFCE1DD81D76858772C6CCF83C03595959C8CDCB43717131BE292D456565254E9CF8719B8754F8D1CFEBEBEB58F0FBE19B9AC2C8C830FAFAFA60B7DB6115ACCC83D19883828202949494A0E27805AAABABD9F7757575686C6860FB3ECF839667D0DBDBCBF8547EE2618A78188E7870100F825540F9B7E5A8FABE0A353535309BCDB0582CB86AB3A1B9B9196D6D76389D4EB85CAE1DF4E023CFE2BF3AD4D6D6E2C2C50BB0122FD7AFDFC0ADD656B4B7B7A3ABAB8B3DAFC1FBF7E176BB31363616E741EBEF20D683CFE793EB40EBDB72B3050EC72FE8E8E8404F4F0FEEDDBB8B470F1F617474145EAF17CFC8FC172F5F607EFE57D9432A7B11B70EBE29D693B76F3BD1DDDD8D81817E0C0D0DB1DA8C8F8FE3E993A7989999C1DCDC1CFC8B7E04026FE49E06FEDF5EC8EB87C1C141B9BE939393783E3D8DD9D9592C882296977FC3DADADA47719379F03EF6C2F78CD6F725A9EF3C969696B0B2BAC2C6778A9BC8C36B52DFC5C545BC0904100C06778DABE62148EA1BF5B2DB5C9E07CAA757AABDE0F23CEC35576DAFFE18FD0BA44D7E13],'Сохранить'=[ZIP3604000078DACD902F0E833014877F4B76801D61721643824592CC70058E809C9D44227B854A646D65E5646D8F8064EF154A10D0342159D6E613F4BDEFFDA17CE657F893130FE2B670C17D0E2CF1ED99FEE4BE8A02A2AA20CA12C330EC22B26C86F388E0AA770BD3341E7E974240B72D2C39D334611C4738E7563FE41DF986FBD53554D7C15ABBD648F59DD690B487A41978EE5023D5B7C6C0F4BD9F434AE96B7CE82DC54FE5C8E79D63C47C8EF39E31428D98AFE9FFED91EA9FEDAF94FA797FFEE6D8D1EE01CED9BA67EF1750C8F6DB],'Сохранить как...'=[ZIP3610000078DAED95CD6EDA4010C7A7521FA08FD063AFB944CA9563A45EF208E41138F6C2A1C728A71C79051F392271E204A6088A40B41688F0211009324A6C08D8DD59EFB8EBF5DA751A525555178DFC39FB9BFF7F764DEEE3E95BE0E394C50716EF44BC81F7C103F15C1EFE5FF2FB747606A5F37328E572502E97B5513A390902DF6341B995CF05302F2F79E07DA354825AA10016CBF17D1F1CC781D96C16E6D37B49F926F22E2EA07275059665857364CD9FD56A60301D06AB01EBA639B2E65BA609E6CD0DAFC3300C3E4797DDCB929F3592F251735AA4E5E373D429075F63D235CD91965F63FE51E0A0F3ACF9693564C9AF542A112E9D3F971FEEB10CFAF11A9FC9DA7581EFC8B92FFE295EE5F3795E331EE99C3478070FF64F7BD8ED767C3F3C3C3C806DDBB05EDFC36AB582E57209F3F91CA6D3298CC7E3701E1A34A7AE472A5BF5CE3B1C60BFDFC396B15DC78547646F18FB7E1DB0170BCE9E4C279C3D1A0EF9BEA3F9AEA57EE8EA90996ACFB86EC6DE6D51B7CB756F90BD5EC31D6707BA279309DCDE8E61381C71F66030807EAF1FA9E15AB32E747A290E9E60A36E97B11F51F726F47CB15C846CAE7B14B0BF31768FB1BBDD2EB43BED584FD3D6684C37B1B9EE0DD78D6CDDB0ACEF42778FB1BF42BBDD8656AB05CD663391A5BBE7798770ADB9AE13F13C64537EB1F833D8E8F57B5C77A723D85F9AD06834A05EAF873EA4D5207BEE08DDB6BD89FF77621EF13583749B0D93B329D26A08D84FB0DDE23A7744BFED80A1F42C729DE005E95623A9E73882FD2DFA6D079EE37CA4573D46CE15BE8E9BC4966B20CFA9DF45315F8C23B403F920F5E2B95CB506CEBE5B41B55A8D784EBD906B88F44533B272D51AF0BB16F35ED62D9D27F5E077D891EF83BCF624A6AF9E27ACC197F02335900FD231E2C5917CCFE483C2F635EBEF586C5F5A73BFDC8347F65EE6FBF23E93F7A26E5F1E991FF35CED8534F05B5114F5BE5644FC7845CD59FC284AF1A7D8FFE3DF881FC8B2BD8E],'Печать'=[ZIP3610000078DAAD57694C5C55183D6A6352FD6134FEA851936AAA55AB8DA6A62626FED090AAB1368DB5A98DA54594696C0A9645590A22605986ADD0B2964176C200C3DA0E304329C3140698010628FBD0B09796026549D7197CDF9D79D3297BA77D9393FBDEBDEF9E73BEEF7EF7BECC57DFEFDC0876EDE4F01E874D263C83CDC601D3B8E5B5B08E9F878707BCBCBCE0EFEFCF9E7D7D7D71F2E449D6BFF0043F7B7B7B86BD7BF762D7AE5D3872E408C3EF5C9F87B3336C0F1DC2BE7DFBACE676757545414101929292E0E6E68643070FC2FBE851887C7C20934850535383B8B838383838E0C08103EBE23D7EFC38E39270F3878787313A3A8A8A8A0AE4E5E5419C9E8E40CEB7CBB163F0F1F6466A6A2AEAEAEAD0DADA8AACAC2C962FD23A71E2C4B2DC2E2E2E108944E8EAEAC2D4D4146EDCB8C134A4522972737319C751CEBFADAD2DE3F1F4F444787838C462319A9A9AD0D7D787F2F272383A3A223434F4116EE26D6B6B63BCB76EDDC2C4C404464646D0DDDD6DE6269E742E06CA57444404FCFCFC18222323214A16B17762636321100820140ACDDCF47E757535666666303D3D8DF1F171B4B7B7B3BC242424B0BA090A0A42747434F3413A454545282E2E66DA34DF99CB1B71868484E0F0E1C38FF0D31CE227CF3D3D3D282929414A4A0A9B4B6B487C67CF9E6531930EB5A495969686D2D252C86432145E2846587E1CFCC24EC1EE173B08431FF207060622272787AD21AD19E5B0B1B11157AE5C617174747440A552A1ACAC0CD9D9D9484E4E467C7C3CCB51707030626263909029C2AF599EF8CDC7117676768FF8A7BD13151585DADA5AF4F6F632747676B2BAA035D3E974EC9940EB41FD1417E9519E288EB0F03078F878C1C5CD95D5B625BF37576B0A85020303038C8FE7A63A226EF2AED56AD1DCDC8C96961668341A764F71517C6AB51A4AA512524E8FE2A1DAB2E4A71FE59FE7A63AA2DC501C0D0D0DAC8E26272759BD0E0E0EB27E1AA71C521CB407488FB4A81E9C9C9C96D47E626222AAAAAA581C9427F243EB4139A079144B7F7F3FC6C6C6980ED518ED0DD2A39CC9E572B64F02020256DDBFA44FF57099E327BDCC8C0CA472B594C7D55229575754B3142B79A058899F7247DC54636B9D0FE7CE9D432797D799C99B18D2F5A14E518D2AB90CF28A725CACAC4425E7F392294E3A9BA8D6F2F3F3593DADF76C2B1767635C9E87075579B8AB2CC61D6D35663BEB31D1A5C170471374AD1A68356AC4C6C4B0BDFBB86767655C24A6EAB261E82882BEB50086967C189A72A16FCC815E5B88394D114A5312AD3EF7A5A785B8DD2185A15F0EBD4EC65AE33D873E19C6AAB321FCF30FABF9EBD36371AF5F09C3B00A862195B11DAE877EC8F8DC2DCD4494DFDF56719F8F14A25B26C183512D0CD7DA8C1837B6FAB156AEBF0595E9F1567B2F120662B45901C3A4EE21A6FA59ABBFA9C3DC402B24F1D156F3ABF333317FED2AF4B3E330CC11AE33E8E97EF63A06DB1AF05F608055DC72EE1B31D4CEE5E5EE3CF477E660B837CFEE0D77E7587B7F7E1AAAF3C5567B5771FBA58BDBB73DF52AF4AAEAD0CBB53D5CDB63BAEFBCAC7C7CD68505B8BBBB4390A0067608B07FFF7E76CF9E4DB0115FC51719DDF82CB90D9FC46BB02D5A852DA10ABC794A864DBE17F0B267215E74CDC5F34E5978F6581A9BBB4390C0F836EEF162786EF75F8C9BF4166325DD1F6593D8737E1CDF4806CD639F2669B13DA611EF9FAEC5DB2197F0BA7F395EF52EC14BEE12BCE09C830D8E190C8B3D6CD8EDBEA2BE397E13EC550F60ABBC8D9FAA66CDBAFCBB8C37B1191F9EA9C7BBE14A6C0EAAC46BFF48F18A571103AFBFD8C36AF1533FC529502F303834EA97E84EDF3782F7F0719C061F44D5618BB01A6FFC2B63DA363636662CE76125FD251E4CBABCA625E87BCA7B236C8D54E2ADE02A96C30CEE3BC263390FABE95B7AF8B67064893EE912EFE28BB8DF0953307D7E2D8967390F6BE9AFE56131689CDEA35AE475A98F5F035A13BAA87F3DDAEBF5C0BF47E3548B1F9D69C0D6881AF31AF0DA8FABBB96074B5D023B1344DC9910D7846D5C2DF239E00101177C309E9A075E97F0B564085F66EBF0796A07F341E0F5A1637FEC00B1519FAF8D27F5C0CE848B33F8A16C02DF158F9A75CDF15AEA12D4D6C7BE9C07BBDA7BF85931BFBAAEDAD852FF93C4BD92074B5DCBF393D7B6DC074F1BABD533E95A13EFFF3D1751D4],'Выход'=[ZIP3610000078DAED977B5054551CC7BF206A44888B4D993985E9A4C2883124E232A1A10DA6A6C3A0984CA1038101B660118463E68CBD7C00D28AB8B88BBAB040228D12A9132A623E581170174443C0281F4C280202A298A7730EDCF572595EF5AF77E73BF7EE39BFDFEFF33D8F7BEFAED77B6E56E0871BD514AAD1DDB28043574777BFF820DD1F954A356409B9840C5DA61AF4DAC3A31636367B606797D787B2616BABE36271CECEBF9B6AB0B39DDD594C9C781D8E8EBDE5E0506B92BD7D1564B2525E439CCFFA5C5CEA3077EE9F5C72F9752E719B504326ABE43EA4F92C9EC509E313F2C46D8207693EF3298D156A88BF0B1ED87C88F399CF850B6F714973C4B9C238D89C8AF399771F9F7A2E733E847914F265B2633DF259BBBFBFF95C299FD592E633DF42BE38878D4B3A1F7DE5070535F01AE258610DA5F96CBF88F3595E6C6CA3A986782C5299E3B3BC8484664447DFE6D7E23A4C6C5E85B5617EA4EBC772598E10275E4BE97E14E6918FE97FDC7FC247A150203A4E8DCF62A3E0BDF403FE3DBFAC1E6987CED1A7C34860F8682C5EF1396F9F1BB8191EABBE8557701CBC03E369FF242A277807C463DE4709884C3E8225915FF3D8C1FA60B1DB72CE710F61511BE0E3170C6B3C479F5B5630262AE135D9917EB387AF6F388F5D16B89E322753BD8180D0E3B0B6C9A0D72EF0F4DB8625B1E9084E3C8C85615BFF938711C34751F608CE1514E23E13DE4EEEB0B77A81726CA85E86DFFB555C8121959CDFE5E12D4CF389C39C7035C295BFE1DDE0EF86EC610CAD2266332D9FF03A7C9D66C263929CF68E35B10509FC2E0F0B303B60373C43D588509D804FE85743F2E06086BFDAD11921AE722C9B31BFC7D899962FBDD683DFE5C115EF287470FFF80744EDCE87CF9A8D83F630FD59CB5EFC4F1CA722D8710A164D9A4E6BBFDA83BFCABFC60C7F165C5728E11294C83D84EF3C02BF4FB70CCA83B38D452FBEC2791A7C5F1B8755F316D0DAE37BF083020C66F8EEF00CD987BDE5043B8AEE23F33241746A21FCBF481CD0C38B164FE69F5CA90629AFC48DA3BF60B9971C13A63871C16A1667575F23B85A4D9F216A22E1CB11A6342249FF185AEA4159D804B5BE0D31FBCE6271C4E67E3DD85B020D65655C8C2B9689AFACA00C3A278A9FB04B7517CA94667C93D0D963FC913B2BA12A7A8CE453F7A0333E467A05C1F6C23B88D1EA317FF5867E3D8CA11E04269B07816B7DB4998BF3B98737E1B7F610F7C0A44A69EDE67B624F01417A31C1A10A766E419A81602F55E2A916C4684E6265C4FA7E3D8CB7B1E47C588C32717BF1B907177C1899C3F9C00CAAB7919AFB003F9612688B3B50DA4450DE41A03ED7020D6D636BB29F7ADA989C33E05EB01E6D0B58CAFAE7730F6C4FB84277EC6F680B3A905142905945B0ABF8360C945D41957B95EE9333AD50D3BE54FD232C08DA34A8FB01C306C74FCAAFC1C93A82B4B32DC8A6E34B28F80B5A6323E5B6229B9E3567EA915EDA89CC4A8280EF8FC33F463D38BEEDD881F9566E28EB24B8D04870858EB5FC2E418EBE01078D4D94D9807D25B771F0EA235C682728A031ECD9383B700B562A36F4FB2C66C2B027EB5F41DB99A6DEE8908C7F2AC23447B05E978FB58979D89C568C6B94554ED75E676847D143825F6F112C8A4D85337D4F46684A3027643BFCC2CCEF41D676425F02EDD1D3F4DDFBBC89FB4A5B3B670B7AC29F8CF4DA4E684A6E20A3B41999E7DB10BEF518D6EDBD88D0DD7AB8AD49823C6C1BBD07DBA12E7B084DD93F884A2DA2EF862FFBE49F3754202BEF04B2F30AE91F88719C2DF0C53EBAF80E48BF780B39C69BF8D940F7DC1D829AFBF4B756503C6684ECC0CEE2766450B696AE85CED0849CF2661C28FA03BBD232FBE46F5C1781AA4B46D455D7E2744D1DF530CAE4411046DA03CFBC846A3ACF4D0F085AA9B627A59AD62E3EE500F65FBC47F77C1B324B1B71E6FA031C3E7F0959B9B9A69881D65F2C76706EF7612E465C935D6F4ACE42AEA11EA72EDF444A46D680DC01EF07F67F6D08F17D797BAAA712F42FEDA4240F],'Правка'=[ZIP3610000078DABD977B4C5BF715C7BF5DB77649B447A5555DD5445DB546AB34756AA4295BF7C7A47549D484AE638DDA644953B50D9012B686574932C2A34D0301C22309040201024E4200F386F236380E86F032D8BC5F311870C0D8F86D5F5F1B767C218C344971A8345B1FF9C2B5BEDF73CEEFFCCEEFFAADBF6DDF00EEB59D788DF8E5324FE1574B3796EFAF7E2DFE9FDE69972F2225290E67C282F1B98F378E1C39C2E1E5E5F5BDB5F3434230D6518179752B26C71BD1D75B89EEEE2AB4882B51949F8594C458040505700404F8C1DFCFF789F49B22CE60465A013BDB05BB5D0A87A30F0B0B83F4390C9B6D1816F3080C8661E8F5A3989CE8454F9718BCEC2B888F3B87C0007F17F52BE1E0B47B8901D21F224689BBC424314DCC10738486BEA3855AA5C0C584D835F5C54E7D5915E9F7C06E93C2CE90878DE26747B0E0902FEB2B8959D25573DA76BB0EAA59052EC49F73413F82F4ABC19A3A601AFF06BA81221886CB60520861D57483358F92979274E7386D87C300D66E806A66D225FDA5FAD4C2666883AE2F07C6B17258EE3591DF20E52227A6283715E96A6077E808236CAC0943C3A388391BE5627D6A61B7C860BE278465A689F49B61996E81694208A35C04A3A21D2A452FB49A69D8181DBECAB8859DC76EE080F7979CC6A1C3FF5AA33E028A73008CB6939080D174C1A6ED01A31B84CD380ED9E010DE09CC817754396AC5BDD8155D832D274BB1FD5028FEBCCB032FBF1B8F3FBC17F61DF511509DFB619E16C13445284494431B2C73BDB0EAC7905AD18A37BEACC38B47F3F0DCDF93F07AB2046FF0E5D81C588C9FBA5FC246BF226C3D968A039F7A3F26FE468A57024D671634121E8C77EB6156B6C3AA1BC6DC9C1CC98DFDD8573D8B1D850A6C4BEEC276D2DE56348157523AF1425C335EC894E1B5841AECFED0179E9F7A3E425F483D7997D6B81FAC816A427BC93A3F08DD7437A2D34BF1F3F792F1E6955EECA9D3E0AF552AFCA5621A7FCC1DC0AF337AB039AB0FCFA749B0C1E72636BD1D8D7D5EC10FD62792F4A522AE57188D148C5A0AEBAC14965919349352045D13E2F789EDD85D31833DF55AECAA55235830048F9874BC7234059BC2EAB0314E8C6722EAF0E393853818160B0F4FAF07E39736518F4F91C724ECD629CA434E398CC338AFC0359912875B187C2032C18DF43D9BB5A868EFC3A9B070BC7EF0249E395E8E1F9DBB8D0D699DD894D606AF84F447D487F4ED33CB7B48437B554F98E058B0426B65D03CCBC25B344FFAF3F06BD5A2AEB30F21A1E178D337122F6548F01CD56773423D5E4EBE05DF90F06FF58F33FE66EA7F05F54C07F510F58D5242C8C0CC4FC06A9805CB58112898C6EE5A0DA75F2FE94708C5FF27FF486CB9DA85E7533BE11696FCF8FE97B6505D94B0CEF5C1AAEAA77518256D39ED6135588B9E66AB0D7593169C699F43CDB81EE5A57C787A7AC0DDC31B6F67DDC28E9211BC7F5DF498FE5FD267B4A3D074F1A947F3A93F9B690F74C0AA1EA775A0B966B382B13B6064ECB0584CE8101422223CD8A5F3471C1949FAAD54FFA5D9E57098698E1A68AD8D608D1ADABF348F5986FEBF40B3C7419F0ED82C464CC8C7101713E5C27C8BC054871842410344E3D3305B8DB8D33384198389CE163314336A3036168CD9029D8501CBB2301A4D98562A919810B7A67E4B5C1C7A8A0A509AC14324BF1EBDE23B381F9180988ADBE82B2D4348F415943677A3ADB80C8125CD14F7240ACB044812B4E1625CAC4B67646862168292B2F1F1A55CF82667E3C4251EBCD38B71238D87E84C3E4EA417A036AF1801D72AC1E7154074230F7BD34A90181DEDF2391CDED28BFF64E5E2DF15421C291220EC6A0EC28512F8F36BE19F948943E54DF820BB147BCF25E3605E0D3EBA928F2FFCFC5DD276F6A885FA677151099B73266B696EAAA4D0F757AEA0EBA940546E253E6E75607F93157B4566BCD360C0CEBA79BCDBA8834C264334E5E3EEEE8E1F1E48073E2FC10F42EB800BCDD898D18DA7523BE095C17F64CFADF65F5C9C2534C43CA1250C8491B0A07162FE91FE9923E607FC7FE295C1793F1D739BF3BEEF7FE2E6376BF83BBD55CBFEABBDCD0443B01836D8C1BBCB7EA7FFD64B42BC9433845FF0FAF1339AFDF7090FF25BA3FEAA55B9EB1EF25E628158C4B60B1DD823D0E3AD1AF543FEAF2635AEF83FFD19EFB1BE0FFA8F73DEFA7E7A9694E42CC3E770AEBD45D9C3C11A54B407ED745EA85CF2FF5D7EFF13F8AF5E7333B7E6FFCB7D6125772777542C4E36295135360FB5994166DC29ECDFBF0F6E6E6EF0A067DC7DD5E32BB8D6FFE39CF76C433CA64A4E7138F376F6BE61A871296FC2C1985662B80FA3BB8792C4E338FAC93F39FF277DAE5FF29F7A68CDED160D076B54D3993DC2E1BCFEB6FFFD1854F7A650907BF37BF8AF5DF7B568AC2E5FB77F6352120E5775AF785FAF126358A5E7749D3D3738A95AD35F5457B52E7FAD7C10C3857C78F04568E81EE4722EF6FB025B124AC0E8F5DCBDF78F9D45706619E7531D1C8A172F0B201F9173F7BD4FC4225BAA58977FEFF5EBC8F6F147BD8F0F3E0A8EE7B49CD74E9CFECEF85AA3A25075FA2C7E7BBE08130201C7F16231D2CAE979776606136DED5C3C023E7F5DBF2BB751DD3D85326C2E6CC5D51A219E150DE16BAAFF6F4A3B70B944885305F5486C68C327B93508083B8F1A5E2E76A497E1ABB3295CECCDA74F636B6A35526363D7FD5BF6BC6418795D7D5CFCCEEBCF5A86B8EB8ACE6EEEFAD8ED01EEEFAFC53D78B5A10FFF102E7DD719EBCE3A29BC2AEF3C51EEFF0576D29AD5],'Отмена'=[ZIP3610000078DAED96B10D833010451D290565CA946982320103A44FC3083002256D66A0A2A5A4A460898CC0102CE07086530C398C0D366962EB0B81B97BFE6763717F0447265AD0E9D6E934E8C02EFDC0302E37FEEFC6FD395337783ED59678D339E8C62EC5ABE6B8143F974FC7BF8A65E2EDDF0D3A1F0B5B5996424DD308B56D2BA46A300E315555B13C8E599AA6FD19C3F9A2B670A77C10B075F95BB9323FCF5FAC288A55FC300C5771A9FA033B491263BEEFFB74F22CD3E2035BAEBFE779F6F9D27E71CEEFC6A328127C71C5FB3DFDC33B75DDD700AF288BFB7F8E8FFEAFF02ED6C1C1F7F7C5977DCAFE0DD6FF6CCB3FB10FF6E28F5833DF21C4825CACBFEA1C90B9E05DCE6BF5FC59F08BB9F0FC06616E9B7CE4E23A535CD067E9B815BE0BAE0EDF2557C5A7B853E6562EC5A7F6952B2EC57759679DFF9F3DFC52FC5F70A773F80597FA07DE93FB064EE93F6E],'Удалить'=[ZIP3609000078DA73F235636100033320D600620128666450804840E591C17F2AC1BCBC3C3026476F65FC2B064D86FB0CF61ACB18525353F1AA4D0AD8C4A0C77E03AB7E03AEDB0CC17E5938CD70D33C0C5617E5B60DA71B6C652E31C4C7C763C85B499C05DB8B4D2F0C5625BC069B116471982125258524BDE866049A1F66080E886330163ACEA0C3769D28BDE87E01E9D366BDC69095D443729CE873DC049BE1AE7D8464FDC8FE35E37FC010694BBC1B407AD1E3C859FE118397C65D8266588A9FC119BFF10ECF194CF9EEE334039F5E6433406AD0C51D651F80C541E98B9CF46F26F090C157E721D5F2222990611A0306FEFFFF3F56CCB09381309E46180F94F944D9318DC67E9836FCC3089FD9949A4FC86C4AC28818B3C9359F58B3C9092352CD26C57C72CC26368CC8359B9A18007948D978],'Заморозка'=[ZIP3624000078DADD594F482367147F8552DA53C5B2BD56C183473DB868974A914AA128B8A2054F2D04F152BAA5E982502FA5DB3DE89CF6D610916AD755D7A865AD7F924C12B5D6056B52A5B42B68DCAED8AA1847B45A7095E9F7DECC377F924C3249753BDB098F97F9E69BF77EEFF7DEF7CDE4A5A6FEEA8B40C75526A54C0A5479018A940BEA75E321FF1F3F0BDFE5774DFD9CDCBB95D735B48DD70FEEB429F38CBE325DBB28FF17147FDEF7E51953C6397678B331276FFF1714BF533FAFBF0AF0B9FB7D78ED156573F8736B0B645986B5B53588442250525242E7C7C7C7B0B2B202BBBBBB505858486356F2926987B9AEEC336CFCC68D4FF47D879DA3FDB2B232FA3E313101D3D3D3B0B3B303A5A5A534B6BFBF0F474747707E7E0E67678AEDBFB725DAB5CC0226FFCBCBCB34D6DEDEAED91F1F1F277F4B4B4BD0D6D6062D2D2DD0D3D343BABEBE1EEAEA1AE063F77B70EBFA67005798CD97D1EE8726BC7DF7EEC33703BDB02D6DD339DAE6F6070707A1BFBF1FFAFAFA341CA7A7A7B0BEBE0EF1789CC9EF7070FC1B043A57019698ED3798DCB9A2E28FD0FCFEDB77957BF7993C35DB9F9A9A22EEF1FBCCCC0C747777C3F0F0308D07020108064330B7E00739D10B1F5D5B55ECCA3A3F14C3DECF005FB02FEF8286BFB2B252C3BBB7B7071E8F07464646401445989D9D25CE50C2E10804C419882EFBE1F0F43E9BFF2DBC5D52CB8C3533E9263F5FBDB3006EF90380044083DC40F63B3A3AC8F7C0C000F948241294835028443EC2E1B0C987C87C7C3F390B8F9FFC08FEAF0F01BE64F80B9438E43F9E98F28CF6F13E59D6631404014E4E4EE0F0F01062B118F8FDFE143FA150047E5808807CD20B9FD63D526CCBB7612F310A8F7EFD054EA553B2D9D4D444F3712DE0F9165B1BFCA8AEAEA6314992281F463FC45530028BD149F8EBE42E3C3D1B65733769FE9BD7DED26C2027683F180CD27D58273867747494F282C7E4E4248DE13A585C5C241FE82B1814E1E1C39FD81A39A6EB0F1E4CD1FCAAAA2A181B1BD3D697C26B98F8C63A999B9B83D5D5558D437E747575116F070707B0B9B9491ACF71DCB80650F0FEF9F979CD7EB21F8C0771733FDBDBDB9A8D8A8A0A1A43CD0FBCCEEDE27D783FDA49B69F4DBC5EAFB6E651E379B67B784CF18D2893B8A26351886A5A8428EA98A245D47E51D77E1F13AE7DE0433DA4681FEA21AF497B517BBCBAF6084C742DA0EE144873BBE847E8748370530037D3AEDA1A7AB133AE050D3BD30AF6B81E83268899C71055EDAB32A4C6C0B4825D5471278987C7E023BC4A0C5E3D864E2506576D2314B3F24241FB1C3BEA46C4CF0230E38F82648881E741CB07C31CB79B0735069E0751C52E26E723431E5CCD3514036A01F381D8558DE3C9CF1CC22CC555EC71F291E919F9AC45C12E58F3CFB013FF9292073C709E1384F07B0433FF49F52F6D487A0C0EC44FEB42CD4123ABA98224FE25C4CEC5A1FCF37D292DFF12E75FD18EE49F6A08D776632AFF729C62E039701C7EC3F381F0A7E19F8B23F9373C1FD2F2CF30CB885FCD8353F947EDB6E43FAEE520193F7F1672C9E42FDBDC4C36D2DDA7F3EF559F6D88DFBAFE6503FE642C7670659B6B077F0AFF86E7B43B1D7E43FD1BD76F2E1C661A338EDB893F19BFF17DE922EADF2E267E2D9F384DF80DEF4BEE669705FFD6F59FADB6EDAC8B5CEB2C857FF5BD15F92FB659FF99FCD9ADE95CF067E45FFDFD60CDBF75FD67E3281FFCB9AC5FFD9D9BF35F6CABFEEDE2FAB7F59F1DBF57FBFD904BFD3FCBFD273BFF8AB85B5DA9FCE751FF99B0E63BCF12BF5FFFFD2630FE8B8BECD5FF653E7F7359BFA2E1F7745AFE1DFEFE63FC3D2DB45AF19F7DFFFFAFF0636FC0A7F60672AD7F67E0F7693158F36F5DFF4EE05FCCC4BFC3EB5F8CF9B43E93D0EA7E2EEB9FCB7359FF5ABF8FF35F9CB5FE9D72E09EAFF75DB117EA82F22CF57F61E792B9AFC1C5D8EFD37BC7D1D4FE77CCD0FF56FBADD6FCC753F270E1E7C63E9FA1DF9AB6EFBD61EC7DEB7D6FE1A61BCA8B32D7FF659E9BF310CD920731E57F082FE3BFBCB6DCDCBBBD6CDE93FA4BC9FD56BBFF3FE038BEC3B9D83B1CC78F7B12DA7252BFDC4A30467A0E3BACBF9FAFFC03AE4141C5],'Вырезать'=[ZIP3609000078DAD592A14EC44010868704DD2091C843527109A66265130C0915C89E24A94162495535AAA93BD3E424D5970A641FA041F701FA02E566B96D6697DDDEF420043AF9B2DB9D997FA6D31537CB5390CF72C762C7D99E13B8F874ECFDF4197ED836D7006B01905DEADA78663BA7F6760F631C8DC5BDD2C5D5A5813EFAAEE25CE7B67CEAB3E5638FAE7CF4D13E559EDA1FEADF9C411E9E43B60AC7DC43F3332D7B7C002104AC6EC5ECFF88B9F9F3D3C81C0D95FBBACEE53BAE5C0D33571947C395CBD598CA35355C3ECE7CB871BF62C3DF228A22489244238E632B184B098280A55F55D517CAB2D4288A42234D53F07D9FA5DFF7BDA4EB3A68DB5642F7755D6B758FD5DFBE6F25A889DFEE799EC4DCCFD10FC370D487972BB81B60B27FE4587D13ACE1026B70F4550DECAB699A49E83770EE8EAD06CE8262BB5373B56D355CF7943B93A91A0AEC5381BADFD5FE0F7C00A9EFD3FE],'Копировать'=[ZIP3609000078DAAD955D4C935718C7FF2633669B4BBA30344636966517335BB8988C062EBC70A2590C37265E8C8C858D2DD9C2952C595CDC8D88E5AB1F6B8B838160C1F1B69B5646595D815149D40299948609889512D4AC53822550F2E2C2387BCE29D617E82B25D97BF24B9EF79CE7FF3FCFF37EEECFCB7A0EE2C822DE22342B6CC1EBB1859575E5C1120CB75E0F7D7EFE863095C1F54C0E438E841213F66FA81779213FE15B4584E638C9ECCF465B13B256BFB6DF983EB26E6F39D4236AE7FAB3C545AAFDC6F5E1F5F5CBE1D1157DB16ABF42CF64F5FAC9A3F5C457AAFDC6F594C79105FED839E54542A104FAA7FDC6F44C812CE0BA519F0F3D4E27DC6509F461FF33F57C5EC92ABDA2DFF5FA187C3EE22E864F7F62FDFD56F4BB761F253D6565899F974DF49BAC5EADDF8DF5CFEE37917E33FD2AC7FB2D2D786D7A1ABBB66E157BCECFCF6366660676BB1D1A8D0646A3110D0D0D181F1FC7C2C202E6E6E6441E8E1D8386D6769B4CF883F24B0A0BC5BCC7E341D6DEBDD8979B8BA3745E5E5E0E6CDB86A96010B22C27E5FF648FAF4B4AF04251116628B6F5F6223A3B0B9D4E8777F6EC41A7D78B57791DE9E9E21EF17CAE4BD6FF31C5BFDEBE8DD3E44345E3B0D98C91C141D4D6D622332303DB0F1DC2F1FE7EE4D2FCE4D8585C9BACBFE861711157EFDC819FD6CED7D561626202B3D4436666267EB2D970856B1E3E14D7E5896633FE1C391AC522CDF3FE6DE4595A5A8AA1A12171CEE7B99F325FCD7F6A6A4A6896969654513E9B6A39CBCBCBA24EA57F53D3399C2AD3416F30A15A6F5C8162C3778419D5468B406FB43EC56485C16A86D56A5D85C562417373335C2E97F0AFACAC4260B01FC337AE22D0D789407F770C1E5F7723704542A0D78E41EF8F18E83E47D830F0BB0D7D3D4DE83B7309C61A0B1A1B1B51535383FAFA7A71FF393C4E494981AEBC0A0F6E79C11EB8C06ED2BB345249DFA82AB03F4F82F9E81FD07510CC9E82D91FB620580D840C8405B8F70510DC918B0F3EFA50FC670B0A0A909A9A8AECEC6C68B55AE4E4E4202D2D4DF887C7C8FFAF0EB0E10ADA83BE0523068A4F835DFB1CECC63760D24E30473A26C9376802C6BF071E1DD989BF3FCDC348F431F0E2F3B8BF14C5FEFC23B05E388FDA363BDED6BE2BFC2B2AAB717FEC1AFEB9DB0579B80EF2CD06E22CC567200F9C84DC711872FB01C8AE83F8F7721E265BDEC4B4FB0DCC677C897BDFBE874747B560073E06DBFE09581AFDB376504D2F7F865B85157869D72B30D3FB71D1D906C9E184F4F32F0ADA215DE880E4F440BAD415C7D1E6859D90BA3C70B8BB61FFAD53C492F7721C47AF07ADED17C5F54AF45DFC3FF90FBD43D84A],'Вставить'=[ZIP3604000078DA8D932172C4300C45D5991EA047286C2FB00728EF6916960606069A1A06069A1A061A8A0A1A1AAAB2E5EC7A1CA7D364DE2413E77D59BBCAD7F7ED15CA71133E84B7CA0BBCEB425D6F0F6ECE4F8305FB73FF17BD3B87085348B07B071C1152240187B47EA9490C4B649813173F5150D03738BDCAF32B7F8A878FC0B457A765ECAFE2D9A819EA5357FF6F7F13EFC8287EED3DEFE1E070239DFB77E239E97DADFD738AEA357B67DC3443B27BDFE7BA4933D44F2543F7D1FE0F34ACBF8B8F49331E3EB322F749C85E701BF8D50E7DE29AD1FB15DC3DD07A177F3ECD4E102FB166E8FC90FE0699A85792E7D9CDEFF77EAE9B6BA4EA5F3179BCF4738FABDFC10ED8420094EC3CDF577EEECF5933FC569C5980A4A705CFFE638682AC1B0384E139FF42D9B7B130EF3474FBEFD72CF38963AD777E0159FA4934],'Копировать ссылку'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F34585050401246D6DB1D1901C69D6161700CE323D330364CFFCD558570FCFFCC1986A7071630DCD93A8FE1D1B99D60FEF7DBFBC1F4FFC7C721F4D9D50CED212160FD203D47973533FCFFFF9FE1749F1D436F9C1643828D2C4396BB31986E4D75069BF5E1DA3E88DE0787C0FA9B0302C0FAEFCF3185EB5D58A0C7F07E9619C39BE9460C9F575A31BCBE50C6F06A670E439C8B21C395DD13187EDFDECDF0FFDE3E14FD3B3BC3186E4EB304EB7D3A4D93E1C5143D866DA526603F9C69D78263903BDE5DDACAF0FFD15114F783DCFEE75A315C3FC8FD3F8F4D63F8FFFC100283FCFDE414C3EB932BC0F4FF331BC161080E3FA0DB4166FC38E9C2F064961A583F363C2DCB16129E2F2E81F54F4A4A80BB1F66C6C76DFA0CE73B94185EAFF104E3DBDDA60C6F671A31FC58E1C0B0AACE03A2FFED6D86FF277733CCCECE84C71FB219607F00FD0EE2EFAF5203EB0585CF9ADE3C869F2F6F30FCFFF40443FFB6A9A90C276627337C7E7698E1F50A0386A33D5A600CF2CFAB255A60BB41E6FDFFFA1A8281FA979615A2A43F901B40F8DFCB7E863F9F0BC0E1F1799719D85C905E503C7E7DFB8CE1FF8F4F60FDAB1AAA31D2EFA5F55D60F520736034CC6F20B3406E8661907EF4BC03D20F76271083EC7A71ED08580C844171BFB9A1186CF7E35976187AE1FAFFFD859B818E41FAC1FEC1016176E1C260FBD120001E64EBB0],'Комментарий'=[ZIP3604000078DA9593A18E84301086E7927B80952B0F77F7029BAC5DD9E40C127B8F805CCB2320B148642576646525165959D99B2985B450F6729DFC49D3F2CDFCD3098FEFDB3BF875237D922E416FF0B15C84FB78B910B269FE2D1705F61D38A3C1CE08761A49128C1EC0EA1E8CEA48ED26ABBB531E11FF14E73BF0434FFC4CF5D983A2FA8B0FF6B0D4EF221F27BC8D78DF07FA3EAAF271C8B1E7951CC0399BF52B84F06FFDCABFF63CEDAC49FB201F5529B679695C7A3AF0A30CBC0D39A62D87E7E98E8A6F39CEF89CFFBAAEE14A79637E6CDB849FD6FAABD807F5B1FAA8CA32F180C390F2B8E37739BAB68122E6A54CF819CFFDB3D883B8DF130F393E2F0BB35250D33B16F4B639DEA8F1054FF9B5026C9F5089AF65904DFAFFF9FAEBEC32E2FACCB307CF920A8A98372A159FADE73CDFB179FA6F7F42F0FE174A1F2244],'Передний план'=[ZIP3604000078DA73F235636100033320D600620128666450804840E5518057314EFC9F08085277E0CE010C3C10FAF1F90597BFD0F5671FFB8F17D3423F3226553FBA5943413FBEB820463FAE34420DFDC4E0814CE3E4EAC78501980BBFF6],'Задний план'=[ZIP3604000078DA73F235636100033320D600620128666450804840E5518057314EFC9F08085277E0CE010C3C18F413E32F7CFAB38FFDC7C0B4D08F0B13A31FDD2C6C7A065A3F2971814B3F3169841AFA71E1C19AC689D58F0B0300D5E5C30E],'Создать группу'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF41020B3714A26072E449B16BB0E91FE970A8C71FA5E977A02000824BF3AC],'Вырывнивание'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF410293929228120301643962C5A861FF68F88D86DF500D3F000704CF2E],'Поиск'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF4100B10152D481E9FFC4E9C7A68E1AFA710152E4FFE351FAFFFF7F92F523EBA1A57E427EC4E7776AC70FB1E14F4C5A24461C9F1F8811A7B6FDA4420052950D6F],'Вид'=[ZIP3609000078DA73F235E36400033320D600620928666450804840E591C1FF51380AA9081B1B1B1922232349C6DEDEDE60BD84CC07A9BBB9BC96E1748F0BC918A49790F9F5D1C03CF1FF0CD80E52F0A8F943C77C8686069A9B0FC2207F108B4176106BFEE232F230B1E6AF9A0FF10348CFDC95100C1283B1411824075303A349319F1C4C8CF9207780EC2015135BFE8CC2E10501921B24EB],'Редактор формы'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F0A6163632343646424560C02B8E4BCBDBDC17A41F4CDE5B50CA77B5C30300C6093036190DEFA68A01FFE9F019B818E9101BA1CA9FAD1CD2049FFFFFF186610AD1FA8F73F101F38708064FDE86620BB01593F4343035EFD60BD686E40D70FC2207760C3C86620BB01A67F71197E8C2D1C40E230FDABE643DC00129BBB12824162303608A3C7030820EB278411603F3C2C41FA417682CC200623EB8799414A5E83E94760D2F32F7ADE07005A536980],'Свойства элемента'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F0AA1AFAF2F49189BFEFFFFFF1385F1E9879BFF1FBB9B08E91FEAF6E3D543A2FB91D55FBE7C19A7FBA73118A2C8A1AB85F16134721A00E945D68F4B0F320DC3203EB27E748C4F2F0CC3F4E34AD3F8F412D28F6C06368CEC7E72F21672F8519A7F018BEDE111],'Менеджер проектов'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF410035D75E2319A3EB9FF3FF3F43F673EC38EA1E2AC6A57FCA77086E790FC1B8CC20A49F9019C4E8C76706B1FA7199418A7E6C6690EA7E648C4F3FCC0C985A42F1CFD123806106B25E42E90E597FD0B9F728E683F8D8F448ACD584EB6528E62039AD83F481CC40B69B54FD51CF7BE0EE201582DC0CC32033000A8105AD],'Чат'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F1C908F8F0F03FF270182D433371D6660489AC6C0D67E92A07E6CF681F481F4F3F65E21E81E10FF701633C3B44006865385EC603E67D7790686AA9D0C8293EF80F95E73B4182CCA14187C97E860D57F229715AC1F663EC85E905E91690FE16220FD41EBF4B1EA3F5FCAC9B03305A29F7FE22DB05EF1994F19A4E6BE066390B8EB447586B0ED8628FA61665FABE567B8DB22046683EC84E9955BF4994161F137B078C42E238698C3A6286100A26F3540F43EED1607F3617682F42AAFF803C6207190DE94D336608CACFF61BB0858EF9B89D260BEECE2B70C8A6B3E31A86EF9CAA0B9F72783EE31887E90BEACB32E0C79E73D51F483F481F09759720C3FE629628D2F64BDC517FC31F47FED5705E39FFD9A60B1AAAA2A86BCBC3C062F2F2F301FA4B7E0BC0F43E9C52086CA4BE158C310196FDBB68D61D2A449603388493FE8F681F48330481C9B3CBA7E42F6A1CB63D38F6C1F29F2E86140288FC1C400036D2B72],'Информация о проекте'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F24D800E4E3C3FF09404AF5E332E73F8970A4EB1F684889FB29493B8321FD529AF6E91DFF001FCA940C],'Запуск'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F1A416F6F6F3026472F433DD061F78178BF165966C0F59369068A7E32CC80EBFFCF49961960FDFFB5C83603A43FF43FF96640F4AF82E8C366463D0309FA116680C5EA198872FF2A901EB87EA819F50C44871FB2FE5524E845E85F45965E64FDAB88F42F4EFBEBC9CF9FC4EA05005CB4AAB5],'Запустить'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F1A416F6F6F3026472F433DD061F78178BF165966C0F59369068A7E32CC80EBFFCF49961960FDFFB5C83603A43FF43FF96640F4AF82E8C366463D0309FA116680C5EA198872FF2A901EB87EA819F50C44871FB2FE5524E845E85F45965E64FDAB88F42F4EFBEBC9CF9FC4EA05005CB4AAB5],'Режим Отладка'=[ZIP3604000078DA9D92BB1180200C40F1CEC6CE112C3D0770005BCED279D8274B388AA360F808514122E1D284BC076896756E858D1973C4EC7D3662701B7E9F86662C2E23A5B4F96453BE574D61F1C0DCA7E0B8FAC48D4D3B024F1CB447BC3C1FBC7754F1BA8B0E0C770FE6FDF5947570BEDFA6F38ED2FF733C382EE550DFB372E7A3C3D65479CE4C0F1826F0DEA19833FAE0E1071B79A862290FCCF766CFAF60A9E32F73022ECD805E],'Трассировка'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F2CF0748F0BC3B210068664330806B1FF930017973130DC5C5E0B36078641E690AA1FD90C9018B1EE40D60F338312FD204C8A7E9819FFFF9F41C1603112C3111983FCF19F0CC820FF9F815C08D20BC394E825D70C4ADD4F2924D56E98FA817433291000DBAEDF46],'Остановить'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF41008F1D3B461646D6DFD2D2C2F0FFFF7FA23136FD204094BD78F413652FB1FAC1F1C3409E7E1CEC21A39F52FF9319FEC4005CFA49C1E8FA2949FF9440001E831F53],'Компилировать'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F284466A3F3F1C921F3B1E9C127472BFDC87EC327478C9F88F17F434303436F5C2C41FC1F0704E9FFFFEB35C3DF2FCF187E7EB8CFF0FDDD1D3806F1FF3CBF82A2FF3816FB417ABF3E3A0BC75FEE9F046310FBF5BD7348FA19C018D90C98FD7F6E6CC5C0BF6EED00EB9F949204D78B6E0648FFBFDF5F19FE5E5A8E1583FCB1B4AA14BFFDFFFF33FC7D7503EC571806F141FEFAF0F41658FD712C76A3E847B3F7F5FDDB186EC6A71FD96E10DED2D78182F1C61F503F3A06E979BD359FE1584F054EBD30FDF8F07F1A4200D617C321],'Сервис'=[ZIP3609000078DADD966B50546518C7FF7EA9C999CC320CB3699C6E0363A31F4A46D1C6A6B2A92646C40851C2B02935F0023820780964E56E72514B30339D4445B9082C81A1A2825CDD8BCADECF39BB2CAC2C7BBF004E1FEA39E7ACE0383AD367F7CC6F9EF7BCCFFBFCF639D7DD8F22C29E83F009234288E000D3304F4C04F20F7FFE7D0AB6BD69A948DB9648243D91F40069FF83F4ED4948D99A84F2B2321C8B0B47E9AA8528895CF078563E61FC040ED29AC3510BB1F98350ECDC918AAB07B6E0CECD66283AA4229D22F24EE9D41CCF0D2994371E99EB689A5CFF605F4EF1EEA5D390C47D869D29C9B8F6E74118C627A0757AA123B4013401B40E17742E3F74462D4CFDF530A9DA29EF81C6C1E7DCD0BA7CC4549DD6E1017BCF88FD89DF903F051DA70BA0F7FAA11EB1436375086809F588034AA50CE6BE1AB45DEBC58AEF9A109D7002EA964AA81903649D57609635413F6C8666C449D827612C1C72057F326E5615C2E01B179CDA5127452774148F37A9F1F986F3A8C82FC7998A435890D387C5920EB49467627FD66F888C3B85D63F2A31641E8066D42DD6F3FD8D3AC051FFF9897142FFBD67F3C0F8C7A1A71CEFE531D8ECC8AE9223ACA81F8B7E68C08A945AC42B7C8869B7E2E3F5BFE3DD44295ECBEE45DEE12A588DDDD059ED62ADE077C238C2A120691D762627A39FFCAC4FF41B28A7B779D02D53E068E700F630F7117FD9822FCFEA9120F3E1EB6E37969D50E193D6612CEEF220A3BA19CA8623301B6E519D5BF0EBC961227FD196B542FF7DE778FF84E066EC742D2D0E4425B5E2FD8D97B0B5C78D54F57D6CBA3D86F5B7BC88E97222B2DF872FFA9C58DA3C8CB7621B114BD744A5E8818EFAE2DDFA51174C560EC501BFAC7A3F38BE7FCAB1E4D7D0F9DF744E8B986A3D52E99CFCA8F463DF800B479BDB1197998F45856D78AF4A8F05B52CDE2991E1D3FCCBB87B5B261C37EF30907F90FC07B6AE15AEAFE2BC84FC1360027E3D71CC3C8E2CEE1F646826B051E1C75F431EB43450AF51AB307F7329424EB1982F3523E4CA08A2AF1B71C73C44D7CC25FA299AAD2C7EDE162BF4AFB82081D13F01D626FAF9EFB96EF1E057991DDBDA6DF85EEEC3DFC3E46F942276751496159EC487BD5E84371A91D3D6835AC60A83DD0D86BC0C39F83834CAE2E0F658A17F25F9B987FD14398A355719C49FD26383DC8FB621379A1B9AB086FA5F7EE024962BC6107E4107B9AC1B668743A81378C49F41FE81BA6CEA7F1C5CC0CB519EA37E1416172A745E14697DE863399416E561E99225482F3F820C9D1F194A1BD456B186778BB57C8F4EDCB3B13894B246F06B2F66C1447E23E58C7611133148B036BA67F99E744A549415606564249A5B9A60F28E09EB0703EBC55ADE2F1ECB3D9B81FC31A2BF7E2F4C74FF18E9DD6172F1F8C4E8F405C684939EFF4116B76E2BC8350AB3672C30EF9D5A23D478C1D17BC962D5E1971DD1C84CA5E7AB2C025D17CBD15357849EFA62F4127CE4F77B035118F3B1B67072DD83F99EDA62816E21D23A8AF29A5C946F5A82CCB46448BF7D0617A2A7A1FAABC7736E720C1A632A172DE66AD74D477DFC0CD4C43E8BBAB8E9A88C790355096FA3707510B276A5A32B790694BBE742B5670E110CD5EE6021AA1FEC0B73B389200CEC0A826AD72C0C64BE0855E64BB89B31134C41284C2561D0E587822909C7B1AC2D38939388E31B4384DF46CB89081872DF049B370FACE455B039AF88640781DD371B8C640E459A97CCA53191130C26EB6562160C3FCD8461CFF360F6F2F10530B4CFEC0B0293FBFA53F1BF81DFFE036ECD86E4],'Настройка'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F28F4305381E3FF38202E355EE6AA0C13F30218967764335C39BA1DAB1920B1F5932BC0185D0D4C3F2E33406C90384C2F8846D75F1C660B96C36646658C13C3DCAA181433B0F9019719A9DE262866E00A239819203B606680D482C46166E00B5F6433D0DD001227A417D90C981E5CFEC517B7C871458C1920F1D33B5780314C2D2C9E60EEC117EE207D201AC6C6954690C5D1E5D0CD434F23E866E0F30FCC0C6CFA61FE22473FB21BB0B90F591E977E647720FB1B39DE09E563E43003000B559180],'Статистика'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F285CB26001C918A6971C80A9FF3F12666050FDAF0AC798B2A3FA09853F29FAD1E160D08F994E89D78FCDBC81D68F2BDF0D340400D1FA42A4],'Скриншот'=[ZIP3604000078DA9D53CB4A1B40143D857E4077DD76D7D7DEE2A23635C42684589AA42626466342177981B8105C149A2005A16A5DF94AA2924D8C2FB42E8C49F3F22D1A151495E84617D15A75A12044249D7B6BC5168AB4335C9861E69C39F7DE33C5AA82BBE05120E291887B5771070F7E1E5C9DDF1CF91BD36834FEB6FF97595EF616438343F07777A3BAD204934E0B59F1CB5B71F4A6CFEB43767F1FDBDBDB0887C3D8D9D9417A7919DF8F8EF0B9E913745A0D2445457FC5EFEEEE22140A21994C221A8D62626202A9540AB95C0EF97C1EC7C7C7F81A8BE16343035C4E079E3E797C8DD7EBF5585C5C442693614C4CDCA3E8EFEFC7D9D919868787E1F57A515F5F8FE6E6662C0B5DF45E6F6F2F9E173E4367672726272759F3CCCC0C128904E6E7E7313D3D8D9595150C0C0C402291402E97432A95C26C36636D6D0D171717A8AA30A2ADAD8DEFEEEDED319EB8288FA9A929D65553530395AA1425CAD7282E51422693A1BDBD1DDF0E0F613157F17A6E6E0ED96C96B1C411894478BDB9B9099BCD8642490906DF3D44D87A1F2F5E95722E948359F4A9ABAB0B0B0B0B383939611DC4158FC7B916D40F8FC7038DB60C168312EF9D6F205796C2ED762323CE2A857E9FCFC7F8CBCB4BCCCECEB2E6743ACD1C9403D59E72379AAAA0D6EA442E2AACAFAFB34E93D1806EE1978383036C6C6C60696909E3E3E3CC49F51D1919C1D6D616CECFCF59B3C3E1E07BD403CAB1C2500EBFDFCFB823E115EAF5EAEA2A3A3A3A303A3A8ABEBE3E0483410402011C8A7A9116E2EEE9E911F8280C7A1D140A05E328A837A4876A6AB158D8032D2D2DB05AAD6810DE696D6DE5FAABD56AB85C2E549B2BAF7D64105AA85763635FB8F6BF38294E4F4F591371353636A2AEAE0EB5B5B5D06A34B7FE8F0AE16FA7D329BCD7C41A3CEE0FB0DBEDFFFD4FFF9C3F004D2AEA64],'Помощь'=[ZIP3609000078DA9D55316BDB40147E1DFB0F3A766CC62C81AE867630744937438660321893A1040F256409254309198CEB21980E1E32049CC1E00E057929C843411E0AF260380F193478B82183060FEAFB9E7427C9B25C37120F099DEEFBDEF7DD7B77950F072F49AE038E371CAF927841AFE381643C7B455BEE8FEFDF6D8DE899B799EFDCF5C89F38A47EBBA4663E05738E3F1E39638786DD6FCFE291FFA3281FAB24F83D0CC3F4BBD6E40C073BF3AC636B9EAF164A30DC7E87FCBB6B523F07A2412FB5E5D28F4A621B07BCC8E68BFF81E79CBC25E7688FBCD30AB9173579778EF6C9BBAA931A0F240799C35CDB382C3E63075397BC4F95046B4F38B00E18F3BF7F49BF73F8B7E7A2C5F8B5091FEB677207B69BE4EC9E709E1C4EEB507C126EE6F1CCF784C3BB695A1DC05AE730F83A08246FF778DF6220C003AFF4D421FFF2303F761CF360DCD440165FB0937552F79D381FCC6DE439BC067BC4DCB96F191DD01C2EFC8206937BC8FAFC5635CEBD91C777191B6B192D0352ED66419FE1407EF13A04057C3DF3D2BCD77207BE3F4B721BF64A35785FEBB6660BF8BF06D6878237E0E0FA97B94FAC9371F2DEC54FE80F93752EC3F74F4BF0D95FF496E8CF723476C38FA6235EBF780D85638307E213FA20A975E0096EA219B51595F813058A828B2AA9564578366990607E9363F0D0B19AC1E177CF6C1F15F0E1519F7BF18A7B091A3837F8A1E71E29EED12C87A943780A5CC9899F7A322AF431F0ED9EB8E0F7768DC29B1AA9CFAC7DEAC5DFB92E4D5F617F307D847A8456E0EB76DD7A030F0B3D96680827BC86B74DE10196DDBF563C77A952ADDCEBC00C2EABA2399C7B760C67C3FAFE103EE974FF9C31C70FCEB37F469AEB1D7B0F786C603FBEBF961CA26E5D6AC3CC05D63ABED5B0CA9C299A3D5E30CFA423011E4434EEC5DC0FE7FCE43DE7D14FB5B38F382BCACE8002073C89027E32C67214073811E05F65CE32D62FF3FF71CB3F59AF7608399F77C0CE72589E55092EE7FEBFB8653C65B10BC65F33DBB8ED],'Помощь'=[ZIP3604000078DA9D92CB4F535110C63F13FF00579A1888258A905A40AC5445346A7C60E4E1231A5DB8712D266E0C1B8D26082EB411050CA2E511511269C2ABA20630E1214501254AB0BCB4D0622994F6DEDEB694DB761C900537C4059E939339C97CBF335FCECC914CDD7A2C2D1D9F783E1B96CF3AA8FE2696F32B17AD616BF33BD6A45FB9773E684541DFF87FB11BAF983046126EBDEFFFA7664BDE27EC7FF611EA7207526AFB70B4A817071B867038EF032C44F0040936AF08EDCBE9556CA2A1090E0A6034184090EB58E5054C306317C3B02E46CED9398E450896304157A5FC87A83B5DB07B6849D3EC92E11722E8E67B6272348E9FCA82C5471877CF61D449709188D4D76605BFEB763B7AC983CFD3F39864AE8735EDACFD2A3027113A29886F7E42078560B613520D3F147C66A519FD739C637628EC42C7146190FC506B12919E7106238110BAD8DFA03788019A87CE30ACE0E32ABF6088D961D6B448B3B070CD1E2F21EB623634091ADC2CACC6779297FCF488ECB7C6A2E0D36AC7503723A17E5E44CB38A12E2CA08BB5AD0E0967CF65637B5C3C2E675D8069C603A32382F48A11057FB24E40CD34A1C94D30710F92625270E04406EAB9569B10862A7A1FA2E363D0CC1E3BD9E3EE169F82CF6EF3A391EBBD5BE4451F9277A8A0DD138B86291945AFDE6073EC562468D430F2FFBE758838F65C54F0A78D12DA423698E608C619C2B5FC7268D57B91AC5363535C1492B66950F2548FEE5982817B797E40393F97AC328A39F76492504C5E54F0DF3D0C10EE3B6554B96514B2EF02F6769763B5E084B6D1A5E00B6D32F43E1165E1101EDB17A0E7597D4411BCF085708FDF29E17E944A324A2301940564A455AF9E7F03CFC50DB784EB368EBF64BE2FE0EA4F42EE6F42CE4404B93C4F39DC9B438D5E05F707B36A216E],'Компоненты'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F1A4243C36350BC148C49D26B89840D9F43F152D2F5926106487D72322E3350F59FCB6660A8B6E440C120BD58F583CDC0D4FF7D8A00C3B964063806E99D3307971B9632307831C031B219CF81340C63350318170CD51C08ECC580E10E905E901B60FE40B69B610E0702A3E9473603A417C4E7281660703A568CAA0F8F7E9819303639FA91E160D18F0B13A39F10A6348F020019E07828],'Письмо автору'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C1FF4100537C7CC8C230BD9B67CE64787CE4084918A4076ECEFFFF603E882606C3EC43D64FAC193035D8F4A39B81CF7C5CFA61EA40E230BFC2C208590D3EFDE86230B5C4E8C7661E36396CFAF1E9457707BA7E427AD1CD40D64FAC5E74BF20A74172D3EF4043005CC5255F],'Обновление'=[ZIP3604000078DA85923D6E83301CC55FA51E2047E802EA1A868C0C9D22A44A59C20158337AE3105462C8C801DC0B840BE4041DB98BEB67FB6F3EE2B4584F21E0DF7BCF361F9F8757B8EB60F56EB50B7AC19B7F11DE2F2F93185555399565B992F9670837F558696C6D90C29F3EE438CFE8B5C4032AB30FCEC0E9F4E0511485676F4798EFCE7219CCFDF2DC43A99507793217F385CC02C330C0FC041FBD5E8BF3086B1196CF997D343774A683D6DA77091EDBBDB836405DD7CEC36703ED0857967CCCA747A203798A7B26F9E4B3C0EFAFF01D12FB98E279EF17A163078C63C8C7C3796E79E691715C0C9C5C27E1DBB67592F5ABCAF3799EC7EC254F96BEEC20EBE30DF74DF68F3CCF207AD84CBFC97370DF7BC58FCBFE4A77397FF2CCE2FCA669E23DFB9C0D02377A6F35775F7E83F4A0AFAB6F3B8BC7DC6B8AAC3BF3C4A00725183D44FC4FEE19BBF591B94BA5E6FE02434C6A86],'О программе'=[ZIP3604000078DA73F235636100033320D600620128666450804840E591C17F1C302A328AC1D0C0108EFF1301CFB52533EC4D3464D8EA29C0B0D5950305CFB1E0604856E1C0AEAF368A616FA822509F04C3521B903A06B0FD3000B2FF58A625C35A470E862916107998DE63A55E0C7B0325C07640F472C0DD8FAC1FD9BEB5407BB23520EAEEAD9A02B11BA83F1BC95C7CFAC166387220FC1CA909D69F4C827E6478AD2F9B616FAC21D81D303348D10F36635A31C3B549C50C4B5D251882143848D60F8F8B2EA05B520D31F44F715564E831E120DA1C74FDE0708AD504C75F3130ECA710300BA41F19FF1F00C82150CDC0C1934D965E2FDF630C0C1C6B81796E29596604851E63F8FFFF3F44BF400FD96E00617C6A00305F8ADA],'Bitmap'=[ZIPF602000078DA95CEBF4B82411807F0A7D610A2411C1AD2A528040979971751E2CD40105D6C71687188161BDCC2C9354737FF09698FA02168099A4B827E20F182E4DBBDF772BD3FBAF7AB1CAFD260079F3BEE9EE7FB7007657B95B03469475A97D6A415DAC2FBCDAC3EBFAC08F30FEF112F33CF110E351A2ED5EB02AA5547310C0EBACE209BB5209DFE8668DE3004E57262D6E7A89E6492413C6E412CF605D37CF8972BBA3C7BA2F3A34738CD3DC0C9FE3D1C6FDF4179F3160E37AE21AC115D902777AFD924B75221AF54A29F629144A1408EAE13D734E2990CD97BBBC45229B01209086B1F6156F25B2DF26AB57FCD086B8B79A854979AC1F2F9695EF6FA8301F9FDBEE2F67A8AD3ED2ABCD301D66EE31EE603C6280802F27D5F715D778E100238E760DB36CECFE150E517672C3347E51778938922C663B04D1326A3118CDF5EE117EA0B3DC0],'Bitmap'=[ZIPF602000078DA73F2FDC6C400066640AC01C40240CC0DC48C0C0A60F1035079641091FE162FF6495A8B17BFF9F0816C0C32BFA6EF0F980DA291EDD5D3FD831783D4536AFFC31D8B191E1638226824BCC591058EF1D90F520B360B070DD24F8EFDC8EEC0161EC8F683F4E372038C4DAEFD208C2D5E60F105B70BE6061C345EFB0960905DE8E90386019EE46504]]
 }
-Add(Hub,13266586,889,49)
+Add(Hub,13266586,924,49)
 {
- link(onEvent1,11772850:doColor,[(913,55)(913,20)])
- link(onEvent2,14171711:doColor,[(917,62)(917,125)])
+ link(onEvent1,11772850:doColor,[(948,55)(948,20)])
+ link(onEvent2,14171711:doColor,[(952,62)(952,125)])
 }
-Add(LineBreak,15513328,840,49)
+Add(LineBreak,4075214,875,49)
 {
  Caption="color"
  link(Out,13266586:doEvent1,[])
- Primary=[12725695,406,791]
+ Primary=[12725695,371,791]
 }
 Add(Hub,303614,931,273)
 {
  link(onEvent1,9516142:doColor,[(955,279)(955,251)])
  link(onEvent2,13791859:doColor,[(955,286)(955,293)])
 }
-Add(LineBreak,2204361,882,273)
+Add(LineBreak,9616685,882,273)
 {
  Caption="color"
  link(Out,303614:doEvent1,[])
@@ -4242,16 +4250,16 @@ Add(Hub,9356062,392,280)
  link(onEvent1,268577:doSetTheme,[(416,286)(416,265)])
  link(onEvent2,15923093:doWork2,[(501,293)(501,216)])
 }
-Add(Hub,13676182,1057,133)
+Add(Hub,13676182,1218,133)
 {
- link(onEvent1,12151591:doColor,[(1083,139)(1083,121)(1052,121)(1052,104)])
+ link(onEvent1,12151591:doColor,[(1244,139)(1244,121)(1213,121)(1213,104)])
  link(onEvent2,2608223:In,[])
 }
-Add(LineBreak,5699306,504,266)
+Add(LineBreak,12548634,504,266)
 {
  Caption="color"
  link(Out,15923093:doWork3,[(553,272)(553,248)(527,248)(527,223)])
- Primary=[2608223,644,-126]
+ Primary=[2608223,798,-126]
 }
 Add(Ini,16105681,1337,399)
 {
@@ -4276,17 +4284,17 @@ Add(Hub,13536488,1148,532)
  link(onEvent1,8716968:doEvent1,[])
  link(onEvent2,397013:In,[(1172,545)(1172,524)])
 }
-Add(LineBreak,11978758,1302,98)
+Add(LineBreak,3884064,1463,98)
 {
- link(Out,5361154:doShowBallonTip,[(1342,104)(1342,111)])
- Primary=[12674208,154,287]
+ link(Out,5361154:doShowBallonTip,[(1503,104)(1503,111)])
+ Primary=[12674208,-7,287]
 }
 Add(RE_Search,3079521,1393,378)
 {
  Expression="-= DONE =-"
  link(onMatch,12674208:In,[(1441,384)(1441,391)])
 }
-Add(LineBreak,13339603,1351,378)
+Add(LineBreak,15353139,1351,378)
 {
  link(Out,3079521:doExec,[])
  Primary=[397013,-168,140]
@@ -4306,4 +4314,60 @@ Add(Between,14631311,777,588)
  Left=Real(0)
  Right=Real(100)
  link(onTrue,9855068:doEvent1,[(817,601)(817,594)])
+}
+Add(ButtonRush,1067900,716,110)
+{
+ Left=231
+ Top=300
+ Width=90
+ Height=28
+ Font=[Tahoma,10,1,0,204]
+ Cursor=2
+ WinStyle=2
+ ColorFrom=-16777203
+ ColorText=-16777211
+ BorderColor=8388608
+ ColorShadow=-16777193
+ ShadowOffset=1
+ GradientStyle=0
+ ColorFromOver=15780518
+ ColorToOver=-16777214
+ GradientStyleOver=0
+ ColorShadowDis=8421504
+ Caption="Обновить"
+ Data=Integer(1)
+ Glyphs=[]
+ Point(doSetTheme)
+ MakeTrans(Caption)
+ link(onClick,11065466:doEvent2,[(756,116)(756,62)])
+}
+Add(GetDataEx,1853776,903,91)
+{
+ link(Data,6003462:LoacalIP,[(909,93)(846,93)])
+}
+Add(Hub,8381860,826,140)
+{
+ InCount=2
+ OutCount=1
+ link(onEvent1,6667612:doWrite,[(861,146)(861,125)])
+}
+Add(LineBreak,16737620,672,112)
+{
+ link(Out,1067900:doSetTheme,[(713,118)(713,116)])
+ Primary=[5912607,105,196]
+}
+Add(Timer,15020308,1260,602)
+{
+ Interval=3000
+ Enable=1
+ AutoStop=1
+ link(onTimer,4253140:doEvent3,[(1311,608)(1311,598)(1199,598)(1199,587)])
+}
+Add(Between,10969069,1218,595)
+{
+ Data=Integer(1)
+ Left=Integer(0)
+ Right=Integer(1000)
+ link(Data,513742:Count,[(1224,579)(1315,579)])
+ link(onFalse,15020308:doTimer,[(1251,601)(1251,608)])
 }
