@@ -1,1 +1,1 @@
-	Make Pkg Han Tools v.3.0.6
+	Make Pkg Han Tools v.3.0.7
