@@ -27,10 +27,7 @@ Many thanks to: hexcsl, BaseD and ErikPshat!
 	
 ### History:
 
-#### 3.0.6 - 3.0.8
-:white_check_mark: Changes in the update process / Изменения в процессе обновления 
-
-#### 3.0.4 / 3.0.5
+#### 3.0.4 - 3.0.8
 :white_check_mark: Changes in the update process / Изменения в процессе обновления 
 
 #### 3.0.3
