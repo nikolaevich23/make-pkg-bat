@@ -10,16 +10,21 @@ Many thanks to: hexcsl, BaseD and ErikPshat!
 --------------------------------------------------------------------
 
 ### Usage: English
+Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a378d1a70deed7b45592a86b2f0995590d4a92050b71fd991be3290b94c74f0d/analysis/1546160432/), unplug before installing.
+
 1. Put the game folders next to the program. 
 2. Put *.pkg CWF files in the folder to try fix it (need game update).
 3. Put act.dat and idps.hex in the same directory.
 4. Run program EXE and select the desired action.
 
 ### Использование: Русский
+Некоторые антивирусы [ложно срабатывают](https://www.virustotal.com/ru/file/a378d1a70deed7b45592a86b2f0995590d4a92050b71fd991be3290b94c74f0d/analysis/1546160432/), отключайте перед установкой.
+
 1. Положите рядом с программой папки игры, которую необходимо упаковать в PKG.
 2. Положите файлы *.pkg для CFW в папку если их нужно пропатчить для активации PSN-игры (нужны апдейты к игре)
 3. Положите файлы act.dat и idps.hex рядом с программой - они так же нужны для подписи активации PSN-игры.
 4. Запустите программу и выберите необходимое действие.
+
 --------------------------------------------------------------------
 ### Requirements
 + For old version Windows need [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
