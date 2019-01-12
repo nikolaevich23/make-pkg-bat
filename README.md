@@ -32,6 +32,13 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
+#### 3.1.0 
+:white_check_mark: 3.1.0 в установщик добавлена проверка на PowerShell
+
+:white_check_mark: Сделан выбор IP
+
+:white_check_mark: поправлен батник (теперь не надо выгружать hfs при обновлении списка)
+
 #### 3.0.4 - 3.0.8
 :white_check_mark: Changes in the update process / Изменения в процессе обновления 
 
