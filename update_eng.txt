@@ -1,0 +1,4 @@
+MPHT 3.1.1;
+List of changes:
+  - Fixed translation
+  - exe compressed
