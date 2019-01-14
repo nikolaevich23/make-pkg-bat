@@ -1,10 +1,4 @@
-<<<<<<< .mine
 MPHT 3.1.2;
 List of changes:
  - Fixed translation when updating
- - new compiler||||||| .r0
-=======
-MPHT 3.1.1;
-List of changes:
-  - Fixed translation
-  - exe compressed>>>>>>> .r290
+ - new compiler
