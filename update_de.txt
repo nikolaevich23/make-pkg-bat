@@ -1,4 +1,4 @@
-MPHT 3.1.3;
+MPHT 3.1.4;
 Liste der Anderungen:
-  - Batchdatei zum Konvertieren von Spielen korrigiert
-  - Kleinere Anderungen
+ - Deutsche Sprache hinzugefugt
+ - Kleinere Anderungen
