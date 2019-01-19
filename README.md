@@ -32,10 +32,18 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
-#### 3.1.1 
-:white_check_mark:  Поправлен перевод
+#### 3.1.1 - 3.1.4 
+:white_check_mark: Corrected translation / Поправлен перевод
 
-:white_check_mark: exe сжат
+:white_check_mark: German language added / Добавлен немецкий язык
+
+:white_check_mark: Installer added check on PowerShell and download it if necessary / В установщик добавлена проверка на PowerShell и скачивание его при необходимости
+
+:white_check_mark: Fixed conversion / Поправлено конвертирование
+
+:white_check_mark: exe compressed / exe сжат
+
+:white_check_mark: Other edits / Другие правки 
 
 #### 3.1.0 
 :white_check_mark: 3.1.0 в установщик добавлена проверка на PowerShell
