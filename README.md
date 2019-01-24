@@ -32,6 +32,22 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
+#### 3.2.0 
+:white_check_mark: Added to settings: /  В настройки добавлены:
+ - sound /  звук, 
+ - minimize to tray or not / сворачивать в трей или нет, 
+ - Hotkeys / горячие клавиши
+
+:white_check_mark:  Reworked the menu / Переработано меню, 
+
+:white_check_mark:  Added alerts / Добавлены оповещения,
+
+:white_check_mark:  Added tray menu / Добавлено меню в трее,
+
+:white_check_mark:  In order to avoid false triggering of antiviruses, exe is not compressed (if you like, compress yourself) / В целях исключения ложного срабатывания антивирусов exe не сжат (хотите - сжимайте сами)  
+
+:white_check_mark:  Other changes / Другие изменения
+
 #### 3.1.1 - 3.1.4 
 :white_check_mark: Corrected translation / Поправлен перевод
 
