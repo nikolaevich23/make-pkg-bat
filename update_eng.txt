@@ -1,4 +1,11 @@
-MPHT 3.1.4;
+MPHT 3.2.0;
 List of changes:
- - Add 
- - Small fix
+ - Added to settings:
+   sound,
+   minimize to tray or not
+   Hotkeys
+ - Reworked the menu,
+ - Added alerts,
+ - Added tray menu,
+ - In order to avoid false triggering of antiviruses, exe is not compressed (if you like, compress yourself)
+ - Other changes

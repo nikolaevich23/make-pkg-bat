@@ -1,4 +1,11 @@
-MPHT 3.1.4;
-Liste der Anderungen:
- - Deutsche Sprache hinzugefugt
- - Kleinere Anderungen
+MPHT 3.2.0;
+Liste der Änderungen:
+ - Einstellungen hinzugefügt:
+   der Ton
+   auf Tablett minimieren oder nicht
+   Hotkeys
+ - Menü überarbeitet,
+ - Warnmeldungen hinzugefügt
+ - Neues Tray-Menü hinzugefügt
+ - Um falsches Auslösen von Virenschutzprogrammen zu vermeiden, wird exe nicht komprimiert
+ - Andere Änderungen
