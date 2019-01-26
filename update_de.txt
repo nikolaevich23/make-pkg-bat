@@ -1,11 +1,3 @@
-MPHT 3.2.0;
-Liste der Änderungen:
- - Einstellungen hinzugefügt:
-   der Ton
-   auf Tablett minimieren oder nicht
-   Hotkeys
- - Menü überarbeitet,
- - Warnmeldungen hinzugefügt
- - Neues Tray-Menü hinzugefügt
- - Um falsches Auslösen von Virenschutzprogrammen zu vermeiden, wird exe nicht komprimiert
- - Andere Änderungen
+MPHT 3.2.1;
+ - Neukompilieren (behebt einige Störungen in der Konsole);
+ - Hotkeys werden standardmäßig geändert.
