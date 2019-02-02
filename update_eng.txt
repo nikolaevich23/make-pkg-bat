@@ -1,3 +1,2 @@
-MPHT 3.2.1;
- - Recompiling (fixes some glitches in the console);
- - Default hotkeys changed;
+MPHT 3.2.2;
+ - A small edit of the output logs;

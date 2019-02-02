@@ -1,3 +1,2 @@
-MPHT 3.2.1;
- - Neukompilieren (behebt einige Störungen in der Konsole);
- - Hotkeys werden standardmäßig geändert.
+MPHT 3.2.2;
+ - Eine kleine Bearbeitung der Ausgabeprotokolle;
