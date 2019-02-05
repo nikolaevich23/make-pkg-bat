@@ -32,6 +32,10 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
+#### 3.3.0 
+:white_check_mark: Added to settings: / В настройки добавлены:
+- sign or not Package_List.pkg / подписывать или нет Package_List.pkg;
+
 #### 3.2.0 
 :white_check_mark: Added to settings: /  В настройки добавлены:
  - sound /  звук, 
