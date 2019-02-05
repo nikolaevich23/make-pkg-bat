@@ -1,2 +1,2 @@
-MPHT 3.2.2;
- - Eine kleine Bearbeitung der Ausgabeprotokolle;
+MPHT 3.3.0;
+ - Einstellung hinzugefügt: sign oder nicht Package_List.pkg;
