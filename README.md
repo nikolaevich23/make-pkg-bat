@@ -32,6 +32,11 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
+#### 3.4.2
+:white_check_mark: Добавлены кнопки - переподписывать DLC/ExData/Theme;
+
+:white_check_mark: Небольшие правки;
+
 #### 3.4.0 
 :white_check_mark: Кнопка 5 переименована в "меню конвертации";
 
