@@ -1,6 +1,2 @@
-MPHT 3.4.0;
- - Button 5 is renamed to "conversion menu";
- - Added button - re-sign DLC:
-    Specify the root folder of the game, for example BLES * or NPEB *
-    After processing, the DLC will be overwritten;
- - Replaced make_npdata.exe;
+MPHT 3.4.1;
+ - Added buttons - re-sign DLC / ExData / Theme;

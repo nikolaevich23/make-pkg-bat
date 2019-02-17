@@ -1,6 +1,2 @@
-MPHT 3.4.0;
- - Taste 5 wird in "Umwandlungsmenü" umbenannt.
- - Schaltfläche hinzugefügt - DLC neu signieren:
-    Geben Sie den Stammordner des Spiels an, zum Beispiel BLES * oder NPEB *.
-    Nach der Verarbeitung wird der DLC überschrieben.
- - Ersetzte make_npdata.exe;
+MPHT 3.4.1;
+ - Schaltfl?chen hinzugef?gt - DLC / ExData / Theme neu signieren;
