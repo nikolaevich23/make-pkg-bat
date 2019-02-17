@@ -1,2 +1,3 @@
-MPHT 3.4.1;
+MPHT 3.4.2;
  - Schaltfl?chen hinzugef?gt - DLC / ExData / Theme neu signieren;
+ - Kleinere ?nderungen;

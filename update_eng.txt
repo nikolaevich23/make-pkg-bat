@@ -1,2 +1,3 @@
-MPHT 3.4.1;
+MPHT 3.4.2;
  - Added buttons - re-sign DLC / ExData / Theme;
+ - Minor edits;
