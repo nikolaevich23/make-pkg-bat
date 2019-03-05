@@ -1,3 +1,3 @@
-MPHT 3.4.2;
- - Schaltfl?chen hinzugef?gt - DLC / ExData / Theme neu signieren;
- - Kleinere ?nderungen;
+MPHT 3.4.3;
+ - Aktualisierte Datenbank database_lite.txt;
+ - Beim Beenden des Programms werden einige gestartete Prozesse beendet;
