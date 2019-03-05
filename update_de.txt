@@ -1,3 +1,2 @@
-MPHT 3.4.3;
- - Aktualisierte Datenbank database_lite.txt;
- - Beim Beenden des Programms werden einige gestartete Prozesse beendet;
+MPHT 3.4.4;
+ - Packt jetzt leere Ordner (dazu wird eine Textdatei erstellt);
