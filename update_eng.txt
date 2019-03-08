@@ -1,2 +1,2 @@
-MPHT 3.4.4;
- - Now packs empty folders (a text file is created for this);
+MPHT 3.4.5;
+  - Minor edits;
