@@ -32,6 +32,13 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 	
 ### History:
 
+#### 3.5.0
+:white_check_mark:  Переделан механизм подписи *.edat - теперь программа сама определяет его тип;
+
+:white_check_mark:  Обновлено руководство в связи с новыми пунктами;
+
+:white_check_mark:  Мелкие правки;
+
 #### 3.4.2
 :white_check_mark: Добавлены кнопки - переподписывать DLC/ExData/Theme;
 
