@@ -1,2 +1,4 @@
-MPHT 3.4.5;
+MPHT 3.5.0;
+  - The * .edat signature mechanism has been reworked - now the program itself determines its type;
+  - Updated guide in connection with new items;
   - Minor edits;

@@ -1,2 +1,4 @@
-MPHT 3.4.5;
-  - geringfügige Änderungen;
+MPHT 3.5.0;
+  - Der * .edat-Signaturmechanismus wurde überarbeitet - das Programm selbst bestimmt nun seinen Typ;
+  - Aktualisierte Anleitung in Verbindung mit neuen Artikeln;
+  - geringfügige Änderungen;
