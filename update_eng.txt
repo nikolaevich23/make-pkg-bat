@@ -1,4 +1,2 @@
-MPHT 3.5.0;
-  - The * .edat signature mechanism has been reworked - now the program itself determines its type;
-  - Updated guide in connection with new items;
-  - Minor edits;
+MPHT 3.5.1;
+  - Added * .dll to work properly when hacking Klic keys

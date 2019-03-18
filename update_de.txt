@@ -1,4 +1,2 @@
-MPHT 3.5.0;
-  - Der * .edat-Signaturmechanismus wurde überarbeitet - das Programm selbst bestimmt nun seinen Typ;
-  - Aktualisierte Anleitung in Verbindung mit neuen Artikeln;
-  - geringfügige Änderungen;
+MPHT 3.5.1;
+  - * .dll hinzugefügt, um beim Hacken von Klic-Schlüsseln richtig zu funktionieren
