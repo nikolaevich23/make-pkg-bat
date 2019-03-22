@@ -1,2 +1,3 @@
-MPHT 3.5.1;
-  - * .dll hinzugefügt, um beim Hacken von Klic-Schlüsseln richtig zu funktionieren
+MPHT 3.5.2;
+  - 482.bat 484.bat hinzugefügt, um die erforderlichen Dateien unter der gewünschten Firmware (4.82 / 4.84) zu kopieren.
+  - geringfügige Änderungen;

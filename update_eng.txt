@@ -1,2 +1,3 @@
-MPHT 3.5.1;
-  - Added * .dll to work properly when hacking Klic keys
+MPHT 3.5.2;
+  - Added 482.bat 484.bat to copy the necessary files under the desired firmware (4.82 / 4.84);
+  - Minor edits;
