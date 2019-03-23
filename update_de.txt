@@ -1,3 +1,2 @@
-MPHT 3.5.2;
-  - 482.bat 484.bat hinzugefügt, um die erforderlichen Dateien unter der gewünschten Firmware (4.82 / 4.84) zu kopieren.
-  - geringfügige Änderungen;
+MPHT 3,5,3;
+  - In Verbindung mit dem Update der Site werden ps3xploit-Dateien für zusätzliche Optionen gelöscht.

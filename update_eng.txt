@@ -1,3 +1,2 @@
-MPHT 3.5.2;
-  - Added 482.bat 484.bat to copy the necessary files under the desired firmware (4.82 / 4.84);
-  - Minor edits;
+MPHT 3.5.3;
+  - In connection with the update of the site ps3xploit files for additional options deleted.
