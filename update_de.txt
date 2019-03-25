@@ -1,2 +1,4 @@
-MPHT 3,5,3;
-  - In Verbindung mit dem Update der Site werden ps3xploit-Dateien für zusätzliche Optionen gelöscht.
+MPHT 3.5.4;
+  - Überprüfung der * .pkg-Dateien beim Erstellen einer Liste mit * .pkg hinzugefügt.
+  Wenn die Datei keinen pkg-Header hat, wird die Datei in den Ordner NOT_PKG verschoben.
+  (Wenn Sie Teile der Paketdatei heruntergeladen haben, sollte diese zusammengeklebt werden.)

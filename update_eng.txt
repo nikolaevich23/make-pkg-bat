@@ -1,2 +1,4 @@
-MPHT 3.5.3;
-  - In connection with the update of the site ps3xploit files for additional options deleted.
+MPHT 3.5.4;
+  - Added checking * .pkg files when creating a list of * .pkg.
+  If the file has no pkg header, the file is moved to the NOT_PKG folder.
+  (if you downloaded parts of the pkg file, then it should be glued together)
