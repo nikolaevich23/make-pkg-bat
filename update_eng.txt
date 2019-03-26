@@ -1,4 +1,2 @@
-MPHT 3.5.4;
-  - Added checking * .pkg files when creating a list of * .pkg.
-  If the file has no pkg header, the file is moved to the NOT_PKG folder.
-  (if you downloaded parts of the pkg file, then it should be glued together)
+MPHT 3.5.5;
+  - Added automatic extraction 2P0001-PS2U10000_00-0000111122223333.rap to all classic PS2 games when creating a RIF.
