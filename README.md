@@ -31,6 +31,13 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 + Для старых версий Windows требуется [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
 	
 ### History:
+#### 3.5.5
+:white_check_mark: Добавлено автоматическое извлечение 2P0001-PS2U10000_00-0000111122223333.rap ко всем классическим PS2 играм при создании RIF.
+
+#### 3.5.4 
+:white_check_mark:  Добавлена проверка *.pkg файлов при создании списка *.pkg. 
+Если файл не имеет заголовка по стандарту pkg, то файл перемещается в папку NOT_PKG
+(если вы качали части файла pkg, то его надо склеивать)
 
 #### 3.5.3 
 :white_check_mark:  В связи с обновлением сайта ps3xploit файлы на дополнительные опции удалены, версия облегчена. 
