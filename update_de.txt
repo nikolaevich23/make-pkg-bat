@@ -1,2 +1,2 @@
-MPHT 3,5,5;
-  - Die automatische Extraktion 2P0001-PS2U10000_00-0000111122223333.rap wurde allen klassischen PS2-Spielen beim Erstellen einer RIF hinzugefügt.
+MPHT 3.5.6;
+ - PS3xploit-Kündiger aktualisiert;
