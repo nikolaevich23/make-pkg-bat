@@ -294,7 +294,7 @@ Add(LineBreakEx,10642298,273,602)
 Add(GLabel,11772850,756,994)
 {
  Left=15
- Top=300
+ Top=345
  Width=90
  Height=28
  Color=-16777203
@@ -316,7 +316,7 @@ Add(GLabel,11772850,756,994)
 Add(GLabel,14171711,763,1043)
 {
  Left=105
- Top=300
+ Top=345
  Width=120
  Height=28
  Color=-16777203
@@ -378,8 +378,8 @@ Add(MainForm,12151591,1246,70)
 {
  Left=50
  Top=100
- Width=782
- Height=462
+ Width=902
+ Height=503
  Color=15780518
  Font=[Times New Roman,10,1,0,204]
  Layout="all"
@@ -488,13 +488,13 @@ Add(StrCat,16352698,413,35)
  MakeTrans(Str2)
  link(onStrCat,5250214:doWork,[])
 }
-Add(LineBreak,223026,616,931)
+Add(LineBreak,11429929,616,931)
 {
  Caption="start"
  link(Out,172456:doWork2,[])
  Primary=[4272780,777,-91]
 }
-Add(LineBreak,896215,392,1071)
+Add(LineBreak,10296875,392,1071)
 {
  link(Out,8381860:doEvent1,[])
  Primary=[8147362,980,-994]
@@ -527,13 +527,12 @@ Add(LineBreakEx,13972144,1218,440)
 }
 Add(RichEdit,513742,1281,588)
 {
- Left=335
+ Left=325
  Top=21
- Width=440
- Height=347
+ Width=570
+ Height=392
  Color=15780518
- Font=[Times New Roman,9,1,0,204]
- ParentFont=0
+ Font=[Lucida Console,8,1,0,204]
  KeyPreview=1
  Ctl3D=0
  Name="Консоль"
@@ -564,8 +563,8 @@ Add(Hub,15674606,1358,833)
 }
 Add(ProgressBarRush,2204639,931,385)
 {
- Top=413
- Width=776
+ Top=454
+ Width=896
  Align=4
  Color=15780518
  ColorFrom=-16777203
@@ -591,7 +590,7 @@ Add(HubEx,2224817,147,238)
  Angle=3
  link(onEvent,5750879:doStrCat,[(151,209)])
 }
-Add(LineBreak,4011270,980,994)
+Add(LineBreak,1477160,980,994)
 {
  link(Out,12222880:doEvent1,[])
  Primary=[8337777,7,-616]
@@ -599,7 +598,7 @@ Add(LineBreak,4011270,980,994)
 Add(GLabel,13791859,973,98)
 {
  Left=15
- Top=340
+ Top=385
  Width=90
  Height=28
  Color=-16777203
@@ -622,7 +621,7 @@ Add(GLabel,13791859,973,98)
 Add(GLabel,9516142,973,56)
 {
  Left=105
- Top=340
+ Top=385
  Width=120
  Height=28
  Color=-16777203
@@ -642,7 +641,7 @@ Add(GLabel,9516142,973,56)
  Antialiased=0
  Point(doColor)
 }
-Add(LineBreak,6392244,700,35)
+Add(LineBreak,9882591,700,35)
 {
  link(Out,7931353:doEvent1,[])
  Primary=[4594940,-238,917]
@@ -742,7 +741,7 @@ BEGIN_SDK
   }
   Add(MainForm,2588236,105,91)
   {
-   Left=3
+   Left=8
    Top=65
    Width=319
    Height=274
@@ -989,32 +988,32 @@ BEGIN_SDK
    link(onEvent5,14624466:In,[])
    link(onEvent6,7589869:In,[(301,531)(301,538)])
   }
-  Add(LineBreak,8279118,105,70)
+  Add(LineBreak,4121378,105,70)
   {
    link(Out,14938098:doSetTheme,[(158,76)(158,104)])
    Primary=[1929658,203,420]
   }
-  Add(LineBreak,6016198,140,238)
+  Add(LineBreak,6058854,140,238)
   {
    link(Out,8834790:doSetTheme,[])
    Primary=[301344,168,259]
   }
-  Add(LineBreak,7523473,35,266)
+  Add(LineBreak,6118447,35,266)
   {
    link(Out,9668916:doSetTheme,[])
    Primary=[13103810,273,238]
   }
-  Add(LineBreak,10999498,14,455)
+  Add(LineBreak,3878241,14,455)
   {
    link(Out,207919:doSetTheme,[])
    Primary=[2344149,294,56]
   }
-  Add(LineBreak,6967870,231,490)
+  Add(LineBreak,10857903,231,490)
   {
    link(Out,3912325:doEvent1,[])
    Primary=[12875360,-196,-462]
   }
-  Add(LineBreak,12612898,749,63)
+  Add(LineBreak,9999064,749,63)
   {
    Caption="wav"
    link(Out,14659419:onEvent7,[(797,69)(797,55)])
@@ -1026,19 +1025,19 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,2065703:In,[])
   }
-  Add(LineBreak,16274380,630,84)
+  Add(LineBreak,3116760,630,84)
   {
    Caption="wav"
    link(Out,12013413:doEvent1,[])
    Primary=[11364155,-385,-7]
   }
-  Add(LineBreak,3698211,630,91)
+  Add(LineBreak,2086367,630,91)
   {
    Caption="wav"
    link(Out,12013413:doEvent2,[])
    Primary=[10343171,-364,130]
   }
-  Add(LineBreak,15386344,630,105)
+  Add(LineBreak,13766679,630,105)
   {
    Caption="wav"
    link(Out,12013413:doEvent3,[(666,111)(666,104)])
@@ -1049,7 +1048,7 @@ BEGIN_SDK
    link(onEvent1,3072129:In,[])
    link(onEvent2,10764515:doEvent4,[(159,272)(159,234)(100,234)(100,195)])
   }
-  Add(LineBreak,1965094,630,105)
+  Add(LineBreak,14136978,630,105)
   {
    Caption="wav"
    link(Out,12013413:doEvent4,[])
@@ -1078,9 +1077,9 @@ BEGIN_SDK
   Add(Hub,1344003,35,112)
   {
    link(onEvent1,7389893:In,[(56,118)(56,97)])
-   link(onEvent2,2588236:doVisible,[])
+   link(onEvent2,2588236:doVisible,[(99,123)])
   }
-  Add(LineBreak,7009617,700,147)
+  Add(LineBreak,8919019,700,147)
   {
    link(Out,2006862:doSearch,[])
    Primary=[7389893,-637,-56]
@@ -1114,7 +1113,7 @@ BEGIN_SDK
    link(onClick,9057128:doEvent1,[(572,232)(572,229)])
    link(onMouseEnter,9035475:doWork2,[])
   }
-  Add(LineBreak,4345322,481,240)
+  Add(LineBreak,8156012,481,240)
   {
    link(Out,2500716:doSetTheme,[(517,246)(517,232)])
    Primary=[14624466,-173,278]
@@ -1127,7 +1126,7 @@ BEGIN_SDK
    link(onEvent3,938899:doBrowse,[(638,243)(638,281)])
    link(onEvent4,425970:In,[(592,250)(592,274)])
   }
-  Add(LineBreak,9731770,630,119)
+  Add(LineBreak,2331847,630,119)
   {
    Caption="wav"
    link(Out,12013413:doEvent5,[(679,125)])
@@ -1156,12 +1155,12 @@ BEGIN_SDK
    link(onFString,1913144:doWork3,[(782,281)(782,355)(702,355)(702,428)(796,428)])
    link(Str1,6558694:Result,[(744,267)(678,267)])
   }
-  Add(LineBreak,2363375,42,196)
+  Add(LineBreak,12010160,42,196)
   {
    link(Out,10764515:doEvent5,[])
    Primary=[425970,557,72]
   }
-  Add(LineBreak,14649259,411,360)
+  Add(LineBreak,16276467,411,360)
   {
    link(Out,2983945:doSetTheme,[(446,366)(446,358)])
    Primary=[7589869,-103,172]
@@ -1203,7 +1202,7 @@ BEGIN_SDK
    link(onEvent3,2388409:doBrowse,[(570,362)(570,400)])
    link(onEvent4,6742757:In,[(549,369)(549,393)])
   }
-  Add(LineBreak,3004123,630,133)
+  Add(LineBreak,6302915,630,133)
   {
    Caption="wav"
    link(Out,12013413:doEvent6,[(668,139)(668,125)])
@@ -1235,7 +1234,7 @@ BEGIN_SDK
    link(Str2,16001568:Result,[(698,382)(658,382)(658,436)(618,436)])
    link(Str3,9579422:Result,[(705,382)(683,382)(683,485)(660,485)])
   }
-  Add(LineBreak,3296607,42,217)
+  Add(LineBreak,12512618,42,217)
   {
    link(Out,10764515:doEvent6,[(96,223)(96,209)])
    Primary=[6742757,482,170]
@@ -1307,13 +1306,13 @@ Add(HubEx,14095683,805,175)
 {
  link(onEvent,699495:doShellExec,[])
 }
-Add(LineBreak,5079767,693,175)
+Add(LineBreak,15425423,693,175)
 {
  Caption="форум"
  link(Out,8235748:doData,[])
  Primary=[4830357,931,161]
 }
-Add(LineBreak,1283750,700,217)
+Add(LineBreak,11834556,700,217)
 {
  Caption="игры"
  link(Out,4656256:doData,[])
@@ -1328,28 +1327,29 @@ Add(InfoTip,7192193,665,154)
 }
 Add(IndexToChanel,1527168,1491,231)
 {
- Count=21
+ Count=22
  Data=Integer(1)
  Point(Index)
  link(onEvent2,5774005:In,[])
- link(onEvent3,781353:In,[])
- link(onEvent9,15019758:In,[(1549,293)(1549,286)])
- link(onEvent10,7494680:In,[(1567,300)(1567,293)])
- link(onEvent12,16708471:In,[(1545,314)(1545,307)])
- link(onEvent13,10916653:In,[(1563,321)(1563,314)])
- link(onEvent14,2052813:In,[])
- link(onEvent16,14044639:In,[(1553,342)(1553,335)])
- link(onEvent17,4830357:In,[(1573,349)(1573,342)])
- link(onEvent18,14692742:In,[])
- link(onEvent19,16453582:In,[(1577,363)(1577,377)])
- link(onEvent21,16453520:doWork1,[(1573,377)(1573,384)])
+ link(onEvent3,7697387:In,[(1549,251)(1549,258)])
+ link(onEvent4,781353:In,[(1531,258)(1531,265)])
+ link(onEvent10,15019758:In,[(1549,300)(1549,286)])
+ link(onEvent11,7494680:In,[(1567,307)(1567,293)])
+ link(onEvent13,16708471:In,[(1545,321)(1545,307)])
+ link(onEvent14,10916653:In,[(1563,328)(1563,314)])
+ link(onEvent15,2052813:In,[(1545,335)(1545,328)])
+ link(onEvent17,14044639:In,[(1553,349)(1553,335)])
+ link(onEvent18,4830357:In,[(1573,356)(1573,342)])
+ link(onEvent19,14692742:In,[(1573,363)(1573,356)])
+ link(onEvent20,16453582:In,[(1577,370)(1577,377)])
+ link(onEvent22,16453520:doWork1,[])
 }
-Add(LineBreak,2356210,672,399)
+Add(LineBreak,16601824,672,399)
 {
  link(Out,690554:doConvert,[])
  Primary=[7981491,413,224]
 }
-Add(LineBreak,10140099,1127,623)
+Add(LineBreak,4300524,1127,623)
 {
  Caption="clear"
  link(Out,4253140:doEvent1,[])
@@ -1424,7 +1424,7 @@ BEGIN_SDK
   Add(Panel,1494575,105,42)
   {
    Left=115
-   Top=340
+   Top=385
    Width=211
    Height=28
    Color=15780518
@@ -1528,7 +1528,7 @@ Add(HubEx,13753692,903,56)
 Add(ButtonRush,9283463,748,56)
 {
  Left=231
- Top=340
+ Top=385
  Width=90
  Height=28
  Font=[Tahoma,10,1,0,204]
@@ -1565,7 +1565,7 @@ Add(Application,9869308,2219,854)
 {
  Wait=1
 }
-Add(LineBreak,15930987,1092,98)
+Add(LineBreak,16014592,1092,98)
 {
  link(Out,753852:doEvent2,[])
  Primary=[12663987,1120,847]
@@ -1616,13 +1616,13 @@ Add(GetIndexData,15425070,602,580)
 }
 Add(StrList,16107174,616,525)
 {
- Strings=#4:Menu|17:<1> Clear Console|8:<6> Exit|8:Settings|4:Logs|6:Sounds|16:Minimize to tray|21:Sign Package_List.pkg|18:<39> Color setting|23:<34> Customize Hot Keys|8:Language|12:<43> Русский|12:<44> English|12:<45> Deutsch|4:Help|9:<38> Help|10:<14> Forum|13:<14> Download|11:<41> Update|1:-|10:<42> About|
+ Strings=#4:Menu|16:<1>Clear Console|20:<9>Delete Temp Files|7:<6>Exit|8:Settings|4:Logs|6:Sounds|16:Minimize to tray|21:Sign Package_List.pkg|17:<39>Color setting|22:<34>Customize Hot Keys|8:Language|11:<43>Русский|11:<44>English|11:<45>Deutsch|4:Help|8:<38>Help|9:<14>Forum|12:<14>Download|10:<41>Update|1:-|9:<42>About|
 }
 Add(StrList,8319746,574,525)
 {
- Strings=#4:Меню|19:<1>Очистить консоль|8:<6>Выход|9:Настройки|4:Логи|5:Звуки|18:Сворачивать в трей|28:Подписывать Package_List.pkg|19:<39>Настройка цвета|28:<34>Настройка горячих клавиш|4:Язык|11:<43>Русский|11:<44>English|11:<45>Deutsch|6:Помощь|11:<38>Справка|9:<14>Форум|11:<14>Закачка|14:<41>Обновление|1:-|15:<42>О программе|
+ Strings=#4:Меню|19:<1>Очистить консоль|26:<9>Удалить временные файлы|8:<6>Выход|9:Настройки|4:Логи|5:Звуки|18:Сворачивать в трей|28:Подписывать Package_List.pkg|19:<39>Настройка цвета|28:<34>Настройка горячих клавиш|4:Язык|11:<43>Русский|11:<44>English|11:<45>Deutsch|6:Помощь|11:<38>Справка|9:<14>Форум|11:<14>Закачка|14:<41>Обновление|1:-|15:<42>О программе|
 }
-Add(LineBreak,1632786,1344,476)
+Add(LineBreak,2682233,1344,476)
 {
  Type=1
  link(Data,6728992:Array,[])
@@ -1639,18 +1639,18 @@ Add(Hub,8051018,1260,868)
  link(onEvent6,15296831:In,[])
  link(onEvent7,10929958:In,[])
 }
-Add(LineBreak,16247993,2058,896)
+Add(LineBreak,4336189,2058,896)
 {
  Caption="lang"
  link(Out,12614378:doRead,[])
  Primary=[2362230,-658,-21]
 }
-Add(LineBreak,13626351,343,581)
+Add(LineBreak,1572354,343,581)
 {
  link(Out,3352529:doEvent1,[])
  Primary=[16219496,1813,315]
 }
-Add(LineBreak,14315971,700,245)
+Add(LineBreak,2434206,700,245)
 {
  Caption="хелп"
  link(Out,13115551:doWork1,[(753,251)])
@@ -1812,7 +1812,7 @@ BEGIN_SDK
   }
   Add(StrCat,2602026,126,232)
   {
-   Str2="ver.txt"
+   Str2="tools\ver.txt"
    link(onStrCat,14610949:doOpen,[(162,238)(162,241)])
    link(Str1,10892412:CurrentDir,[(132,195)(142,195)])
   }
@@ -2022,12 +2022,12 @@ Add(Hub,8889090,1113,858)
  OutCount=1
  link(onEvent1,6488617:In,[(1139,864)(1139,868)(1101,868)(1101,801)])
 }
-Add(LineBreak,7829429,826,830)
+Add(LineBreak,4350326,826,830)
 {
  link(Out,15491903:doEvent1,[])
  Primary=[8493099,91,-266]
 }
-Add(LineBreak,15111011,308,812)
+Add(LineBreak,6911654,308,812)
 {
  Caption="размер"
  link(Out,2688232:doWork7,[(425,818)(425,808)])
@@ -2123,7 +2123,7 @@ Add(Hub,15491903,875,830)
  link(onEvent1,16776915:doOperation,[(907,836)(907,843)])
  link(onEvent2,12467587:doOperation,[(903,843)(903,808)])
 }
-Add(LineBreak,394382,798,515)
+Add(LineBreak,5002012,798,515)
 {
  Caption="байт"
  link(Out,11180403:doSplit,[])
@@ -2196,13 +2196,13 @@ Add(Memory,346382,168,840)
 {
  link(onData,7363037:doData,[(212,846)(212,881)(156,881)(156,902)])
 }
-Add(LineBreak,5346365,28,846)
+Add(LineBreak,10708356,28,846)
 {
  Caption="скорость"
  link(Out,4253600:doSplit,[])
  Primary=[8185162,1645,264]
 }
-Add(LineBreak,82172,287,742)
+Add(LineBreak,12042717,287,742)
 {
  Caption="скорость"
  link(Out,5265295:doCompare,[(356,748)(356,780)])
@@ -2215,18 +2215,18 @@ Add(InfoTip,16040554,21,819)
  Width=246
  Height=130
 }
-Add(LineBreak,12601434,28,704)
+Add(LineBreak,13492544,28,704)
 {
  Caption="прогресс"
  link(Out,9430107:doWork2,[])
  Primary=[13979603,1715,364]
 }
-Add(LineBreak,10437476,469,777)
+Add(LineBreak,15115872,469,777)
 {
  link(Out,1862247:doEvent1,[])
  Primary=[5185838,-238,-37]
 }
-Add(LineBreak,12593560,308,707)
+Add(LineBreak,1054980,308,707)
 {
  link(Out,7952447:doValue,[])
  Primary=[4344519,-105,-2]
@@ -2263,8 +2263,8 @@ Add(HubEx,10637458,1064,588)
 }
 Add(GLabel,1675013,798,343)
 {
- Top=399
- Width=776
+ Top=439
+ Width=896
  Align=4
  Color=15780518
  Font=[Times New Roman,11,1,0,204]
@@ -2480,12 +2480,12 @@ BEGIN_SDK
    link(onCalcDelta,2540144:doOperation,[])
    link(Data,10523508:Value,[])
   }
-  Add(LineBreak,16532450,567,119)
+  Add(LineBreak,15591276,567,119)
   {
    link(Out,773702:doStop,[])
    Primary=[12891159,272,441]
   }
-  Add(LineBreak,2542656,567,112)
+  Add(LineBreak,8599155,567,112)
   {
    link(Out,773702:doTimer,[])
    Primary=[5001101,181,448]
@@ -2493,7 +2493,7 @@ BEGIN_SDK
   Add(Memory,10523508,679,56)
   {
   }
-  Add(LineBreak,15122924,630,56)
+  Add(LineBreak,782185,630,56)
   {
    link(Out,10523508:doValue,[])
    Primary=[1682349,56,329]
@@ -2505,7 +2505,7 @@ BEGIN_SDK
    ResultType=0
    link(onResult,2020687:doStrCat,[])
   }
-  Add(LineBreak,16275818,699,616)
+  Add(LineBreak,1032540,699,616)
   {
    link(Out,6604786:doWork5,[])
    Primary=[4114932,141,-504]
@@ -2521,22 +2521,22 @@ BEGIN_SDK
    Width=316
    Height=151
   }
-  Add(LineBreak,13096598,762,602)
+  Add(LineBreak,6452430,762,602)
   {
    link(Out,6604786:doWork3,[])
    Primary=[16754028,15,-385]
   }
-  Add(LineBreak,12828403,734,609)
+  Add(LineBreak,2016908,734,609)
   {
    link(Out,6604786:doWork4,[])
    Primary=[4422585,-55,-364]
   }
-  Add(LineBreak,9677147,595,245)
+  Add(LineBreak,688598,595,245)
   {
    link(Out,16640474:doOperation,[])
    Primary=[6340408,363,315]
   }
-  Add(LineBreak,8745029,693,217)
+  Add(LineBreak,5252909,693,217)
   {
    link(Out,8892864:doOperation,[])
    Primary=[9911054,-42,133]
@@ -2547,12 +2547,12 @@ BEGIN_SDK
    Width=316
    Height=109
   }
-  Add(LineBreak,450891,581,343)
+  Add(LineBreak,8970833,581,343)
   {
    link(Out,11486028:doEvent1,[])
    Primary=[5818602,251,196]
   }
-  Add(LineBreak,9219757,790,595)
+  Add(LineBreak,13556811,790,595)
   {
    link(Out,6604786:doWork2,[])
    Primary=[5709946,22,-252]
@@ -2563,12 +2563,12 @@ BEGIN_SDK
    Width=316
    Height=109
   }
-  Add(LineBreak,12958441,1057,14)
+  Add(LineBreak,9136514,1057,14)
   {
    link(Out,13888189:onStatus,[])
    Primary=[12224167,-134,574]
   }
-  Add(LineBreak,6190780,1015,7)
+  Add(LineBreak,709689,1015,7)
   {
    link(Out,13888189:onDownload,[])
    Primary=[9304207,48,504]
@@ -2579,7 +2579,7 @@ BEGIN_SDK
   }
   Add(StrCat,7947497,322,154)
   {
-   Str2="ver.txt"
+   Str2="tools\ver.txt"
    link(onStrCat,5349380:doOpen,[(358,160)(358,163)])
    link(Str1,15152328:CurrentDir,[(328,117)(324,117)])
   }
@@ -2637,7 +2637,7 @@ BEGIN_SDK
    Default=Integer(1)
    link(onData,11837970:doEvent1,[(191,83)(191,128)(75,128)(75,173)])
   }
-  Add(LineBreak,3156749,217,98)
+  Add(LineBreak,11519233,217,98)
   {
    Type=1
    link(Data,8818305:Value,[(223,72)(188,72)(188,121)(153,121)])
@@ -2689,7 +2689,7 @@ BEGIN_SDK
    Width=519
    Height=235
   }
-  Add(LineBreak,14003880,672,532)
+  Add(LineBreak,5673197,672,532)
   {
    link(Out,15399492:doEvent1,[])
    Primary=[13958465,-162,49]
@@ -2711,7 +2711,7 @@ BEGIN_SDK
    Data=String(https://raw.githubusercontent.com/nikolaevich23/make-pkg-bat/master/update_eng.txt)
    link(onEventData,8284730:doEvent2,[(119,600)(119,601)(126,601)(126,573)])
   }
-  Add(LineBreak,15484611,70,322)
+  Add(LineBreak,4265114,70,322)
   {
    Caption="eng"
    link(Out,13772075:doValue,[])
@@ -2725,7 +2725,7 @@ BEGIN_SDK
    Point(onYES)
    MakeTrans(Message)
   }
-  Add(LineBreak,6729131,28,77)
+  Add(LineBreak,15376223,28,77)
   {
    Caption="button"
    link(Out,7534477:doCalcDelta,[])
@@ -2742,23 +2742,23 @@ BEGIN_SDK
   {
    link(onData,7029845:doEvent1,[])
   }
-  Add(LineBreak,354345,70,385)
+  Add(LineBreak,14073643,70,385)
   {
    link(Out,11251385:doCompare,[(111,391)(111,390)])
    Primary=[11207047,301,-154]
   }
-  Add(LineBreak,12481634,35,595)
+  Add(LineBreak,12795884,35,595)
   {
    Caption="eng"
    link(Out,6538189:doData,[(73,601)(73,600)])
    Primary=[11950067,147,-210]
   }
-  Add(LineBreak,1689683,77,434)
+  Add(LineBreak,8010888,77,434)
   {
    link(Out,4311042:doCompare,[(115,440)(115,439)])
    Primary=[3466627,105,-42]
   }
-  Add(LineBreak,16657966,35,175)
+  Add(LineBreak,7657400,35,175)
   {
    Caption="start"
    link(Out,11837970:doEvent2,[(83,181)(83,180)])
@@ -2774,7 +2774,7 @@ BEGIN_SDK
   Add(Memory,6509857,315,329)
   {
   }
-  Add(LineBreak,3769898,273,378)
+  Add(LineBreak,4377690,273,378)
   {
    link(Out,930203:doCompare,[(311,384)(311,390)])
    Primary=[5698468,217,-133]
@@ -2791,12 +2791,12 @@ BEGIN_SDK
    Width=183
    Height=221
   }
-  Add(LineBreak,10605462,791,595)
+  Add(LineBreak,8520454,791,595)
   {
    link(Out,6604786:doWork1,[(827,601)(827,594)])
    Primary=[8781663,161,-42]
   }
-  Add(LineBreak,2183751,273,329)
+  Add(LineBreak,8212986,273,329)
   {
    link(Out,6509857:doValue,[])
    Primary=[4454997,-77,-7]
@@ -2845,27 +2845,27 @@ BEGIN_SDK
    link(onEvent2,8415717:In,[])
    link(onEvent3,9949307:In,[])
   }
-  Add(LineBreak,4523426,427,539)
+  Add(LineBreak,8544418,427,539)
   {
    link(Out,960405:doEvent1,[])
    Primary=[15222770,-56,28]
   }
-  Add(LineBreak,3160028,210,693)
+  Add(LineBreak,4967770,210,693)
   {
    link(Out,3500077:doSplit,[])
    Primary=[8415717,294,-147]
   }
-  Add(LineBreak,227904,56,700)
+  Add(LineBreak,9662007,56,700)
   {
    link(Out,14515462:doSplit,[])
    Primary=[2505425,448,-161]
   }
-  Add(LineBreak,2833034,434,581)
+  Add(LineBreak,8071387,434,581)
   {
    link(Out,11755566:doEvent1,[])
    Primary=[1418902,-287,231]
   }
-  Add(LineBreak,11702690,434,588)
+  Add(LineBreak,11341239,434,588)
   {
    link(Out,11755566:doEvent2,[])
    Primary=[3219976,-133,217]
@@ -2877,7 +2877,7 @@ BEGIN_SDK
    link(onFalse,2106543:doCompare,[(572,698)(572,722)(516,722)(516,747)])
    link(Op1,11479588:Var2,[(534,667)(531,667)])
   }
-  Add(LineBreak,6472011,476,686)
+  Add(LineBreak,15684663,476,686)
   {
    link(Out,4760013:doCompare,[(521,692)(521,691)])
    Primary=[4897864,-189,-105]
@@ -2890,12 +2890,12 @@ BEGIN_SDK
    link(onEvent1,4454997:In,[])
    link(onEvent2,6198123:In,[])
   }
-  Add(LineBreak,12053661,476,616)
+  Add(LineBreak,10062777,476,616)
   {
    link(Out,15086599:doValue,[])
    Primary=[6198123,-280,-287]
   }
-  Add(LineBreak,7145033,203,742)
+  Add(LineBreak,12903512,203,742)
   {
    Caption="en"
    link(Out,12160574:doString,[])
@@ -2933,23 +2933,23 @@ BEGIN_SDK
    Count=3
    Point(onNotFound)
   }
-  Add(LineBreak,6102026,343,693)
+  Add(LineBreak,868054,343,693)
   {
    link(Out,10374339:doSplit,[])
    Primary=[9949307,161,-140]
   }
-  Add(LineBreak,3539907,434,595)
+  Add(LineBreak,16035902,434,595)
   {
    link(Out,11755566:doEvent3,[])
    Primary=[12819085,21,210]
   }
-  Add(LineBreak,4374823,343,742)
+  Add(LineBreak,12326922,343,742)
   {
    Caption="de"
    link(Out,7414985:doString,[])
    Primary=[3892346,259,0]
   }
-  Add(LineBreak,15767022,63,756)
+  Add(LineBreak,3220188,63,756)
   {
    Caption="ru"
    link(Out,5038367:doString,[])
@@ -2975,13 +2975,13 @@ BEGIN_SDK
   {
    link(Data,13772075:Value,[])
   }
-  Add(LineBreak,9287414,28,560)
+  Add(LineBreak,14924824,28,560)
   {
    Caption="ru"
    link(Out,1249253:doData,[(69,566)(69,565)])
    Primary=[7069520,140,-126]
   }
-  Add(LineBreak,5097937,35,637)
+  Add(LineBreak,11418105,35,637)
   {
    Caption="de"
    link(Out,9471515:doData,[])
@@ -3008,12 +3008,12 @@ BEGIN_SDK
    MakeTrans(Message)
   }
 END_SDK
-Add(LineBreak,10951836,1050,105)
+Add(LineBreak,10419685,1050,105)
 {
  link(Out,753852:doEvent3,[])
  Primary=[157600,630,-56]
 }
-Add(LineBreak,9867559,602,777)
+Add(LineBreak,14445074,602,777)
 {
  link(Out,15953874:doEvent2,[])
  Primary=[6223101,1176,-707]
@@ -3368,22 +3368,22 @@ BEGIN_SDK
      OutCount=1
      link(onEvent1,15226850:doData,[])
     }
-    Add(LineBreak,5257228,490,329)
+    Add(LineBreak,5352633,490,329)
     {
      link(Out,12881647:doEvent2,[])
      Primary=[13520297,-427,-203]
     }
-    Add(LineBreak,1384733,490,511)
+    Add(LineBreak,11726593,490,511)
     {
      link(Out,4395277:doEvent2,[])
      Primary=[304842,-427,-378]
     }
-    Add(LineBreak,11102837,525,280)
+    Add(LineBreak,594026,525,280)
     {
      link(Out,11884574:doSelectColor,[])
      Primary=[10865198,-490,-231]
     }
-    Add(LineBreak,4953411,525,448)
+    Add(LineBreak,6354314,525,448)
     {
      link(Out,7571357:doSelectColor,[])
      Primary=[13392864,-490,-392]
@@ -3485,42 +3485,42 @@ BEGIN_SDK
    Default=Integer(15780518)
    link(onData,12502199:doEvent1,[(859,328)(859,335)])
   }
-  Add(LineBreak,12609453,469,161)
+  Add(LineBreak,587152,469,161)
   {
    link(Out,4238924:doValue,[])
    Primary=[10065142,917,-28]
   }
-  Add(LineBreak,12452274,777,322)
+  Add(LineBreak,7284132,777,322)
   {
    link(Out,5264675:doValue,[])
    Primary=[1740037,728,-168]
   }
-  Add(LineBreak,13584785,455,329)
+  Add(LineBreak,6215115,455,329)
   {
    link(Out,12459283:doValue,[])
    Primary=[10538990,1015,-182]
   }
-  Add(LineBreak,13704638,784,161)
+  Add(LineBreak,12719459,784,161)
   {
    link(Out,6771406:doValue,[])
    Primary=[10863779,644,-21]
   }
-  Add(LineBreak,15774402,707,28)
+  Add(LineBreak,8367484,707,28)
   {
    link(Out,6339323:doWork1,[])
    Primary=[6403257,-91,147]
   }
-  Add(LineBreak,15817869,672,35)
+  Add(LineBreak,13695149,672,35)
   {
    link(Out,6339323:doWork2,[])
    Primary=[13544393,245,147]
   }
-  Add(LineBreak,14631175,637,42)
+  Add(LineBreak,12508711,637,42)
   {
    link(Out,6339323:doWork3,[])
    Primary=[12011473,-21,294]
   }
-  Add(LineBreak,4827388,602,49)
+  Add(LineBreak,11635999,602,49)
   {
    link(Out,6339323:doWork4,[])
    Primary=[9966227,294,280]
@@ -3531,7 +3531,7 @@ BEGIN_SDK
    link(onEvent1,6403257:In,[])
    link(onEvent2,3661014:In,[])
   }
-  Add(LineBreak,6731944,448,217)
+  Add(LineBreak,2705879,448,217)
   {
    link(Out,238968:doRead,[])
    Primary=[9870944,-280,-70]
@@ -3542,7 +3542,7 @@ BEGIN_SDK
    Width=281
    Height=158
   }
-  Add(LineBreak,5684857,742,210)
+  Add(LineBreak,8200935,742,210)
   {
    link(Out,10976251:doRead,[])
    Primary=[12824094,-574,-56]
@@ -3559,7 +3559,7 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,13544393:In,[])
   }
-  Add(LineBreak,1589459,455,385)
+  Add(LineBreak,1179514,455,385)
   {
    link(Out,5360076:doRead,[])
    Primary=[1581449,-287,-224]
@@ -3576,7 +3576,7 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,12011473:In,[])
   }
-  Add(LineBreak,9295593,756,364)
+  Add(LineBreak,15825578,756,364)
   {
    link(Out,7892727:doRead,[])
    Primary=[3193779,-588,-196]
@@ -3613,22 +3613,22 @@ BEGIN_SDK
    link(onEvent1,12502199:doEvent2,[(894,370)(894,356)(856,356)(856,342)])
    link(onEvent2,699843:In,[])
   }
-  Add(LineBreak,3361018,1274,133)
+  Add(LineBreak,10358847,1274,133)
   {
    link(Out,3991701:doWork1,[])
    Primary=[8736113,-679,91]
   }
-  Add(LineBreak,3057026,1274,140)
+  Add(LineBreak,3240030,1274,140)
   {
    link(Out,3991701:doWork2,[])
    Primary=[11852139,-372,77]
   }
-  Add(LineBreak,1765169,1274,147)
+  Add(LineBreak,10708478,1274,147)
   {
    link(Out,3991701:doWork3,[])
    Primary=[7690046,-686,245]
   }
-  Add(LineBreak,5756593,1274,154)
+  Add(LineBreak,11053872,1274,154)
   {
    link(Out,3991701:doWork4,[])
    Primary=[699843,-378,217]
@@ -3649,27 +3649,27 @@ BEGIN_SDK
    link(onEvent10,10426858:In,[])
    link(onEvent11,7509820:In,[])
   }
-  Add(LineBreak,11272084,427,231)
+  Add(LineBreak,13283983,427,231)
   {
    link(Out,1232573:doWork2,[])
    Primary=[1509699,-210,21]
   }
-  Add(LineBreak,6458613,742,224)
+  Add(LineBreak,2280031,742,224)
   {
    link(Out,2968347:doWork2,[])
    Primary=[10310942,-525,35]
   }
-  Add(LineBreak,6939806,420,392)
+  Add(LineBreak,2543665,420,392)
   {
    link(Out,7892525:doWork2,[])
    Primary=[8401836,-203,-126]
   }
-  Add(LineBreak,11834049,693,371)
+  Add(LineBreak,7456542,693,371)
   {
    link(Out,11495592:doWork2,[])
    Primary=[5765693,-476,-98]
   }
-  Add(LineBreak,5316754,63,98)
+  Add(LineBreak,15477476,63,98)
   {
    link(Out,13332163:doColor,[])
    Primary=[3661014,553,84]
@@ -3718,7 +3718,7 @@ BEGIN_SDK
   {
    Wait=1
   }
-  Add(LineBreak,7485789,987,28)
+  Add(LineBreak,5800821,987,28)
   {
    link(Out,8939779:onEvent2,[])
    Primary=[2309448,-777,420]
@@ -3880,13 +3880,13 @@ BEGIN_SDK
      DarkClrBack=12632256
     }
   END_SDK
-  Add(LineBreak,12301393,21,35)
+  Add(LineBreak,3397528,21,35)
   {
    Type=1
    link(Data,8939779:Data1,[])
    Primary=[16143661,1337,343]
   }
-  Add(LineBreak,9061510,1358,469)
+  Add(LineBreak,5301100,1358,469)
   {
    Type=1
    link(Data,10659433:Var2,[])
@@ -3909,17 +3909,17 @@ BEGIN_SDK
    Default=Real(0)
    link(onData,3624685:doEvent1,[(573,496)(573,517)])
   }
-  Add(LineBreak,1960402,462,518)
+  Add(LineBreak,2010321,462,518)
   {
    link(Out,3624685:doEvent2,[])
    Primary=[2266956,973,-112]
   }
-  Add(LineBreak,4807078,462,539)
+  Add(LineBreak,13464351,462,539)
   {
    link(Out,11394380:doRead,[])
    Primary=[15726332,-294,-364]
   }
-  Add(LineBreak,11527020,392,546)
+  Add(LineBreak,3135305,392,546)
   {
    link(Out,15481355:doWork2,[])
    Primary=[15076695,-175,-266]
@@ -3935,12 +3935,12 @@ BEGIN_SDK
    link(onEvent1,3624685:doEvent3,[(584,545)(584,531)])
    link(onEvent2,10610731:In,[])
   }
-  Add(LineBreak,5237116,1225,35)
+  Add(LineBreak,8057680,1225,35)
   {
    link(Out,8939779:onEvent3,[])
    Primary=[10815937,-595,476]
   }
-  Add(LineBreak,1802706,1309,406)
+  Add(LineBreak,10818422,1309,406)
   {
    link(Out,14217182:doWork1,[])
    Primary=[10610731,-721,140]
@@ -3953,12 +3953,12 @@ BEGIN_SDK
    link(onEvent3,4180262:In,[(67,174)(67,188)])
    link(onEvent4,14364506:In,[])
   }
-  Add(LineBreak,7925139,476,490)
+  Add(LineBreak,6727754,476,490)
   {
    link(Out,758868:doValue,[])
    Primary=[13134998,938,-77]
   }
-  Add(LineBreak,11506367,1309,420)
+  Add(LineBreak,5481682,1309,420)
   {
    link(Out,14217182:doWork3,[])
    Primary=[8297381,-1064,-259]
@@ -3994,28 +3994,28 @@ BEGIN_SDK
   {
    link(Data,14217182:Var1,[])
   }
-  Add(LineBreak,3018892,1323,469)
+  Add(LineBreak,5343598,1323,469)
   {
    Type=1
    link(Data,10659433:Var1,[(1329,453)])
    Primary=[14926879,-511,7]
   }
-  Add(LineBreak,7514448,1190,42)
+  Add(LineBreak,9018938,1190,42)
   {
    link(Out,8939779:onEvent4,[])
    Primary=[10276833,210,378]
   }
-  Add(LineBreak,5728248,1225,49)
+  Add(LineBreak,6826765,1225,49)
   {
    link(Out,8939779:onEvent5,[])
    Primary=[6716291,175,378]
   }
-  Add(LineBreak,11091814,798,560)
+  Add(LineBreak,3994448,798,560)
   {
    link(Out,7305539:doRead,[])
    Primary=[5753984,-630,-378]
   }
-  Add(LineBreak,3119936,728,504)
+  Add(LineBreak,2331984,728,504)
   {
    link(Out,5412926:doEvent1,[(758,510)])
    Primary=[4528104,-511,-217]
@@ -4025,7 +4025,7 @@ BEGIN_SDK
    link(onEvent1,6693237:doData,[])
    link(onEvent2,4605483:doWork1,[(822,517)])
   }
-  Add(LineBreak,391176,1309,434)
+  Add(LineBreak,3877592,1309,434)
   {
    link(Out,14217182:doWork2,[(1352,440)(1352,419)])
    Primary=[14212393,-406,126]
@@ -4036,7 +4036,7 @@ BEGIN_SDK
    Width=288
    Height=158
   }
-  Add(LineBreak,7253888,1274,175)
+  Add(LineBreak,3227667,1274,175)
   {
    link(Out,3991701:doWork7,[])
    Primary=[4180262,-1190,7]
@@ -4214,12 +4214,12 @@ BEGIN_SDK
      link(onPart5,11033918:In,[])
      link(onPart6,15793079:In,[])
     }
-    Add(LineBreak,958454,868,77)
+    Add(LineBreak,4837708,868,77)
     {
      link(Out,5863685:onEvent2,[(960,83)(960,34)])
      Primary=[3584980,-308,448]
     }
-    Add(LineBreak,8564247,742,21)
+    Add(LineBreak,13651784,742,21)
     {
      link(Out,5863685:onEvent1,[])
      Primary=[1275343,-126,434]
@@ -4240,7 +4240,7 @@ BEGIN_SDK
     {
      link(Data,12043778:CurrentColor,[(274,263)(253,263)])
     }
-    Add(LineBreak,6448738,266,350)
+    Add(LineBreak,9232599,266,350)
     {
      Type=1
      link(Data,6064196:Var2,[(272,340)(274,340)])
@@ -4250,7 +4250,7 @@ BEGIN_SDK
     {
      link(Data,14097571:CurrentColor,[])
     }
-    Add(LineBreak,8570890,371,259)
+    Add(LineBreak,2675414,371,259)
     {
      Type=1
      link(Data,6734646:Var3,[(377,243)])
@@ -4260,7 +4260,7 @@ BEGIN_SDK
     {
      link(Data,4758797:CurrentColor,[(469,215)(483,215)])
     }
-    Add(LineBreak,13134166,448,259)
+    Add(LineBreak,16310227,448,259)
     {
      Type=1
      link(Data,9143454:Var3,[(454,243)])
@@ -4270,7 +4270,7 @@ BEGIN_SDK
     {
      link(Data,1210136:CurrentColor,[(554,225)(603,225)])
     }
-    Add(LineBreak,14499050,497,266)
+    Add(LineBreak,13422553,497,266)
     {
      Type=1
      link(Data,12212847:Var1,[(503,258)(517,258)(517,250)])
@@ -4280,7 +4280,7 @@ BEGIN_SDK
     {
      link(Data,9320223:CurrentColor,[(624,232)(722,232)])
     }
-    Add(LineBreak,12521518,588,273)
+    Add(LineBreak,11090777,588,273)
     {
      Type=1
      link(Data,1677478:Var1,[(594,257)])
@@ -4290,7 +4290,7 @@ BEGIN_SDK
     {
      link(Data,16174019:CurrentColor,[(694,243)(841,243)])
     }
-    Add(LineBreak,2111350,658,280)
+    Add(LineBreak,5410256,658,280)
     {
      Type=1
      link(Data,3364290:Var1,[(664,264)])
@@ -4308,62 +4308,62 @@ BEGIN_SDK
      OutCount=1
      link(onEvent1,3231427:doEvent3,[(283,412)(283,489)])
     }
-    Add(LineBreak,1306277,210,182)
+    Add(LineBreak,6756072,210,182)
     {
      link(Out,12043778:doSelectColor,[(244,188)(244,186)])
      Primary=[13701184,-56,-77]
     }
-    Add(LineBreak,6901859,315,168)
+    Add(LineBreak,14709808,315,168)
     {
      link(Out,14097571:doSelectColor,[])
      Primary=[1433321,-161,-56]
     }
-    Add(LineBreak,11767358,434,168)
+    Add(LineBreak,15074752,434,168)
     {
      link(Out,4758797:doSelectColor,[(470,174)(470,173)])
      Primary=[12390034,-280,-49]
     }
-    Add(LineBreak,4848952,560,182)
+    Add(LineBreak,15870272,560,182)
     {
      link(Out,1210136:doSelectColor,[(594,188)(594,186)])
      Primary=[8868803,-406,-56]
     }
-    Add(LineBreak,4921502,798,175)
+    Add(LineBreak,8987975,798,175)
     {
      link(Out,16174019:doSelectColor,[(832,181)(832,179)])
      Primary=[15793079,-644,-35]
     }
-    Add(LineBreak,13198384,679,189)
+    Add(LineBreak,13342203,679,189)
     {
      link(Out,9320223:doSelectColor,[(713,195)(713,193)])
      Primary=[11033918,-525,-56]
     }
-    Add(LineBreak,9501423,203,406)
+    Add(LineBreak,10596454,203,406)
     {
      link(Out,15395227:doEvent1,[])
      Primary=[2219675,672,-238]
     }
-    Add(LineBreak,855323,203,413)
+    Add(LineBreak,11486961,203,413)
     {
      link(Out,15395227:doEvent2,[])
      Primary=[5736550,553,-231]
     }
-    Add(LineBreak,12835389,203,420)
+    Add(LineBreak,7496684,203,420)
     {
      link(Out,15395227:doEvent3,[])
      Primary=[13720938,434,-245]
     }
-    Add(LineBreak,13969212,203,427)
+    Add(LineBreak,11592229,203,427)
     {
      link(Out,15395227:doEvent4,[])
      Primary=[9498503,315,-266]
     }
-    Add(LineBreak,2060507,196,434)
+    Add(LineBreak,1264617,196,434)
     {
      link(Out,15395227:doEvent5,[])
      Primary=[11921809,203,-273]
     }
-    Add(LineBreak,15359019,196,441)
+    Add(LineBreak,895471,196,441)
     {
      link(Out,15395227:doEvent6,[])
      Primary=[8029742,91,-266]
@@ -4477,12 +4477,12 @@ BEGIN_SDK
      DarkClrBack=12632256
     }
   END_SDK
-  Add(LineBreak,12397759,1190,56)
+  Add(LineBreak,10998291,1190,56)
   {
    link(Out,8939779:onEvent6,[])
    Primary=[14572300,245,203]
   }
-  Add(LineBreak,2779060,1302,259)
+  Add(LineBreak,10765531,1302,259)
   {
    link(Out,4180757:doWork1,[])
    Primary=[6451709,-1085,35]
@@ -4503,22 +4503,22 @@ BEGIN_SDK
   {
    Default=Integer(0)
   }
-  Add(LineBreak,2270945,1050,518)
+  Add(LineBreak,12920100,1050,518)
   {
    link(Out,10719212:doValue,[])
    Primary=[5615013,364,-238]
   }
-  Add(LineBreak,14544053,1029,567)
+  Add(LineBreak,4342407,1029,567)
   {
    link(Out,12946904:doRead,[])
    Primary=[11685984,-861,-378]
   }
-  Add(LineBreak,11684766,1029,574)
+  Add(LineBreak,7950649,1029,574)
   {
    link(Out,12946904:doWrite,[])
    Primary=[9434324,-812,-273]
   }
-  Add(LineBreak,12402434,1274,266)
+  Add(LineBreak,5838216,1274,266)
   {
    link(Out,4180757:doWork2,[])
    Primary=[11028705,-147,301]
@@ -4533,12 +4533,12 @@ BEGIN_SDK
    link(onEvent1,5096532:In,[])
    link(onEvent2,15211790:In,[(1487,293)(1487,300)])
   }
-  Add(LineBreak,14339098,56,259)
+  Add(LineBreak,11247924,56,259)
   {
    link(Out,14529595:doSetTheme,[])
    Primary=[5096532,1442,21]
   }
-  Add(LineBreak,5446212,28,406)
+  Add(LineBreak,1407556,28,406)
   {
    link(Out,13482790:doSetTheme,[(60,412)(60,433)])
    Primary=[15211790,1470,-112]
@@ -4605,32 +4605,32 @@ BEGIN_SDK
    link(onEvent1,7166041:doClear,[(795,531)(795,517)])
    link(onEvent2,4605483:doWork2,[])
   }
-  Add(LineBreak,5255320,392,182)
+  Add(LineBreak,10297625,392,182)
   {
    link(Out,8548729:doEvent1,[])
    Primary=[204071,-63,252]
   }
-  Add(LineBreak,9666004,392,357)
+  Add(LineBreak,1802967,392,357)
   {
    link(Out,165637:doEvent1,[(428,363)(428,356)])
    Primary=[4507037,-63,84]
   }
-  Add(LineBreak,6136804,385,511)
+  Add(LineBreak,11819379,385,511)
   {
    link(Out,14911180:doEvent1,[])
    Primary=[16358728,-56,-63]
   }
-  Add(LineBreak,5383588,672,182)
+  Add(LineBreak,2015218,672,182)
   {
    link(Out,14705399:doEvent1,[])
    Primary=[9893287,-343,273]
   }
-  Add(LineBreak,8998825,672,343)
+  Add(LineBreak,9018287,672,343)
   {
    link(Out,10906978:doEvent1,[])
    Primary=[10170415,-343,119]
   }
-  Add(LineBreak,1529877,665,525)
+  Add(LineBreak,8470199,665,525)
   {
    link(Out,8810619:doEvent1,[])
    Primary=[2710823,-336,-56]
@@ -4693,32 +4693,32 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,9096745:In,[])
   }
-  Add(LineBreak,14934489,966,210)
+  Add(LineBreak,15300479,966,210)
   {
    link(Out,14266917:doEvent1,[])
    Primary=[4214975,-637,266]
   }
-  Add(LineBreak,7536865,1022,238)
+  Add(LineBreak,15029149,1022,238)
   {
    link(Out,9759321:doRead,[])
    Primary=[4017861,-854,-42]
   }
-  Add(LineBreak,8622859,1022,252)
+  Add(LineBreak,4796728,1022,252)
   {
    link(Out,13375749:doWork2,[])
    Primary=[11373770,-805,56]
   }
-  Add(LineBreak,11358450,1071,189)
+  Add(LineBreak,8219217,1071,189)
   {
    link(Out,6827120:doValue,[])
    Primary=[12444413,315,-28]
   }
-  Add(LineBreak,6735320,560,56)
+  Add(LineBreak,8737075,560,56)
   {
    link(Out,6339323:doWork5,[])
    Primary=[9096745,644,154]
   }
-  Add(LineBreak,6380360,1274,161)
+  Add(LineBreak,11686546,1274,161)
   {
    link(Out,3991701:doWork5,[])
    Primary=[11732965,-84,84]
@@ -4766,43 +4766,43 @@ BEGIN_SDK
    OutCount=1
    link(onEvent1,10556499:In,[])
   }
-  Add(LineBreak,6068028,1274,168)
+  Add(LineBreak,12887087,1274,168)
   {
    link(Out,3991701:doWork6,[])
    Primary=[11068001,-84,245]
   }
-  Add(LineBreak,7956182,525,63)
+  Add(LineBreak,12829203,525,63)
   {
    link(Out,6339323:doWork6,[])
    Primary=[10556499,679,315]
   }
-  Add(LineBreak,2750458,973,378)
+  Add(LineBreak,9585836,973,378)
   {
    link(Out,3558077:doEvent1,[])
    Primary=[8190629,-644,105]
   }
-  Add(LineBreak,16641379,1057,406)
+  Add(LineBreak,2098012,1057,406)
   {
    link(Out,8294936:doRead,[])
    Primary=[13731538,-889,-203]
   }
-  Add(LineBreak,9975,1022,420)
+  Add(LineBreak,12551504,1022,420)
   {
    link(Out,11853123:doWork2,[])
    Primary=[10426858,-805,-105]
   }
-  Add(LineBreak,8355692,49,168)
+  Add(LineBreak,10946984,49,168)
   {
    link(Out,16422405:doEraseSection,[(81,174)(81,167)])
    Primary=[3611248,161,259]
   }
-  Add(LineBreak,894108,105,84)
+  Add(LineBreak,15914052,105,84)
   {
    Caption="closed"
    link(Out,13332163:doClose,[])
    Primary=[7509820,112,238]
   }
-  Add(LineBreak,6882560,147,259)
+  Add(LineBreak,11690439,147,259)
   {
    link(Out,16245816:doEvent2,[])
    Primary=[14364506,-84,-84]
@@ -4843,7 +4843,7 @@ BEGIN_SDK
    Width=288
    Height=130
   }
-  Add(LineBreak,9238328,1085,357)
+  Add(LineBreak,192407,1085,357)
   {
    link(Out,10428995:doValue,[])
    Primary=[3299995,343,-189]
@@ -4859,31 +4859,31 @@ Add(MT_IndexToChanel,13487263,1722,763)
  link(onEvent5,12725695:In,[])
  link(onEvent6,8908853:In,[])
 }
-Add(LineBreak,9114531,1582,798)
+Add(LineBreak,14596092,1582,798)
 {
  Caption="skin"
  link(Out,9890502:doWork1,[(1623,804)(1623,818)])
  Primary=[15019758,-7,-518]
 }
-Add(LineBreak,12900443,1113,140)
+Add(LineBreak,15598233,1113,140)
 {
  Caption="color"
  link(Out,13676182:doEvent1,[(1160,146)(1160,139)])
  Primary=[7710479,672,623]
 }
-Add(LineBreak,8540459,728,357)
+Add(LineBreak,322271,728,357)
 {
  Caption="color"
  link(Out,1675013:doColor,[(781,363)(781,356)])
  Primary=[11714552,1057,420]
 }
-Add(LineBreak,238396,1232,623)
+Add(LineBreak,7504960,1232,623)
 {
  Caption="color"
  link(Out,513742:doColor,[(1275,629)(1275,615)])
  Primary=[16766180,595,147]
 }
-Add(LineBreak,9051044,805,427)
+Add(LineBreak,14672699,805,427)
 {
  Caption="color"
  link(Out,2204639:doColor,[(855,433)(855,398)])
@@ -4896,13 +4896,13 @@ Add(InfoTip,11987349,1540,739)
  Width=351
  Height=228
 }
-Add(LineBreak,4987922,1554,805)
+Add(LineBreak,10219142,1554,805)
 {
  Caption="skin"
  link(Out,9890502:doWork2,[(1609,811)(1609,825)])
  Primary=[8371605,-238,77]
 }
-Add(LineBreak,11136558,1050,91)
+Add(LineBreak,5875952,1050,91)
 {
  link(Out,753852:doEvent1,[])
  Primary=[15898166,693,728]
@@ -4913,14 +4913,14 @@ Add(Hub,753852,1134,91)
  OutCount=1
  link(onEvent1,8722152:doEvent1,[(1155,97)(1155,104)])
 }
-Add(LineBreak,3926141,1631,868)
+Add(LineBreak,501448,1631,868)
 {
  Caption="color "
  Type=1
  link(Data,9890502:Var1,[])
  Primary=[2027317,-343,-308]
 }
-Add(LineBreak,4668125,1295,672)
+Add(LineBreak,11889874,1295,672)
 {
  Caption="color t"
  Type=1
@@ -4933,7 +4933,7 @@ Add(Hub,8716968,1232,588)
  OutCount=1
  link(onEvent1,513742:doAdd,[])
 }
-Add(LineBreak,3952862,1162,602)
+Add(LineBreak,13545255,1162,602)
 {
  Caption="color t"
  link(Out,8716968:doEvent3,[])
@@ -4945,13 +4945,13 @@ Add(Hub,4253140,1190,623)
  OutCount=1
  link(onEvent1,513742:doClear,[(1242,629)(1242,601)])
 }
-Add(LineBreak,13545879,1127,644)
+Add(LineBreak,9797511,1127,644)
 {
  Caption="color t"
  link(Out,4253140:doEvent2,[(1184,650)(1184,636)])
  Primary=[3246412,616,189]
 }
-Add(LineBreak,6038201,735,371)
+Add(LineBreak,15661290,735,371)
 {
  Caption="color t"
  link(Out,1675013:doFont,[(795,377)(795,363)])
@@ -4959,7 +4959,7 @@ Add(LineBreak,6038201,735,371)
 }
 Add(Hub,2620494,1715,889)
 {
- OutCount=8
+ OutCount=9
  link(onEvent1,2880182:In,[])
  link(onEvent2,74776:In,[])
  link(onEvent3,4714401:In,[])
@@ -4968,50 +4968,51 @@ Add(Hub,2620494,1715,889)
  link(onEvent6,3547262:In,[])
  link(onEvent7,6689360:In,[])
  link(onEvent8,16265540:In,[])
+ link(onEvent9,14377224:In,[(1739,951)(1739,958)])
 }
-Add(LineBreak,11480057,42,588)
+Add(LineBreak,8613228,42,588)
 {
  Caption="colork"
  link(Out,11616974:doSetTheme,[(88,594)(88,587)])
  Primary=[2880182,1708,301]
 }
-Add(LineBreak,14011417,350,259)
+Add(LineBreak,5468121,350,259)
 {
  Caption="colork"
  link(Out,9356062:doEvent1,[(412,265)(412,275)(380,275)(380,286)])
  Primary=[74776,1400,637]
 }
-Add(LineBreak,1422897,350,399)
+Add(LineBreak,16103279,350,399)
 {
  Caption="colork"
  link(Out,5721681:doSetTheme,[(396,405)(396,440)])
  Primary=[4714401,1400,504]
 }
-Add(LineBreak,5179372,56,392)
+Add(LineBreak,4462242,56,392)
 {
  Caption="colork"
  link(Out,14819043:doSetTheme,[])
  Primary=[3383150,1694,518]
 }
-Add(LineBreak,879844,49,203)
+Add(LineBreak,2220277,49,203)
 {
  Caption="colork"
  link(Out,14349947:doSetTheme,[(88,209)(88,237)])
  Primary=[16682081,1701,714]
 }
-Add(LineBreak,14660449,28,42)
+Add(LineBreak,10996791,28,42)
 {
  Caption="colork"
  link(Out,3352433:doSetTheme,[(67,48)(67,76)])
  Primary=[3547262,1722,882]
 }
-Add(LineBreak,10954760,364,91)
+Add(LineBreak,707253,364,91)
 {
  Caption="colork"
  link(Out,5604813:doSetTheme,[])
  Primary=[6689360,1386,840]
 }
-Add(LineBreak,15967312,686,105)
+Add(LineBreak,2593325,686,105)
 {
  Caption="colork"
  link(Out,4462221:doEvent1,[])
@@ -5028,7 +5029,7 @@ Add(MenuEx,6728992,1337,398)
 {
  IconByIndex=0
  EndItemRight=0
- Menu=#1:1|1:(|1:2|1:3|1:)|1:4|1:(|1:5|1:6|1:7|1:8|1:9|2:10|1:)|2:11|1:(|2:12|2:13|2:14|1:)|2:15|1:(|2:16|2:17|2:18|2:19|1:-|2:20|1:)|
+ Menu=#1:1|1:(|1:2|1:3|1:4|1:)|1:5|1:(|1:6|1:7|1:8|1:9|2:10|2:11|1:)|2:12|1:(|2:13|2:14|2:15|1:)|2:16|1:(|2:17|2:18|2:19|2:20|1:-|2:21|1:)|
  ImgSize=18
  adWidth=1
  LeftMargin=10
@@ -5068,7 +5069,7 @@ Add(Hub,13266586,588,1001)
  link(onEvent1,11772850:doColor,[])
  link(onEvent2,14171711:doColor,[(623,1014)(623,1056)])
 }
-Add(LineBreak,15477450,525,1001)
+Add(LineBreak,8032921,525,1001)
 {
  Caption="color"
  link(Out,13266586:doEvent1,[])
@@ -5079,7 +5080,7 @@ Add(Hub,303614,938,91)
  link(onEvent1,9516142:doColor,[(962,97)(962,69)])
  link(onEvent2,13791859:doColor,[(962,104)(962,111)])
 }
-Add(LineBreak,12032145,889,91)
+Add(LineBreak,8350749,889,91)
 {
  Caption="color"
  link(Out,303614:doEvent1,[])
@@ -5092,14 +5093,16 @@ Add(Hub,9356062,392,280)
 }
 Add(Hub,13676182,1176,133)
 {
+ OutCount=3
  link(onEvent1,12151591:doColor,[(1202,139)(1202,121)(1171,121)(1171,104)])
  link(onEvent2,2608223:In,[])
+ link(onEvent3,5077819:In,[(1197,153)(1197,160)])
 }
-Add(LineBreak,7098473,504,266)
+Add(LineBreak,12873891,497,273)
 {
  Caption="color"
- link(Out,15923093:doWork3,[(553,272)(553,248)(527,248)(527,223)])
- Primary=[2608223,700,-126]
+ link(Out,15923093:doWork3,[(553,279)(553,248)(527,248)(527,223)])
+ Primary=[2608223,707,-133]
 }
 Add(Hub,9855068,826,399)
 {
@@ -5114,7 +5117,7 @@ Add(DoData,5593626,931,434)
 Add(ButtonRush,1067900,541,922)
 {
  Left=231
- Top=300
+ Top=345
  Width=90
  Height=28
  Font=[Tahoma,10,1,0,204]
@@ -5143,7 +5146,7 @@ Add(Hub,8381860,476,1071)
  link(onEvent1,3760428:In,[])
  link(onEvent2,6667612:doWrite,[(522,1084)(522,1056)])
 }
-Add(LineBreak,235107,483,924)
+Add(LineBreak,2830341,483,924)
 {
  link(Out,1067900:doSetTheme,[(538,930)(538,928)])
  Primary=[5912607,301,-798]
@@ -5178,12 +5181,12 @@ Add(Hub,15953874,679,770)
  OutCount=1
  link(onEvent1,13778332:doPosPBar,[(700,776)(700,780)])
 }
-Add(LineBreak,8613400,651,805)
+Add(LineBreak,9849029,651,805)
 {
  link(Out,13778332:doMax,[(697,811)(697,794)])
  Primary=[13450182,1127,-728]
 }
-Add(LineBreak,2971078,826,847)
+Add(LineBreak,11919271,826,847)
 {
  link(Out,15491903:doEvent2,[(866,853)(866,843)])
  Primary=[14136933,952,-791]
@@ -5194,7 +5197,7 @@ Add(Hub,1862247,511,777)
  OutCount=1
  link(onEvent1,2688232:doWork3,[(543,783)(543,780)])
 }
-Add(LineBreak,13296095,469,784)
+Add(LineBreak,10152391,469,784)
 {
  link(Out,1862247:doEvent2,[])
  Primary=[216053,1309,-721]
@@ -5205,7 +5208,7 @@ Add(Hub,13332132,504,826)
  OutCount=1
  link(onEvent1,2688232:doWork5,[(539,832)(539,794)])
 }
-Add(LineBreak,15436512,434,861)
+Add(LineBreak,5268200,434,861)
 {
  link(Out,13332132:doEvent2,[(494,867)(494,839)])
  Primary=[8453668,1344,-777]
@@ -5216,14 +5219,14 @@ Add(FileStream,2740909,1405,640)
 }
 Add(StrCat,1513921,1358,637)
 {
- Str2="ver.txt"
+ Str2="tools\ver.txt"
  link(onStrCat,2740909:doOpen,[(1394,643)(1394,646)])
  link(Str1,722731:CurrentDir,[(1364,600)(1360,600)])
 }
 Add(Dir,722731,1354,559)
 {
 }
-Add(LineBreak,14911097,1316,637)
+Add(LineBreak,8728868,1316,637)
 {
  link(Out,1513921:doStrCat,[])
  Primary=[426096,7,259]
@@ -5369,7 +5372,7 @@ BEGIN_SDK
    link(onFalse,11063505:In,[])
    link(Op1,9958717:Var3,[(482,257)])
   }
-  Add(LineBreak,1177795,392,273)
+  Add(LineBreak,1378258,392,273)
   {
    link(Out,13454545:doEvent1,[])
    Primary=[5391663,-378,-266]
@@ -5402,25 +5405,25 @@ BEGIN_SDK
    Point(doClearAll)
    link(onSectionNames,9889109:doRead,[(324,265)(324,272)])
   }
-  Add(LineBreak,4634329,553,7)
+  Add(LineBreak,9342114,553,7)
   {
    Caption="ip"
    link(Out,7908189:onEvent2,[])
    Primary=[13060128,21,126]
   }
-  Add(LineBreak,4854251,595,21)
+  Add(LineBreak,3535705,595,21)
   {
    Caption="доп проверка"
    link(Out,7908189:onEvent4,[])
    Primary=[15202656,-84,308]
   }
-  Add(LineBreak,4825210,448,14)
+  Add(LineBreak,9342494,448,14)
   {
    Caption="галка не стоит"
    link(Out,7908189:onEvent3,[])
    Primary=[11063505,70,266]
   }
-  Add(LineBreak,4726088,399,0)
+  Add(LineBreak,4874749,399,0)
   {
    Caption="галка стоит"
    link(Out,7908189:onEvent1,[])
@@ -5457,7 +5460,7 @@ BEGIN_SDK
    link(Data,1721161:Value,[])
   }
 END_SDK
-Add(LineBreak,3547492,336,924)
+Add(LineBreak,5479276,336,924)
 {
  link(Out,11065466:doEvent1,[(386,930)(386,937)])
  Primary=[7360086,441,-14]
@@ -5468,12 +5471,12 @@ Add(Hub,14867999,721,1043)
  OutCount=1
  link(onEvent1,14171711:doText,[])
 }
-Add(LineBreak,10644052,672,1050)
+Add(LineBreak,5929208,672,1050)
 {
  link(Out,14867999:doEvent2,[])
  Primary=[6789274,105,-126]
 }
-Add(LineBreak,12741880,336,938)
+Add(LineBreak,267434,336,938)
 {
  link(Out,11065466:doEvent2,[])
  Primary=[3249393,441,0]
@@ -5483,12 +5486,12 @@ Add(DoData,3369077,609,1127)
  link(onEventData,14867999:doEvent3,[(681,1133)(681,1063)])
  link(Data,6003462:LoacalIP,[])
 }
-Add(LineBreak,6371308,560,1127)
+Add(LineBreak,11687655,560,1127)
 {
  link(Out,3369077:doData,[])
  Primary=[10558906,217,-182]
 }
-Add(LineBreak,7205767,616,945)
+Add(LineBreak,13748460,616,945)
 {
  Caption="ini"
  link(Out,172456:doWork3,[(715,951)(715,944)])
@@ -5508,7 +5511,7 @@ Add(Convertor,13336191,1449,637)
 }
 Add(FormatStr,15322228,1498,686)
 {
- Mask="             %2\r\n        __________________________________"
+ Mask="             %2\r\n             __________________________________"
  link(onFString,513742:doText,[(1549,692)(1549,650)(1269,650)(1269,608)])
  link(Str2,3730516:Value,[])
 }
@@ -5516,12 +5519,12 @@ Add(Memory,3730516,1505,637)
 {
  link(onData,15322228:doString,[(1549,643)(1549,667)(1486,667)(1486,692)])
 }
-Add(LineBreak,8963506,1190,595)
+Add(LineBreak,11343147,1190,595)
 {
  link(Out,8716968:doEvent2,[])
  Primary=[12360824,469,469]
 }
-Add(LineBreak,2701626,1043,644)
+Add(LineBreak,10911003,1043,644)
 {
  link(Out,10637458:doWork3,[(1068,650)])
  Primary=[514774,427,434]
@@ -5531,13 +5534,13 @@ Add(Hub,3352529,392,581)
  link(onEvent1,11772766:doValue,[])
  link(onEvent2,5002101:In,[(413,594)(413,622)])
 }
-Add(LineBreak,2885226,1561,70)
+Add(LineBreak,10414667,1561,70)
 {
  Caption="lang"
  link(Out,5641235:doEvent21,[(1609,76)(1609,69)])
  Primary=[5002101,-1141,546]
 }
-Add(LineBreak,11325933,1554,56)
+Add(LineBreak,7346128,1554,56)
 {
  Caption="update"
  link(Out,5641235:doEvent2,[])
@@ -5547,7 +5550,7 @@ Add(MultiElementEx,11772766,427,581)
 {
  link(onTrue,711905:doWork1,[(468,587)(468,585)])
  link(onTrue1,711905:doWork2,[(500,594)(500,592)])
- link(onTrue2,711905:doWork3,[(468,601)(468,599)])
+ link(onTrue2,711905:doWork3,[(467,601)(467,599)])
 }
 BEGIN_SDK
   Add(EditMultiEx,5133891,21,21)
@@ -5591,7 +5594,7 @@ BEGIN_SDK
 END_SDK
 Add(StrList,11007764,666,525)
 {
- Strings=#4:Menu|19:<1> Konsole loschen|11:<6> Beenden|13:Einstellungen|10:Protokolle|6:Klingt|22:Auf Tablett minimieren|21:Sign Package_List.pkg|20:<39> Farbeinstellung|33:<34> Tastenkombinationen anpassen|7:Sprache|12:<43> Русский|12:<44> English|12:<45> Deutsch|5:Hilfe|10:<38> Hilfe|10:<14> Forum|18:<14> Herunterladen|11:<41> Update|1:-|22:<42> Uber das Programm|0:|
+ Strings=#4:Menu|18:<1>Konsole loschen|28:<9>Temporare Dateien loschen|10:<6>Beenden|13:Einstellungen|10:Protokolle|6:Klingt|22:Auf Tablett minimieren|21:Sign Package_List.pkg|19:<39>Farbeinstellung|32:<34>Tastenkombinationen anpassen|7:Sprache|11:<43>Русский|11:<44>English|11:<45>Deutsch|5:Hilfe|9:<38>Hilfe|9:<14>Forum|17:<14>Herunterladen|10:<41>Update|1:-|21:<42>Uber das Programm|0:|
 }
 Add(MultiElementEx,12614378,2107,896)
 {
@@ -5678,19 +5681,19 @@ BEGIN_SDK
    link(onEvent1,11558999:onEvent1,[(293,146)(293,34)])
   }
 END_SDK
-Add(LineBreak,4882622,1995,903)
+Add(LineBreak,1047077,1995,903)
 {
  Caption="ru"
  link(Out,12614378:doData,[])
  Primary=[16708471,-427,-602]
 }
-Add(LineBreak,14320770,2030,910)
+Add(LineBreak,8637955,2030,910)
 {
  Caption="en"
  link(Out,12614378:doData1,[])
  Primary=[10916653,-427,-602]
 }
-Add(LineBreak,119545,2065,917)
+Add(LineBreak,4183807,2065,917)
 {
  Caption="de"
  link(Out,12614378:doData2,[])
@@ -5699,7 +5702,7 @@ Add(LineBreak,119545,2065,917)
 Add(Translator,557037,1470,133)
 {
  Lang="de"
- LangWords=['2. Создать подписанный PKG'="2. Erstellen Sie eine signierte PKG",'7. Создать pakage_list и запустить сервер '="7. Erstellen Sie pakage_list und starten Sie den Server",'IP адрес :'="IP-Adresse:",'Создать не подписанный PKG'="Erstellen Sie nicht signierte PKG",' для запуска в DEBUG HAN'=" in DEBUG HAN laufen",'Создать подписанный PKG'="Erstellen Sie eine signierte PKG",' для запуска в HAN'=" in HAN laufen",'Создать RIF'="RIF erstellen ",' из файлов act.dat и idps.hex и из базы rap'=" aus den Dateien act.dat und idps.hex und aus der rap-Datenbank",'Подписать все PKG'="Alle Pkg unterschreiben",' которые находятся в директории'=" welche sind im Verzeichnis",'Создать лист PKG'="PKG-Arbeitsblatt erstellen",' на основе *.pkg файлов которые лежат рядом и запустить локальный сервер'=" basierend auf * .pkg-Dateie die in der Nahe liegen und den lokalen Server starten",'Сконвертировать дисковую игру'="Disc-Spiel konvertieren",' при наличии патча к игре'=" in Anwesenheit eines Patches fur das Spiel",'Попробовать пофиксить CFW игру из PSN'="Versuchen Si das CFW-Spiel von PSN zu reparieren",' при наличии патча к игре.'=" (in Anwesenheit eines Patches fur das Spiel)",'Порт :'="Port:",'1. Создать не подписанный PKG'="1. Erstellen Sie nicht signierte PKG",'Изменить'="Andern",'6. Подписать все *.PKG'="6. Alles signieren *.PKG",'3. Создать RIF'="3. RIF erstellen ",'4. Попробовать пофиксить CFW игру'="4. Versuchen Si CFW Spiel zu fixieren",'5. Меню конвертации'="5. Konvertierungsmen",'Выберите папку игры PS3_GAME для конвертации'="Wahlen Sie den zu konvertierenden PS3_GAME-Ordner aus",'Подписать все PKG'="Alle Pkg unterschreiben",'Проверить наличие патча'="Uberprufen Sie den Patch",'Меню конвертации'="Konvertierungsmenu",'Образ диска ISO'="ISO image",'Открыть образ диска ISO'="Offnen Sie das ISO-Image",'Подписать все PKG'="Alle Pkg unterschreiben",'Выберите папку игры PS3_GAME для конвертации'="Wahlen Sie den zu konvertierenden PS3_GAME-Ordner aus",'Выберите PS3_GAME'="Wahlen Sie PS3_GAME aus",'PS3_GAME папка'="PS3_GAME-Ordner",'Переподписать *.edat'="*.Edat erneut signieren",'Переподписать *.edat с другим cID'="*.Edat mit einer anderen cID neu signieren",'Выберите папку игры с DLC'="W?hlen Sie mit DLC einen Spielordner aus",'Укажите файл EBOOT.BIN под который надо переподписать'="Geben Sie die EBOOT.BIN-Datei an, f?r die Sie erneut signieren m?ssen",'Назад в меню'="Zuruck zum Menu",'Выберите папку игры с DLC'="W?hlen Sie mit DLC einen Spielordner aus",'Сохранить'="Speichern",' из файлов act.dat, idps.hex и из базы rap'="aus act.dat / idps.hex-Dateien und aus der rap-Datenbank",'О программе'="Uber das Programm",'Скачиваю патч: '="Patch herunterladen",'Сбросить настройки'="Einstellungen zurucksetzen",'Цвет окна'="Fensterfarbe",'Фон'="Hintergrund",'Консоль'="Console",'Статус бар'="Status bar",'Прогресс'="Fortschritt",'Цвет Текста'="Textfarbe",'Цвет кнопок'="Farbe der Schaltflache",'Текст'="Text",'Рамка'="Rahmen",'Фон 2'="Hintergrund 2",'Текст 2'="Text 2",'Рамка 2'="Rahmen 2",'Сбросить настройки по умолчанию?'="Auf Standard zurucksetzen ?",'Готово'="Ist fertig",'7. Создать package_list и запустить сервер '="7. Erstellen Sie package_list und starten Sie den Server",'Обновить'="Aktualisieren",'Выбрать'="Auswahlen",'Авто определение IP'="Automatische IP-Erkennung",'Нужен act.dat / idps.hex. *.rap берется из базы при наличии игры в pkg. Можете сами создать папку RAPS и положить туда *.rap'="Benotigen Sie act.dat / idps.hex. *.rap wird von der Basis ubernomme wenn in pkg ein Spiel vorhanden ist. Sie konnen einen RAPS-Ordner selbst erstellen und dort * .rap einfugen",'Сервер HFS'="Server HFS",'Программа свернута в трей и продолжает работать.'="Das Programm ist im Tray minimiert und funktioniert weiterhin.",'Операция успешно завершена.'="Vorgang erfolgreich abgeschlossen.",'Закрыть программу?'="Programm beenden?",'Операция выполняется, пожалуйста подождите'="Vorgang lauf bitte warten"]
+ LangWords=['2. Создать подписанный PKG'="2. Erstellen Sie eine signierte PKG",'7. Создать pakage_list и запустить сервер '="7. Erstellen Sie pakage_list und starten Sie den Server",'IP адрес :'="IP-Adresse:",'Создать не подписанный PKG'="Erstellen Sie nicht signierte PKG",' для запуска в DEBUG HAN'=" in DEBUG HAN laufen",'Создать подписанный PKG'="Erstellen Sie eine signierte PKG",' для запуска в HAN'=" in HAN laufen",'Создать RIF'="RIF erstellen ",' из файлов act.dat и idps.hex и из базы rap'=" aus den Dateien act.dat und idps.hex und aus der rap-Datenbank",'Подписать все PKG'="Alle Pkg unterschreiben",' которые находятся в директории'=" welche sind im Verzeichnis",'Создать лист PKG'="PKG-Arbeitsblatt erstellen",' на основе *.pkg файлов которые лежат рядом и запустить локальный сервер'=" basierend auf * .pkg-Dateie die in der Nahe liegen und den lokalen Server starten",'Сконвертировать дисковую игру'="Disc-Spiel konvertieren",' при наличии патча к игре'=" in Anwesenheit eines Patches fur das Spiel",'Попробовать пофиксить CFW игру из PSN'="Versuchen Si das CFW-Spiel von PSN zu reparieren",' при наличии патча к игре.'=" (in Anwesenheit eines Patches fur das Spiel)",'Порт :'="Port:",'1. Создать не подписанный PKG'="1. Erstellen Sie nicht signierte PKG",'Изменить'="Andern",'6. Подписать все *.PKG'="6. Alles signieren *.PKG",'3. Создать RIF'="3. RIF erstellen ",'4. Попробовать пофиксить CFW игру'="4. Versuchen Si CFW Spiel zu fixieren",'5. Меню конвертации'="5. Konvertierungsmen",'Выберите папку игры PS3_GAME для конвертации'="Wahlen Sie den zu konvertierenden PS3_GAME-Ordner aus",'Подписать все PKG'="Alle Pkg unterschreiben",'Проверить наличие патча'="Uberprufen Sie den Patch",'Меню конвертации'="Konvertierungsmenu",'Образ диска ISO'="ISO image",'Открыть образ диска ISO'="Offnen Sie das ISO-Image",'Подписать все PKG'="Alle Pkg unterschreiben",'Выберите папку игры PS3_GAME для конвертации'="Wahlen Sie den zu konvertierenden PS3_GAME-Ordner aus",'Выберите PS3_GAME'="Wahlen Sie PS3_GAME aus",'PS3_GAME папка'="PS3_GAME-Ordner",'Переподписать *.edat'="*.Edat erneut signieren",'Переподписать *.edat с другим cID'="*.Edat mit einer anderen cID neu signieren",'Выберите папку игры с DLC'="W?hlen Sie mit DLC einen Spielordner aus",'Укажите файл EBOOT.BIN под который надо переподписать'="Geben Sie die EBOOT.BIN-Datei a",' f?r die Sie erneut signieren m?ssen",''Назад в меню'''="Zuruck zum Menu",'Выберите папку игры с DLC'="W?hlen Sie mit DLC einen Spielordner aus",'Сохранить'="Speichern",' из файлов act.dat, idps.hex и из базы rap'="aus act.dat / idps.hex-Dateien und aus der rap-Datenbank",'О программе'="Uber das Programm",'Скачиваю патч: '="Patch herunterladen",'Сбросить настройки'="Einstellungen zurucksetzen",'Цвет окна'="Fensterfarbe",'Фон'="Hintergrund",'Консоль'="Console",'Статус бар'="Status bar",'Прогресс'="Fortschritt",'Цвет Текста'="Textfarbe",'Цвет кнопок'="Farbe der Schaltflache",'Текст'="Text",'Рамка'="Rahmen",'Фон 2'="Hintergrund 2",'Текст 2'="Text 2",'Рамка 2'="Rahmen 2",'Сбросить настройки по умолчанию?'="Auf Standard zurucksetzen ?",'Готово'="Ist fertig",'7. Создать package_list и запустить сервер '="7. Erstellen Sie package_list und starten Sie den Server",'Обновить'="Aktualisieren",'Выбрать'="Auswahlen",'Авто определение IP'="Automatische IP-Erkennung",'Нужен act.dat / idps.hex. *.rap берется из базы при наличии игры в pkg. Можете сами создать папку RAPS и положить туда *.rap'="Benotigen Sie act.dat / idps.hex. *.rap wird von der Basis ubernomme wenn in pkg ein Spiel vorhanden ist. Sie konnen einen RAPS-Ordner selbst erstellen und dort * .rap einfugen",'Сервер HFS'="Server HFS",'Программа свернута в трей и продолжает работать.'="Das Programm ist im Tray minimiert und funktioniert weiterhin.",'Операция успешно завершена.'="Vorgang erfolgreich abgeschlossen.",'Закрыть программу?'="Programm beenden?",'Операция выполняется, пожалуйста подождите'="Vorgang lauf bitte warten"]
  Place=1
  Key="config.ini"
  Section="Main"
@@ -5719,7 +5722,7 @@ Add(WindowAnimation,2755100,2177,595)
  link(onEndAnimation,12343245:In,[])
  link(Handle,1608550:Var,[])
 }
-Add(LineBreak,5969280,1246,140)
+Add(LineBreak,13701148,1246,140)
 {
  Type=1
  link(Data,7016146:Var2,[])
@@ -5743,13 +5746,13 @@ Add(Hub,2225367,1078,1015)
  link(onEvent5,5490351:doData,[(1104,1049)(1104,1064)(988,1064)(988,1112)])
  link(onEvent6,7487084:doMessage,[(1097,1056)(1097,1088)(1066,1088)(1066,1119)])
 }
-Add(LineBreak,10736933,1190,105)
+Add(LineBreak,735922,1190,105)
 {
  Caption="timer"
  link(Out,12151591:doFlashWindow,[])
  Primary=[9575505,28,917]
 }
-Add(LineBreak,3269235,994,1015)
+Add(LineBreak,16277682,994,1015)
 {
  link(Out,2225367:doEvent1,[])
  Primary=[45214,98,-364]
@@ -5765,12 +5768,12 @@ Add(Hub,10688411,903,378)
  OutCount=1
  link(onEvent1,2204639:doPosition,[(924,384)(924,391)])
 }
-Add(LineBreak,655451,840,378)
+Add(LineBreak,16516119,840,378)
 {
  link(Out,10688411:doEvent1,[])
  Primary=[7062150,413,686]
 }
-Add(LineBreak,14380762,959,1036)
+Add(LineBreak,6242308,959,1036)
 {
  Caption="stop timer"
  link(Out,5758157:doStopAll,[])
@@ -5784,7 +5787,7 @@ Add(Message,7487084,1078,1113)
  link(Message,9481790:Value,[])
  link(onOK,8470713:In,[])
 }
-Add(LineBreak,7119898,1085,35)
+Add(LineBreak,2781804,1085,35)
 {
  Caption="ок"
  link(Out,3525691:doEvent1,[(1125,41)(1125,48)])
@@ -5807,11 +5810,11 @@ Add(PlaySound,7349436,910,679)
 }
 Add(Hub,7460006,833,679)
 {
- InCount=10
+ InCount=12
  OutCount=1
  link(onEvent1,9568309:doCompare,[])
 }
-Add(LineBreak,5897770,784,679)
+Add(LineBreak,434247,784,679)
 {
  Caption="wav"
  link(Out,7460006:doEvent1,[])
@@ -5823,7 +5826,7 @@ Add(Hub,16380481,518,91)
  link(onEvent1,4907649:doStrCat,[])
  link(onEvent2,13964808:In,[(539,104)(539,139)])
 }
-Add(LineBreak,3841954,784,686)
+Add(LineBreak,1691315,784,686)
 {
  Caption="wav"
  link(Out,7460006:doEvent2,[])
@@ -5835,7 +5838,7 @@ Add(Hub,589311,196,245)
  link(onEvent1,5838133:doStrCat,[(238,251)(238,252)])
  link(onEvent2,1109431:In,[(217,258)(217,286)])
 }
-Add(LineBreak,111274,784,693)
+Add(LineBreak,3126402,784,693)
 {
  Caption="wav"
  link(Out,7460006:doEvent3,[])
@@ -5847,7 +5850,7 @@ Add(Hub,15517514,210,420)
  link(onEvent1,10586052:doStrCat,[])
  link(onEvent2,12702524:In,[(231,433)(231,461)])
 }
-Add(LineBreak,97369,784,700)
+Add(LineBreak,10221073,784,700)
 {
  Caption="wav"
  link(Out,7460006:doEvent4,[])
@@ -5859,7 +5862,7 @@ Add(Hub,7225757,504,434)
  link(onEvent1,3904211:doStrCat,[])
  link(onEvent2,11462584:In,[(525,447)(525,475)])
 }
-Add(LineBreak,10129749,784,707)
+Add(LineBreak,2565232,784,707)
 {
  Caption="wav"
  link(Out,7460006:doEvent5,[])
@@ -5871,7 +5874,7 @@ Add(Hub,3628227,182,602)
  link(onEvent1,15758691:doStrCat,[])
  link(onEvent2,2119221:In,[(203,615)(203,643)])
 }
-Add(LineBreak,1507624,784,714)
+Add(LineBreak,8969520,784,714)
 {
  Caption="wav"
  link(Out,7460006:doEvent6,[])
@@ -5882,7 +5885,7 @@ Add(Hub,7655505,840,28)
  link(onEvent1,12264472:In,[])
  link(onEvent2,2955559:doWork1,[(861,41)(861,62)])
 }
-Add(LineBreak,11395771,784,721)
+Add(LineBreak,9968993,784,721)
 {
  Caption="wav"
  link(Out,7460006:doEvent7,[])
@@ -5894,7 +5897,7 @@ Add(Hub,10699015,490,189)
  link(onEvent1,6682016:In,[])
  link(onEvent2,15923093:doWork1,[(522,202)(522,209)])
 }
-Add(LineBreak,1021662,784,728)
+Add(LineBreak,1139869,784,728)
 {
  Caption="wav"
  link(Out,7460006:doEvent8,[])
@@ -5905,13 +5908,13 @@ Add(Hub,1942153,623,896)
  link(onEvent1,4084025:In,[])
  link(onEvent2,172456:doWork1,[(679,909)(679,930)])
 }
-Add(LineBreak,9939167,784,735)
+Add(LineBreak,11270169,784,735)
 {
  Caption="wav"
  link(Out,7460006:doEvent9,[])
  Primary=[4084025,-126,161]
 }
-Add(LineBreak,14488971,784,742)
+Add(LineBreak,15013417,784,742)
 {
  Caption="wav"
  link(Out,7460006:doEvent10,[])
@@ -5961,7 +5964,7 @@ Add(Hub,7654279,1715,1071)
  link(onEvent1,13979603:In,[(1736,1077)(1736,1074)])
  link(onEvent2,1269678:In,[])
 }
-Add(LineBreak,401945,1029,1022)
+Add(LineBreak,7105454,1029,1022)
 {
  link(Out,2225367:doEvent2,[])
  Primary=[9391220,441,70]
@@ -5972,7 +5975,7 @@ Add(Hub,12222880,1064,994)
  link(onEvent1,10032273:doPosition,[])
  link(onEvent2,12078414:In,[])
 }
-Add(LineBreak,13095653,1022,1001)
+Add(LineBreak,5808970,1022,1001)
 {
  link(Out,12222880:doEvent2,[])
  Primary=[1269678,721,77]
@@ -5982,7 +5985,7 @@ Add(Hub,14049040,1211,1064)
  link(onEvent1,7062150:In,[])
  link(onEvent2,14733992:In,[])
 }
-Add(LineBreak,4231413,623,784)
+Add(LineBreak,11371884,623,784)
 {
  link(Out,15953874:doEvent3,[])
  Primary=[14733992,630,287]
@@ -6005,31 +6008,31 @@ Add(Hub,773597,1988,553)
  link(onEvent1,12804234:In,[(2006,559)(2006,538)])
  link(onEvent2,15884640:doMessage,[(2030,566)(2030,557)])
 }
-Add(LineBreak,14682534,1092,112)
+Add(LineBreak,13057146,1092,112)
 {
  link(Out,753852:doEvent4,[])
  Primary=[12343245,1141,483]
 }
-Add(LineBreak,11256081,1855,560)
+Add(LineBreak,122291,1855,560)
 {
  Caption="exit"
  link(Out,773597:doEvent2,[])
- Primary=[781353,-315,-315]
+ Primary=[781353,-315,-301]
 }
-Add(LineBreak,1569259,1974,168)
+Add(LineBreak,10164630,1974,168)
 {
  Caption="%"
  link(Out,545477:doValue,[])
  Primary=[12078414,-861,833]
 }
-Add(LineBreak,14549250,1715,301)
+Add(LineBreak,3588567,1715,301)
 {
  link(Out,7395826:doEvent1,[])
  Primary=[16777123,-609,735]
 }
 Add(PopupMenu,4268227,1981,343)
 {
- Menu=#1:1|1:2|1:3|1:4|1:5|1:6|1:7|1:-|1:8|
+ Menu=#1:1|1:2|1:3|1:4|1:5|1:6|1:7|1:8|1:-|1:9|
  Point(Bitmaps)
  Point(Array)
  link(onClick,4956506:doEvent,[])
@@ -6040,15 +6043,15 @@ Add(If_else,16427373,1918,336)
  link(onTrue,9246524:doEvent1,[(1958,342)(1958,300)])
  link(onFalse,4268227:doPopupHere,[])
 }
-Add(LineBreak,8331926,1897,567)
+Add(LineBreak,5360447,1897,567)
 {
  Caption="exit"
  link(Out,773597:doEvent3,[])
- Primary=[15028697,175,-168]
+ Primary=[15028697,182,-154]
 }
 Add(MT_IndexToChanel,4956506,2030,343)
 {
- Count=9
+ Count=10
  link(onEvent1,16064830:In,[(2067,349)(2067,342)])
  link(onEvent2,15041537:In,[])
  link(onEvent3,1118451:In,[])
@@ -6056,45 +6059,46 @@ Add(MT_IndexToChanel,4956506,2030,343)
  link(onEvent5,3479616:In,[])
  link(onEvent6,14928370:In,[])
  link(onEvent7,6204993:In,[])
- link(onEvent9,15028697:In,[])
+ link(onEvent8,5742515:In,[(2070,398)(2070,405)])
+ link(onEvent10,15028697:In,[(2070,412)(2070,419)])
 }
-Add(LineBreak,16615726,112,77)
+Add(LineBreak,6245118,112,77)
 {
  Caption="tray"
  link(Out,12560109:doEvent2,[])
  Primary=[16064830,1960,259]
 }
-Add(LineBreak,2495403,154,252)
+Add(LineBreak,8334652,154,252)
 {
  Caption="tray"
  link(Out,589311:doEvent2,[])
  Primary=[15041537,1918,98]
 }
-Add(LineBreak,7047089,168,427)
+Add(LineBreak,14457349,168,427)
 {
  Caption="tray"
  link(Out,15517514:doEvent2,[])
  Primary=[1118451,1904,-70]
 }
-Add(LineBreak,9755061,476,98)
+Add(LineBreak,14029269,476,98)
 {
  Caption="tray"
  link(Out,16380481:doEvent2,[])
  Primary=[10418954,1596,266]
 }
-Add(LineBreak,11749692,413,182)
+Add(LineBreak,15118426,413,182)
 {
  Caption="tray"
  link(Out,10699015:doEvent2,[(468,188)(468,202)])
  Primary=[3479616,1659,189]
 }
-Add(LineBreak,9073185,133,609)
+Add(LineBreak,11009592,133,609)
 {
  Caption="tray"
  link(Out,3628227:doEvent2,[])
  Primary=[14928370,1939,-231]
 }
-Add(LineBreak,11024113,455,448)
+Add(LineBreak,2924002,455,448)
 {
  Caption="tray"
  link(Out,7225757:doEvent2,[(495,454)(495,447)])
@@ -6106,7 +6110,7 @@ Add(Timer,1229513,1890,413)
  AutoStop=1
  link(onTimer,9693687:doEvent1,[])
 }
-Add(LineBreak,8009889,1841,413)
+Add(LineBreak,11374551,1841,413)
 {
  link(Out,1229513:doTimer,[])
  Primary=[13398156,42,-63]
@@ -6125,7 +6129,7 @@ Add(DoData,210551,1764,252)
  link(onEventData,4188972:doWork2,[])
  link(Data,525259:Caption,[])
 }
-Add(LineBreak,6201671,1715,252)
+Add(LineBreak,261075,1715,252)
 {
  link(Out,210551:doData,[])
  Primary=[13299723,259,161]
@@ -6136,7 +6140,7 @@ Add(Hub,3236037,1799,357)
  OutCount=1
  link(onEvent1,7102686:doShowBallonTip,[])
 }
-Add(LineBreak,220554,1736,364)
+Add(LineBreak,5202630,1736,364)
 {
  link(Out,3236037:doEvent2,[])
  Primary=[2975919,238,56]
@@ -6176,7 +6180,7 @@ BEGIN_SDK
    WorkCount=2
    Width=678
    Height=550
-   link(doWork1,10994629:doShowModal,[(35,27)(35,139)])
+   link(doWork1,10994629:doShowModal,[(42,27)(42,139)])
    link(doWork2,15257538:In,[(39,34)(39,41)])
   }
   Add(MainForm,10994629,49,105)
@@ -6184,7 +6188,7 @@ BEGIN_SDK
    Left=35
    Top=105
    Width=442
-   Height=357
+   Height=401
    Color=15780518
    Visible=1
    Caption="HotKey"
@@ -6197,8 +6201,8 @@ BEGIN_SDK
   }
   Add(Edit,16467908,224,28)
   {
-   Left=330
-   Top=20
+   Left=335
+   Top=55
    Width=80
    Color=15780518
    KeyPreview=1
@@ -6210,12 +6214,12 @@ BEGIN_SDK
   Add(MultiElementEx,9411673,539,35)
   {
    link(onIndex,10260439:In,[])
-   link(onIndex1,12106220:onEvent1,[(607,48)(607,27)])
+   link(onIndex1,12106220:onEvent1,[(635,48)(635,27)])
   }
   BEGIN_SDK
     Add(EditMultiEx,8701483,35,7)
     {
-     WorkCount=#11:doOperation|14:doSectionNames|8:doEvent1|
+     WorkCount=#11:doOperation|14:doSectionNames|8:doEvent1|20:doEraseSection=erase|
      EventCount=#7:onIndex|8:onIndex1|
      DataCount=#5:Value|
      Width=1462
@@ -6252,47 +6256,47 @@ BEGIN_SDK
      link(onEvent9,12610799:In,[])
      link(onEvent10,5452096:In,[])
     }
-    Add(LineBreak,10451041,259,98)
+    Add(LineBreak,16130915,259,98)
     {
      link(Out,158945:doEvent1,[])
      Primary=[4651575,-126,-56]
     }
-    Add(LineBreak,241421,539,91)
+    Add(LineBreak,16212122,539,91)
     {
      link(Out,5398766:doEvent1,[])
      Primary=[14699108,-406,-42]
     }
-    Add(LineBreak,13815182,266,259)
+    Add(LineBreak,9112015,266,259)
     {
      link(Out,16141372:doEvent1,[])
      Primary=[5118406,-133,-203]
     }
-    Add(LineBreak,473030,539,259)
+    Add(LineBreak,12532622,539,259)
     {
      link(Out,8118329:doEvent1,[])
      Primary=[5856202,-406,-196]
     }
-    Add(LineBreak,10105698,259,420)
+    Add(LineBreak,6715082,259,420)
     {
      link(Out,15354079:doEvent1,[])
      Primary=[14578210,-126,-350]
     }
-    Add(LineBreak,4044802,546,420)
+    Add(LineBreak,4324237,546,420)
     {
      link(Out,5825199:doEvent1,[])
      Primary=[11412259,-413,-343]
     }
-    Add(LineBreak,10134534,833,98)
+    Add(LineBreak,14463550,833,98)
     {
      link(Out,9147521:doEvent1,[])
      Primary=[14985510,-700,-14]
     }
-    Add(LineBreak,2717841,833,259)
+    Add(LineBreak,8744487,833,259)
     {
      link(Out,3620122:doEvent1,[])
      Primary=[11612906,-700,-168]
     }
-    Add(LineBreak,6719881,833,420)
+    Add(LineBreak,8699383,833,420)
     {
      link(Out,9555011:doEvent1,[])
      Primary=[12610799,-700,-322]
@@ -6302,57 +6306,57 @@ BEGIN_SDK
      Count=11
      link(onIndex,8701483:onIndex,[])
     }
-    Add(LineBreak,12681654,1169,189)
+    Add(LineBreak,14062175,1169,189)
     {
      link(Out,16476575:doEvent1,[])
      Primary=[5452096,-1036,-84]
     }
-    Add(LineBreak,3136315,1358,7)
+    Add(LineBreak,7955209,1358,7)
     {
      link(Out,16444379:doWork1,[])
      Primary=[1614237,-868,77]
     }
-    Add(LineBreak,1158665,1358,14)
+    Add(LineBreak,16014221,1358,14)
     {
      link(Out,16444379:doWork2,[])
      Primary=[1493258,-581,70]
     }
-    Add(LineBreak,10746898,1358,28)
+    Add(LineBreak,11173927,1358,28)
     {
      link(Out,16444379:doWork3,[(1394,34)(1394,27)])
      Primary=[7120423,-861,217]
     }
-    Add(LineBreak,3113557,1358,35)
+    Add(LineBreak,1030460,1358,35)
     {
      link(Out,16444379:doWork4,[(1394,41)(1394,34)])
      Primary=[7148534,-581,210]
     }
-    Add(LineBreak,225800,1358,42)
+    Add(LineBreak,15511820,1358,42)
     {
      link(Out,16444379:doWork5,[(1394,48)(1394,41)])
      Primary=[16724380,-875,364]
     }
-    Add(LineBreak,4080250,1358,49)
+    Add(LineBreak,6773773,1358,49)
     {
      link(Out,16444379:doWork6,[(1394,55)(1394,48)])
      Primary=[6186435,-581,357]
     }
-    Add(LineBreak,16371322,1358,56)
+    Add(LineBreak,8890069,1358,56)
     {
      link(Out,16444379:doWork7,[(1394,62)(1394,55)])
      Primary=[4305656,-287,28]
     }
-    Add(LineBreak,7863116,1358,63)
+    Add(LineBreak,10547089,1358,63)
     {
      link(Out,16444379:doWork8,[(1394,69)(1394,62)])
      Primary=[12711180,-294,182]
     }
-    Add(LineBreak,14835593,1358,70)
+    Add(LineBreak,13355363,1358,70)
     {
      link(Out,16444379:doWork9,[(1394,76)(1394,69)])
      Primary=[5037941,-294,336]
     }
-    Add(LineBreak,16415089,1358,77)
+    Add(LineBreak,15384881,1358,77)
     {
      link(Out,16444379:doWork10,[(1394,83)(1394,76)])
      Primary=[16700589,42,98]
@@ -6365,6 +6369,7 @@ BEGIN_SDK
      Point(onSectionNames)
      Point(doSectionNames)
      Point(doClearAll)
+     Point(doEraseSection)
      link(onSectionNames,8935102:doEvent1,[])
     }
     Add(Hub,8935102,154,168)
@@ -6393,7 +6398,7 @@ BEGIN_SDK
      link(onResult,158945:doEvent2,[(359,153)(359,139)(310,139)(310,111)])
      link(Value,15984560:Var1,[(342,89)])
     }
-    Add(LineBreak,1344124,266,147)
+    Add(LineBreak,12974525,266,147)
     {
      link(Out,10622471:doRead,[])
      Primary=[11896232,-84,21]
@@ -6412,7 +6417,7 @@ BEGIN_SDK
      link(onEvent9,13426283:In,[])
      link(onEvent10,12300249:In,[])
     }
-    Add(LineBreak,12477766,266,154)
+    Add(LineBreak,12061705,266,154)
     {
      link(Out,10622471:doWrite,[])
      Primary=[6231682,-175,91]
@@ -6474,12 +6479,12 @@ BEGIN_SDK
     {
      link(Data,6871449:Value,[])
     }
-    Add(LineBreak,1486619,567,147)
+    Add(LineBreak,822635,567,147)
     {
      link(Out,854799:doRead,[])
      Primary=[160909,-385,28]
     }
-    Add(LineBreak,7601081,567,154)
+    Add(LineBreak,6250951,567,154)
     {
      link(Out,854799:doWrite,[])
      Primary=[15545879,-476,98]
@@ -6542,12 +6547,12 @@ BEGIN_SDK
      Width=288
      Height=158
     }
-    Add(LineBreak,4297748,273,308)
+    Add(LineBreak,15391451,273,308)
     {
      link(Out,4740481:doRead,[])
      Primary=[16672763,-91,-126]
     }
-    Add(LineBreak,5512239,273,315)
+    Add(LineBreak,5630096,273,315)
     {
      link(Out,4740481:doWrite,[])
      Primary=[11683575,-182,-56]
@@ -6598,12 +6603,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,16571481,567,308)
+    Add(LineBreak,7401151,567,308)
     {
      link(Out,12932549:doRead,[])
      Primary=[11935099,-385,-119]
     }
-    Add(LineBreak,1418079,567,315)
+    Add(LineBreak,222683,567,315)
     {
      link(Out,12932549:doWrite,[])
      Primary=[1781892,-476,-49]
@@ -6654,12 +6659,12 @@ BEGIN_SDK
      Width=288
      Height=158
     }
-    Add(LineBreak,6649215,273,469)
+    Add(LineBreak,3359339,273,469)
     {
      link(Out,2015436:doRead,[])
      Primary=[1441032,-91,-273]
     }
-    Add(LineBreak,7752499,273,476)
+    Add(LineBreak,9064019,273,476)
     {
      link(Out,2015436:doWrite,[])
      Primary=[5896718,-182,-203]
@@ -6710,12 +6715,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,6909727,567,469)
+    Add(LineBreak,6458171,567,469)
     {
      link(Out,11562554:doRead,[])
      Primary=[11750423,-385,-266]
     }
-    Add(LineBreak,15959981,567,476)
+    Add(LineBreak,2904759,567,476)
     {
      link(Out,11562554:doWrite,[])
      Primary=[2598237,-476,-196]
@@ -6759,12 +6764,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,4705079,854,147)
+    Add(LineBreak,6683370,854,147)
     {
      link(Out,10377461:doRead,[])
      Primary=[9465901,-672,63]
     }
-    Add(LineBreak,12261567,854,161)
+    Add(LineBreak,8331708,854,161)
     {
      link(Out,10377461:doWrite,[(890,167)(890,160)])
      Primary=[3736303,-763,126]
@@ -6815,12 +6820,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,8050569,854,308)
+    Add(LineBreak,14321915,854,308)
     {
      link(Out,11892372:doRead,[])
      Primary=[6354629,-672,-91]
     }
-    Add(LineBreak,5523761,854,315)
+    Add(LineBreak,4085481,854,315)
     {
      link(Out,11892372:doWrite,[])
      Primary=[11944064,-763,-21]
@@ -6871,12 +6876,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,7464954,854,469)
+    Add(LineBreak,14163219,854,469)
     {
      link(Out,6666291:doRead,[])
      Primary=[12626661,-672,-245]
     }
-    Add(LineBreak,5902974,854,476)
+    Add(LineBreak,8310393,854,476)
     {
      link(Out,6666291:doWrite,[])
      Primary=[13426283,-763,-175]
@@ -6927,12 +6932,12 @@ BEGIN_SDK
      Width=281
      Height=158
     }
-    Add(LineBreak,11766260,1190,238)
+    Add(LineBreak,3256924,1190,238)
     {
      link(Out,1437338:doRead,[])
      Primary=[10956731,-1008,-7]
     }
-    Add(LineBreak,10722742,1190,252)
+    Add(LineBreak,2938428,1190,252)
     {
      link(Out,1437338:doWrite,[(1226,258)(1226,251)])
      Primary=[12300249,-1099,56]
@@ -6942,7 +6947,7 @@ BEGIN_SDK
      Count=10
      link(onIndex,8701483:onIndex1,[(1464,321)(1464,20)])
     }
-    Add(LineBreak,1804484,1358,315)
+    Add(LineBreak,2083810,1358,315)
     {
      link(Out,6428340:doWork1,[])
      Primary=[4653002,-1008,-210]
@@ -6951,47 +6956,47 @@ BEGIN_SDK
     {
      link(Data,8531248:Value,[])
     }
-    Add(LineBreak,12310876,1358,322)
+    Add(LineBreak,6419317,1358,322)
     {
      link(Out,6428340:doWork2,[])
      Primary=[2824860,-735,-224]
     }
-    Add(LineBreak,7887611,1358,329)
+    Add(LineBreak,16044536,1358,329)
     {
      link(Out,6428340:doWork3,[])
      Primary=[9543461,-1022,-63]
     }
-    Add(LineBreak,5905480,1358,336)
+    Add(LineBreak,1062332,1358,336)
     {
      link(Out,6428340:doWork4,[])
      Primary=[1085575,-742,-70]
     }
-    Add(LineBreak,14799055,1358,343)
+    Add(LineBreak,3223700,1358,343)
     {
      link(Out,6428340:doWork5,[])
      Primary=[4170101,-1015,84]
     }
-    Add(LineBreak,16584070,1358,350)
+    Add(LineBreak,1068765,1358,350)
     {
      link(Out,6428340:doWork6,[])
      Primary=[7807402,-735,77]
     }
-    Add(LineBreak,5184378,1358,357)
+    Add(LineBreak,1658542,1358,357)
     {
      link(Out,6428340:doWork7,[])
      Primary=[16471619,-448,-252]
     }
-    Add(LineBreak,10897716,1358,364)
+    Add(LineBreak,10282934,1358,364)
     {
      link(Out,6428340:doWork8,[])
      Primary=[15145761,-448,-98]
     }
-    Add(LineBreak,4490649,1358,371)
+    Add(LineBreak,14792355,1358,371)
     {
      link(Out,6428340:doWork9,[])
      Primary=[2925899,-441,56]
     }
-    Add(LineBreak,5274214,1358,378)
+    Add(LineBreak,59931,1358,378)
     {
      link(Out,6428340:doWork10,[])
      Primary=[13143581,-112,-182]
@@ -6999,8 +7004,8 @@ BEGIN_SDK
   END_SDK
   Add(GLabel,3193900,322,35)
   {
-   Left=15
-   Top=20
+   Left=20
+   Top=55
    Width=305
    Height=20
    Color=-16777203
@@ -7021,8 +7026,8 @@ BEGIN_SDK
   }
   Add(GLabel,10254271,326,84)
   {
-   Left=15
-   Top=50
+   Left=20
+   Top=85
    Width=305
    Height=20
    Color=-16777203
@@ -7043,8 +7048,8 @@ BEGIN_SDK
   }
   Add(GLabel,910753,326,133)
   {
-   Left=15
-   Top=80
+   Left=20
+   Top=115
    Width=305
    Height=20
    Color=-16777203
@@ -7065,8 +7070,8 @@ BEGIN_SDK
   }
   Add(GLabel,2682657,333,189)
   {
-   Left=15
-   Top=110
+   Left=20
+   Top=145
    Width=305
    Height=20
    Color=-16777203
@@ -7085,10 +7090,10 @@ BEGIN_SDK
    Point(doColor)
    MakeTrans(Caption)
   }
-  Add(GLabel,6152965,333,252)
+  Add(GLabel,6152965,340,252)
   {
-   Left=15
-   Top=140
+   Left=20
+   Top=175
    Width=305
    Height=20
    Color=-16777203
@@ -7107,10 +7112,10 @@ BEGIN_SDK
    Point(doColor)
    MakeTrans(Caption)
   }
-  Add(GLabel,3083373,333,308)
+  Add(GLabel,3083373,340,308)
   {
-   Left=15
-   Top=170
+   Left=20
+   Top=205
    Width=305
    Height=20
    Color=-16777203
@@ -7129,10 +7134,10 @@ BEGIN_SDK
    Point(doColor)
    MakeTrans(Caption)
   }
-  Add(GLabel,6334773,333,371)
+  Add(GLabel,6334773,340,371)
   {
-   Left=15
-   Top=200
+   Left=20
+   Top=235
    Width=305
    Height=20
    Color=-16777203
@@ -7153,8 +7158,8 @@ BEGIN_SDK
   }
   Add(GLabel,1887732,326,427)
   {
-   Left=15
-   Top=230
+   Left=20
+   Top=265
    Width=305
    Height=20
    Color=-16777203
@@ -7175,8 +7180,8 @@ BEGIN_SDK
   }
   Add(GLabel,16465363,326,476)
   {
-   Left=15
-   Top=260
+   Left=20
+   Top=295
    Width=305
    Height=20
    Color=-16777203
@@ -7197,8 +7202,8 @@ BEGIN_SDK
   }
   Add(GLabel,6198751,326,525)
   {
-   Left=15
-   Top=290
+   Left=20
+   Top=325
    Width=305
    Height=20
    Color=-16777203
@@ -7219,8 +7224,8 @@ BEGIN_SDK
   }
   Add(Edit,7710218,224,70)
   {
-   Left=330
-   Top=50
+   Left=335
+   Top=85
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7231,8 +7236,8 @@ BEGIN_SDK
   }
   Add(Edit,3286000,226,119)
   {
-   Left=330
-   Top=80
+   Left=335
+   Top=115
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7243,8 +7248,8 @@ BEGIN_SDK
   }
   Add(Edit,15022307,229,173)
   {
-   Left=330
-   Top=110
+   Left=335
+   Top=145
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7255,8 +7260,8 @@ BEGIN_SDK
   }
   Add(Edit,5476071,230,226)
   {
-   Left=330
-   Top=140
+   Left=335
+   Top=175
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7267,8 +7272,8 @@ BEGIN_SDK
   }
   Add(Edit,10284879,229,289)
   {
-   Left=330
-   Top=170
+   Left=335
+   Top=205
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7279,8 +7284,8 @@ BEGIN_SDK
   }
   Add(Edit,4693242,229,353)
   {
-   Left=330
-   Top=200
+   Left=335
+   Top=235
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7291,8 +7296,8 @@ BEGIN_SDK
   }
   Add(Edit,15240069,229,403)
   {
-   Left=330
-   Top=230
+   Left=335
+   Top=265
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7303,8 +7308,8 @@ BEGIN_SDK
   }
   Add(Edit,6928190,228,453)
   {
-   Left=330
-   Top=260
+   Left=335
+   Top=295
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7315,8 +7320,8 @@ BEGIN_SDK
   }
   Add(Edit,7090416,224,499)
   {
-   Left=330
-   Top=290
+   Left=335
+   Top=325
    Width=80
    Color=15780518
    KeyPreview=1
@@ -7344,139 +7349,238 @@ BEGIN_SDK
    link(onEvent9,12419411:In,[])
    link(onEvent10,2004778:In,[])
   }
-  Add(LineBreak,7959693,385,147)
+  Add(LineBreak,3016599,385,147)
   {
-   link(Out,505439:doEvent,[])
-   Primary=[10260439,196,-112]
+   link(Out,9332400:doWork2,[])
+   Primary=[10260439,203,-112]
   }
-  Add(LineBreak,14868997,399,35)
+  Add(LineBreak,8894389,399,35)
   {
    link(Out,9305292:doWork1,[])
    Primary=[14956786,-133,7]
   }
-  Add(LineBreak,2460381,399,42)
+  Add(LineBreak,886733,399,42)
   {
    link(Out,9305292:doWork2,[])
    Primary=[4940924,-133,42]
   }
-  Add(LineBreak,7111338,399,49)
+  Add(LineBreak,15042013,399,49)
   {
    link(Out,9305292:doWork3,[])
    Primary=[7048043,-133,84]
   }
-  Add(LineBreak,13108113,399,56)
+  Add(LineBreak,6582289,399,56)
   {
    link(Out,9305292:doWork4,[])
    Primary=[219577,-126,133]
   }
-  Add(LineBreak,2517383,399,63)
+  Add(LineBreak,2315909,399,63)
   {
    link(Out,9305292:doWork5,[])
    Primary=[5827,-126,182]
   }
-  Add(LineBreak,13016727,399,77)
+  Add(LineBreak,14370830,399,77)
   {
    link(Out,9305292:doWork6,[(435,83)(435,76)])
    Primary=[9950890,-126,231]
   }
-  Add(LineBreak,7326781,399,84)
+  Add(LineBreak,15549966,399,84)
   {
    link(Out,9305292:doWork7,[(435,90)(435,83)])
    Primary=[7294133,-126,287]
   }
-  Add(LineBreak,12695073,399,91)
+  Add(LineBreak,9300918,399,91)
   {
    link(Out,9305292:doWork8,[(435,97)(435,90)])
    Primary=[677548,-126,329]
   }
-  Add(LineBreak,7861190,399,98)
+  Add(LineBreak,12789298,399,98)
   {
    link(Out,9305292:doWork9,[(435,104)(435,97)])
    Primary=[7379261,-126,371]
   }
-  Add(LineBreak,87300,399,105)
+  Add(LineBreak,14291360,399,105)
   {
    link(Out,9305292:doWork10,[(428,111)(428,104)])
    Primary=[9422170,-133,413]
   }
-  Add(LineBreak,15281228,168,28)
+  Add(LineBreak,4890075,168,28)
   {
    link(Out,16467908:doText,[])
    Primary=[14203628,308,119]
   }
-  Add(LineBreak,8087065,147,70)
+  Add(LineBreak,6908517,147,70)
   {
    link(Out,7710218:doText,[])
    Primary=[5318550,329,84]
   }
-  Add(LineBreak,7680526,154,119)
+  Add(LineBreak,11486729,154,119)
   {
    link(Out,3286000:doText,[])
    Primary=[10785371,322,42]
   }
-  Add(LineBreak,11883678,154,168)
+  Add(LineBreak,16101633,154,168)
   {
    link(Out,15022307:doText,[(196,174)(196,179)])
    Primary=[1417803,322,0]
   }
-  Add(LineBreak,15651649,161,224)
+  Add(LineBreak,15236015,161,224)
   {
    link(Out,5476071:doText,[(197,230)(197,232)])
    Primary=[6198249,315,-49]
   }
-  Add(LineBreak,12301717,154,287)
+  Add(LineBreak,14500919,154,287)
   {
    link(Out,10284879:doText,[(196,293)(196,295)])
    Primary=[351245,322,-105]
   }
-  Add(LineBreak,7716588,154,350)
+  Add(LineBreak,11918996,154,350)
   {
    link(Out,4693242:doText,[(196,356)(196,359)])
    Primary=[6688707,322,-161]
   }
-  Add(LineBreak,11063843,154,406)
+  Add(LineBreak,8200428,154,406)
   {
    link(Out,15240069:doText,[(196,412)(196,409)])
    Primary=[5376297,322,-210]
   }
-  Add(LineBreak,7387338,154,455)
+  Add(LineBreak,8041781,154,455)
   {
    link(Out,6928190:doText,[(195,461)(195,459)])
    Primary=[12419411,322,-252]
   }
-  Add(LineBreak,4664050,147,504)
+  Add(LineBreak,16340361,147,504)
   {
    link(Out,7090416:doText,[(190,510)(190,505)])
    Primary=[2004778,329,-294]
   }
-  Add(LineBreak,7842347,483,42)
+  Add(LineBreak,10857889,476,77)
   {
-   link(Out,9411673:doSectionNames,[])
-   Primary=[15257538,-427,-7]
+   link(Out,9411673:doSectionNames,[(526,83)(526,48)])
+   Primary=[15257538,-420,-42]
   }
-  Add(LineBreak,5721231,483,56)
+  Add(LineBreak,12011101,476,56)
   {
    Caption="save"
    link(Out,9411673:doEvent1,[(533,62)(533,55)])
-   Primary=[12840937,-357,77]
+   Primary=[12840937,-350,77]
   }
-  Add(LineBreak,3295187,616,28)
+  Add(LineBreak,5616476,616,28)
   {
-   link(Out,12106220:onEvent2,[])
+   link(Out,12106220:onEvent2,[(680,34)(680,34)])
    Primary=[15379266,-483,77]
   }
   Add(Hub,210881,98,133)
   {
    link(onEvent1,12840937:In,[])
-   link(onEvent2,5617606:In,[])
+   link(onEvent2,5617606:In,[(119,146)(119,160)])
   }
-  Add(LineBreak,7376075,651,35)
+  Add(LineBreak,14506744,651,35)
   {
-   link(Out,12106220:onEvent3,[])
-   Primary=[5617606,-525,105]
+   link(Out,12106220:onEvent3,[(697,41)(683,41)])
+   Primary=[5617606,-525,119]
+  }
+  Add(CheckBox,600344,413,273)
+  {
+   Left=20
+   Top=15
+   Width=300
+   Font=[Tahoma,10,1,0,204]
+   Transparent=0
+   Checked=0
+   Caption="Вкл. горячие клавиши"
+   link(onCheck,9616029:doEvent,[])
+  }
+  Add(SelectColor,107009,511,280)
+  {
+   Color=-16777216
+   link(onColor,9777733:doEvent1,[])
+  }
+  Add(Hub,9777733,560,280)
+  {
+   InCount=2
+   OutCount=10
+   link(onEvent1,277790:In,[])
+   link(onEvent2,2088432:In,[])
+   link(onEvent3,922596:In,[])
+   link(onEvent4,9075884:In,[])
+   link(onEvent5,295952:In,[])
+   link(onEvent6,5514180:In,[])
+   link(onEvent7,5112377:In,[])
+   link(onEvent8,5509141:In,[])
+   link(onEvent9,14428545:In,[])
+   link(onEvent10,3066508:In,[])
+  }
+  Add(LineBreak,4051516,280,63)
+  {
+   link(Out,3193900:doColor,[(305,69)(305,48)])
+   Primary=[277790,308,217]
+  }
+  Add(LineBreak,12709009,287,98)
+  {
+   link(Out,10254271:doColor,[(332,104)(332,97)])
+   Primary=[2088432,301,189]
+  }
+  Add(LineBreak,12148301,287,147)
+  {
+   link(Out,910753:doColor,[(325,153)(325,146)])
+   Primary=[922596,301,147]
+  }
+  Add(LineBreak,14650719,301,203)
+  {
+   link(Out,2682657:doColor,[(332,209)(332,202)])
+   Primary=[9075884,287,98]
+  }
+  Add(MT_IndexToChanel,9616029,462,273)
+  {
+   link(onEvent1,107009:doColor,[(510,279)(510,286)])
+   link(onEvent2,11184794:doEvent1,[(506,286)(506,310)(478,310)(478,328)])
+  }
+  Add(SelectColor,15543626,518,322)
+  {
+   Color=-16777203
+   link(onColor,9777733:doEvent2,[(558,328)(558,293)])
+  }
+  Add(LineBreak,6215855,301,266)
+  {
+   link(Out,6152965:doColor,[(332,272)(332,265)])
+   Primary=[295952,287,42]
+  }
+  Add(LineBreak,11993346,301,315)
+  {
+   link(Out,3083373:doColor,[])
+   Primary=[5514180,287,0]
+  }
+  Add(LineBreak,8079734,301,371)
+  {
+   link(Out,6334773:doColor,[(332,377)(332,384)])
+   Primary=[5112377,287,-49]
+  }
+  Add(LineBreak,9403867,294,434)
+  {
+   link(Out,1887732:doColor,[])
+   Primary=[5509141,294,-105]
+  }
+  Add(LineBreak,8980104,294,483)
+  {
+   link(Out,16465363:doColor,[])
+   Primary=[14428545,294,-147]
+  }
+  Add(LineBreak,5508974,294,532)
+  {
+   link(Out,6198751:doColor,[])
+   Primary=[3066508,294,-189]
+  }
+  Add(Hub,11184794,490,322)
+  {
+   link(onEvent1,15543626:doColor,[])
+  }
+  Add(HubEx,9332400,413,147)
+  {
+   link(onEvent,505439:doEvent,[])
   }
 END_SDK
-Add(LineBreak,6374616,35,987)
+Add(LineBreak,3940226,35,987)
 {
  Caption="HotKey"
  link(Out,7878183:doWork1,[])
@@ -7501,23 +7605,23 @@ Add(Hub,685384,140,1029)
  link(onEvent9,5293941:In,[])
  link(onEvent10,6363511:In,[])
 }
-Add(LineBreak,6981916,28,133)
+Add(LineBreak,7418310,28,133)
 {
  Caption="1"
  link(Out,9953284:doKey,[])
  Primary=[4414677,245,854]
 }
-Add(LineBreak,1526406,28,119)
+Add(LineBreak,15984274,28,119)
 {
  Caption="1"
  link(Out,9953284:doStartHotKey,[])
  Primary=[3020692,154,910]
 }
-Add(LineBreak,4816380,28,1022)
+Add(LineBreak,10485201,28,1022)
 {
  Caption="HotKey"
  link(Out,1301023:doEvent1,[])
- Primary=[15296831,1337,-119]
+ Primary=[15296831,1295,-119]
 }
 Add(MT_IndexToChanel,6483537,224,987)
 {
@@ -7538,13 +7642,13 @@ Add(GHotKey,7777526,84,287)
  Point(doKey)
  link(onEventHotKey,589311:doEvent3,[(156,293)(156,265)])
 }
-Add(LineBreak,6565181,42,301)
+Add(LineBreak,9719389,42,301)
 {
  Caption="2"
  link(Out,7777526:doKey,[])
  Primary=[9002173,231,693]
 }
-Add(LineBreak,14274376,42,287)
+Add(LineBreak,9207486,42,287)
 {
  Caption="2"
  link(Out,7777526:doStartHotKey,[])
@@ -7555,13 +7659,13 @@ Add(GHotKey,6517849,112,455)
  Point(doKey)
  link(onEventHotKey,15517514:doEvent3,[(177,461)(177,440)])
 }
-Add(LineBreak,11540049,70,469)
+Add(LineBreak,13309145,70,469)
 {
  Caption="3"
  link(Out,6517849:doKey,[])
  Primary=[5527629,203,532]
 }
-Add(LineBreak,1005985,70,455)
+Add(LineBreak,4917349,70,455)
 {
  Caption="3"
  link(Out,6517849:doStartHotKey,[])
@@ -7578,13 +7682,13 @@ Add(GHotKey,5997857,420,126)
  Point(doKey)
  link(onEventHotKey,16380481:doEvent3,[(485,132)(485,111)])
 }
-Add(LineBreak,9280232,371,140)
+Add(LineBreak,14938931,371,140)
 {
  Caption="4"
  link(Out,5997857:doKey,[])
  Primary=[2559679,-98,868]
 }
-Add(LineBreak,15426766,371,126)
+Add(LineBreak,2926238,371,126)
 {
  Caption="4"
  link(Out,5997857:doStartHotKey,[])
@@ -7595,13 +7699,13 @@ Add(GHotKey,10862171,441,294)
  Point(doKey)
  link(onEventHotKey,10699015:doEvent3,[(484,300)(484,209)])
 }
-Add(LineBreak,3209183,399,308)
+Add(LineBreak,6048426,399,308)
 {
  Caption="5"
  link(Out,10862171:doKey,[])
  Primary=[1466486,-126,707]
 }
-Add(LineBreak,11554583,399,301)
+Add(LineBreak,12909992,399,301)
 {
  Caption="5"
  link(Out,10862171:doStartHotKey,[(435,307)(435,300)])
@@ -7612,13 +7716,13 @@ Add(GHotKey,4886604,91,630)
  Point(doKey)
  link(onEventHotKey,3628227:doEvent3,[(153,636)(153,622)])
 }
-Add(LineBreak,13626020,49,644)
+Add(LineBreak,11667057,49,644)
 {
  Caption="6"
  link(Out,4886604:doKey,[])
  Primary=[5810124,224,378]
 }
-Add(LineBreak,9718186,49,630)
+Add(LineBreak,7091075,49,630)
 {
  Caption="6"
  link(Out,4886604:doStartHotKey,[])
@@ -7629,13 +7733,13 @@ Add(GHotKey,1019243,441,462)
  Point(doKey)
  link(onEventHotKey,7225757:doEvent3,[(489,468)(489,454)])
 }
-Add(LineBreak,4251420,399,476)
+Add(LineBreak,4369040,399,476)
 {
  Caption="7"
  link(Out,1019243:doKey,[])
  Primary=[9866331,-126,553]
 }
-Add(LineBreak,8699385,399,462)
+Add(LineBreak,4569685,399,462)
 {
  Caption="7"
  link(Out,1019243:doStartHotKey,[])
@@ -7646,13 +7750,13 @@ Add(GHotKey,9074548,1106,161)
  Point(doKey)
  link(onEventHotKey,12151591:doMinimize,[(1165,167)(1165,90)])
 }
-Add(LineBreak,1141373,1064,175)
+Add(LineBreak,13027266,1064,175)
 {
  Caption="8"
  link(Out,9074548:doKey,[])
  Primary=[4750004,-791,861]
 }
-Add(LineBreak,15873048,1064,161)
+Add(LineBreak,6886343,1064,161)
 {
  Caption="8"
  link(Out,9074548:doStartHotKey,[])
@@ -7667,13 +7771,13 @@ Add(HubEx,13115551,749,259)
 {
  link(onEvent,12336689:doRead,[])
 }
-Add(LineBreak,4934452,665,280)
+Add(LineBreak,14371927,665,280)
 {
  Caption="9"
  link(Out,844931:doKey,[(701,286)(701,279)])
  Primary=[14110191,-392,763]
 }
-Add(LineBreak,10015267,665,259)
+Add(LineBreak,4449640,665,259)
 {
  Caption="9"
  link(Out,844931:doStartHotKey,[])
@@ -7684,13 +7788,13 @@ Add(GHotKey,12362234,1750,595)
  Point(doKey)
  link(onEventHotKey,773597:doEvent4,[(1885,601)(1885,580)])
 }
-Add(LineBreak,812480,1708,616)
+Add(LineBreak,7170578,1708,616)
 {
  Caption="10"
  link(Out,12362234:doKey,[(1744,622)(1744,615)])
  Primary=[11760251,-1435,434]
 }
-Add(LineBreak,14404757,1708,602)
+Add(LineBreak,3995144,1708,602)
 {
  Caption="10"
  link(Out,12362234:doStartHotKey,[(1744,608)(1744,601)])
@@ -7710,66 +7814,66 @@ Add(Hub,4454322,161,1113)
  link(onEvent9,10105276:In,[])
  link(onEvent10,672662:In,[])
 }
-Add(LineBreak,4290196,119,1113)
+Add(LineBreak,9373963,119,1113)
 {
  link(Out,4454322:doEvent1,[])
  Primary=[14778335,56,-119]
 }
-Add(LineBreak,2252721,28,126)
+Add(LineBreak,1436701,28,126)
 {
  Caption="1"
  link(Out,9953284:doStopHotKey,[])
  Primary=[12525565,161,987]
 }
-Add(LineBreak,815352,42,294)
+Add(LineBreak,8978317,42,294)
 {
  Caption="2"
  link(Out,7777526:doStopHotKey,[])
  Primary=[13304432,147,826]
 }
-Add(LineBreak,12790236,70,462)
+Add(LineBreak,1434913,70,462)
 {
  Caption="3"
  link(Out,6517849:doStopHotKey,[])
  Primary=[2281881,119,665]
 }
-Add(LineBreak,16171751,371,133)
+Add(LineBreak,12420857,371,133)
 {
  Caption="4"
  link(Out,5997857:doStopHotKey,[])
  Primary=[12774652,-182,1001]
 }
-Add(LineBreak,16711424,399,301)
+Add(LineBreak,12140017,399,301)
 {
  Caption="5"
  link(Out,10862171:doStopHotKey,[])
  Primary=[15271076,-210,840]
 }
-Add(LineBreak,13956593,49,637)
+Add(LineBreak,6858144,49,637)
 {
  Caption="6"
  link(Out,4886604:doStopHotKey,[])
  Primary=[14435711,140,511]
 }
-Add(LineBreak,6720745,399,469)
+Add(LineBreak,730159,399,469)
 {
  Caption="7"
  link(Out,1019243:doStopHotKey,[])
  Primary=[4763324,-210,686]
 }
-Add(LineBreak,8676633,1064,168)
+Add(LineBreak,5604779,1064,168)
 {
  Caption="8"
  link(Out,9074548:doStopHotKey,[])
  Primary=[6383667,-875,994]
 }
-Add(LineBreak,5662891,665,266)
+Add(LineBreak,16500895,665,266)
 {
  Caption="9"
  link(Out,844931:doStopHotKey,[])
  Primary=[10105276,-476,903]
 }
-Add(LineBreak,3997623,1708,609)
+Add(LineBreak,8843510,1708,609)
 {
  Caption="10"
  link(Out,12362234:doStopHotKey,[(1744,615)(1744,608)])
@@ -7900,17 +8004,17 @@ BEGIN_SDK
    link(onEvent3,8148569:In,[(56,97)(56,111)])
    link(onEvent4,12675714:In,[])
   }
-  Add(LineBreak,6312278,154,112)
+  Add(LineBreak,6711791,154,112)
   {
    link(Out,4603404:doClear,[])
    Primary=[11223872,-91,-35]
   }
-  Add(LineBreak,12390798,182,154)
+  Add(LineBreak,8631331,182,154)
   {
    link(Out,13833353:doClear,[])
    Primary=[16221907,-119,-63]
   }
-  Add(LineBreak,4998807,231,196)
+  Add(LineBreak,10525051,231,196)
   {
    link(Out,7997101:doClear,[])
    Primary=[8148569,-168,-91]
@@ -7931,7 +8035,7 @@ BEGIN_SDK
    Default=Integer(80)
    link(onData,13883158:doWork4,[(394,230)(394,167)(317,167)(317,104)])
   }
-  Add(LineBreak,4154247,301,231)
+  Add(LineBreak,7905238,301,231)
   {
    link(Out,4413342:doClear,[])
    Primary=[12675714,-238,-133]
@@ -7953,17 +8057,17 @@ Add(Hub,6509782,1358,245)
  link(onEvent1,10487556:In,[])
  link(onEvent2,102289:In,[(1382,258)(1382,265)])
 }
-Add(LineBreak,1271563,1316,280)
+Add(LineBreak,3606993,1316,280)
 {
  link(Out,9096038:doEvent1,[])
  Primary=[10418704,105,112]
 }
-Add(LineBreak,7538373,1288,420)
+Add(LineBreak,7429818,1288,420)
 {
  link(Out,6728992:doCheckIdx,[(1334,426)(1334,425)])
  Primary=[10487556,105,-175]
 }
-Add(LineBreak,15039515,1288,448)
+Add(LineBreak,13526620,1288,448)
 {
  link(Out,6728992:doCheckItems,[(1327,454)(1327,453)])
  Primary=[102289,105,-189]
@@ -7998,7 +8102,7 @@ Add(Hub,5103125,1092,287)
  link(onEvent3,2168895:doRead,[(1124,307)(1124,349)])
  link(onEvent4,11403286:doRead,[(1124,314)(1124,391)])
 }
-Add(LineBreak,6047823,1029,287)
+Add(LineBreak,6600680,1029,287)
 {
  Caption="Check"
  link(Out,5103125:doEvent1,[])
@@ -8032,7 +8136,7 @@ Add(HubEx,2720813,1113,287)
 {
  link(onEvent,2643036:doRead,[(1124,293)(1124,251)])
 }
-Add(LineBreak,12246243,1428,427)
+Add(LineBreak,11384987,1428,427)
 {
  link(Out,13540973:doCompare,[])
  Primary=[10708258,-35,-140]
@@ -8057,17 +8161,17 @@ Add(MT_IndexToChanel,13517652,1526,413)
  link(onEvent2,9910543:In,[])
  link(onEvent3,3193163:In,[(1570,433)(1570,440)])
 }
-Add(LineBreak,10160557,798,651)
+Add(LineBreak,9935071,798,651)
 {
  link(Out,13977191:doValue,[(844,657)(844,643)])
  Primary=[9910543,777,-231]
 }
-Add(LineBreak,4839185,1442,231)
+Add(LineBreak,9329155,1442,231)
 {
  link(Out,1527168:doEvent,[])
  Primary=[3834286,7,154]
 }
-Add(LineBreak,4803917,1554,49)
+Add(LineBreak,6573791,1554,49)
 {
  Caption="update"
  link(Out,5641235:doEvent1,[])
@@ -8096,7 +8200,7 @@ Add(If_else,3429727,2135,770)
 Add(Memory,3090678,2135,714)
 {
 }
-Add(LineBreak,12643530,2065,714)
+Add(LineBreak,1413851,2065,714)
 {
  link(Out,16329067:doEvent1,[])
  Primary=[3193163,-483,-280]
@@ -8141,7 +8245,7 @@ Add(Hub,3525691,1134,42)
  link(onEvent2,12864102:In,[])
  link(onEvent3,14548671:In,[])
 }
-Add(LineBreak,8776673,1085,49)
+Add(LineBreak,8790350,1085,49)
 {
  link(Out,3525691:doEvent2,[])
  Primary=[3210727,910,245]
@@ -8150,30 +8254,30 @@ Add(GetDataEx,7016146,1246,119)
 {
  link(Data,12151591:Handle,[])
 }
-Add(LineBreak,122757,1281,140)
+Add(LineBreak,15212062,1281,140)
 {
  Caption="minim"
  Type=1
  link(Data,7016146:Var3,[(1287,124)])
  Primary=[4476888,735,546]
 }
-Add(LineBreak,3623613,1743,343)
+Add(LineBreak,8021269,1743,343)
 {
  Caption="minim"
  link(Out,7102686:doHide,[])
  Primary=[8263823,483,399]
 }
-Add(LineBreak,7913453,1904,672)
+Add(LineBreak,9243228,1904,672)
 {
  link(Out,1707700:doEvent1,[])
  Primary=[3755618,91,-371]
 }
-Add(LineBreak,7220029,1792,399)
+Add(LineBreak,14835971,1792,399)
 {
  link(Out,7102686:doDeleteTrayIcon,[(1836,405)(1836,377)])
  Primary=[12864102,-630,-350]
 }
-Add(LineBreak,16218817,1911,728)
+Add(LineBreak,1617816,1911,728)
 {
  link(Out,9219229:doStop,[(1964,734)(1964,727)])
  Primary=[2923444,322,49]
@@ -8191,20 +8295,20 @@ Add(Hub,1707700,1953,672)
  OutCount=1
  link(onEvent1,9219229:doTimer,[(1979,678)(1979,699)(1955,699)(1955,720)])
 }
-Add(LineBreak,5434140,1211,868)
+Add(LineBreak,10591016,1211,868)
 {
  Caption="start"
  Color=255
  link(Out,8051018:doEvent1,[])
  Primary=[9627316,203,-784]
 }
-Add(LineBreak,9018038,1939,602)
+Add(LineBreak,11121194,1939,602)
 {
  Type=1
  link(Data,427436:GetData,[])
  Primary=[6596582,-693,-560]
 }
-Add(LineBreak,4181469,1904,679)
+Add(LineBreak,13264698,1904,679)
 {
  Caption="minim"
  link(Out,1707700:doEvent2,[])
@@ -8265,12 +8369,12 @@ Add(DoData,7997080,1792,546)
  link(onEventData,8384125:doValue,[(1883,552)(1883,503)])
  link(Data,14842631:Caption,[])
 }
-Add(LineBreak,13449043,1897,553)
+Add(LineBreak,7424670,1897,553)
 {
  link(Out,427436:doData,[(1933,559)(1933,557)])
  Primary=[4593456,294,-7]
 }
-Add(LineBreak,11085605,1715,546)
+Add(LineBreak,14077427,1715,546)
 {
  link(Out,7997080:doData,[])
  Primary=[12804234,294,-14]
@@ -8294,7 +8398,7 @@ Add(FormatStr,12284409,1988,224)
  link(Str1,7346129:Caption,[(1994,212)(1938,212)])
  link(Str2,545477:Value,[(2001,212)(2029,212)])
 }
-Add(LineBreak,5589203,1785,378)
+Add(LineBreak,1919634,1785,378)
 {
  Caption="%"
  link(Out,7102686:doHint,[(1828,384)(1828,370)])
@@ -8320,13 +8424,13 @@ Add(GetIndexData,15029374,2149,300)
 }
 Add(StrList,4184666,2163,245)
 {
- Strings=#19:Create Unsigned PKG|17:Create Signed PKG|10:Create RIF|19:Try to fix CFW game|17:Convert disc game|12:Sign all pkg|36:Create Package_list and start server|1:-|4:Exit|0:|
+ Strings=#19:Create Unsigned PKG|17:Create Signed PKG|10:Create RIF|19:Try to fix CFW game|15:Conversion menu|12:Sign all pkg|36:Create Package_list and start server|21:Menu PS3GameExtractor|1:-|4:Exit|0:|
 }
 Add(StrList,15785898,2121,245)
 {
- Strings=#26:Создать не подписанный PKG|23:Создать подписанный PKG|11:Создать RIF|30:Попробовать пофиксить CFW игру|29:Сконвертировать дисковую игру|17:Подписать все PKG|39:Создать Package_list и запустить сервер|1:-|5:Выход|
+ Strings=#26:Создать не подписанный PKG|23:Создать подписанный PKG|11:Создать RIF|30:Попробовать пофиксить CFW игру|16:Меню конвертации|17:Подписать все PKG|39:Создать Package_list и запустить сервер|21:Меню PS3GameExtractor|1:-|5:Выход|
 }
-Add(LineBreak,4750878,1988,392)
+Add(LineBreak,4072816,1988,392)
 {
  Type=1
  link(Data,4268227:Array,[])
@@ -8334,14 +8438,14 @@ Add(LineBreak,4750878,1988,392)
 }
 Add(StrList,3410777,2212,245)
 {
- Strings=#33:Erstellen Sie nicht signierte PKG|32:Erstellen Sie eine signierte PKG|13:RIF erstellen|42:Versuchen Sie, das CFW-Spiel zu reparieren|23:Disc-Spiel konvertieren|23:Alle Pkg unterschreiben|53:Erstellen Sie Package_list und starten Sie den Server|1:-|7:Beenden|0:|
+ Strings=#33:Erstellen Sie nicht signierte PKG|32:Erstellen Sie eine signierte PKG|13:RIF erstellen|42:Versuchen Sie, das CFW-Spiel zu reparieren|18:Konvertierungsmenь|23:Alle Pkg unterschreiben|53:Erstellen Sie Package_list und starten Sie den Server|21:Menь PS3GameExtractor|1:-|7:Beenden|0:|
 }
 Add(Hub,16411049,525,581)
 {
  link(onEvent1,15425070:doIndex,[(588,587)(588,586)])
  link(onEvent2,4373853:In,[(546,594)(546,601)])
 }
-Add(LineBreak,12507398,2100,301)
+Add(LineBreak,5609115,2100,301)
 {
  Caption="tray"
  link(Out,15029374:doIndex,[(2143,307)(2143,306)])
@@ -8408,4 +8512,744 @@ Add(StrList,15045884,1357,154)
 }
 Add(Application,13385210,1365,35)
 {
+}
+Add(ButtonRush,5628235,511,1274)
+{
+ Left=15
+ Top=300
+ Width=305
+ Height=28
+ Font=[Tahoma,10,1,0,204]
+ Cursor=2
+ WinStyle=2
+ ColorFrom=-16777203
+ ColorText=-16777211
+ BorderColor=8388608
+ ColorShadow=-16777193
+ ShadowOffset=1
+ GradientStyle=0
+ ColorFromOver=15780518
+ ColorToOver=-16777214
+ GradientStyleOver=0
+ ColorShadowDis=8421504
+ Caption="8. Меню PS3GameExtractor"
+ HAlign=0
+ Glyphs=[]
+ Point(onMouseEnter)
+ Point(doSetTheme)
+ MakeTrans(Caption)
+ link(onClick,10057411:doEvent1,[(559,1280)(559,1210)])
+ link(onMouseEnter,8356018:doStrCat,[(555,1287)(555,1259)(485,1259)(485,1231)])
+}
+Add(LineBreakEx,14326798,539,1225)
+{
+ Caption="s"
+}
+Add(StrCat,8356018,497,1225)
+{
+ Str1="Сконвертировать дисковую игру"
+ Str2=" при наличии патча к игре"
+ MakeTrans(Str1)
+ MakeTrans(Str2)
+ link(onStrCat,14326798:doWork,[])
+}
+Add(ChildForm,16744967,623,1218)
+{
+ link(onEvent1,1650188:doWork,[])
+ link(onEvent2,6315744:doWork,[(671,1231)(671,1244)(680,1244)])
+ link(onEvent3,3633378:doEvent1,[(663,1238)(663,1273)])
+ link(onEvent4,3633378:doEvent2,[(663,1245)(663,1280)])
+ link(onEvent5,3633378:doEvent3,[(663,1252)(663,1290)(672,1290)])
+ link(onEvent6,12246552:doWork,[])
+ link(onEvent7,9104309:In,[(667,1266)(667,1304)(639,1304)(639,1322)])
+ link(onEvent9,11205490:doWork,[(677,1280)(677,1301)])
+}
+BEGIN_SDK
+  Add(EditMulti,10729726,7,7)
+  {
+   EventCount=10
+   WorkCount=4
+   Width=909
+   Height=564
+   link(doWork1,10832575:doEvent1,[(21,13)(21,118)])
+   link(doWork2,393094:In,[(21,20)(21,34)])
+   link(doWork3,8069426:doColor,[(21,27)(21,132)])
+  }
+  Add(MainForm,8069426,105,91)
+  {
+   Left=8
+   Top=65
+   Width=319
+   Height=307
+   Color=15780518
+   Visible=1
+   Caption="Меню PS3GameExtractor"
+   BorderStyle=3
+   Position=2
+   Point(doVisible)
+   Point(doColor)
+   MakeTrans(Caption)
+  }
+  Add(ButtonRush,16335790,182,238)
+  {
+   Left=5
+   Top=45
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   Hint="Выберите файл для распаковки"
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Распаковать архивы Игры"
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Hint)
+   MakeTrans(Caption)
+   link(onClick,11037766:doEvent1,[(229,244)(229,241)])
+   link(onMouseEnter,10729726:onEvent4,[(435,251)(435,34)])
+  }
+  Add(ButtonRush,10305373,161,98)
+  {
+   Left=5
+   Top=10
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   Hint="Выберите файл для распаковки"
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Распаковать ISO"
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Caption)
+   link(onClick,5632138:doEvent1,[])
+   link(onMouseEnter,10729726:onEvent3,[(421,111)(421,27)])
+  }
+  Add(StrCat,12698986,287,98)
+  {
+   Str2="tools\make_pkg.bat 81 ""
+   link(Str1,10888757:CurrentDir,[])
+  }
+  Add(Dir,10888757,287,28)
+  {
+  }
+  Add(ODialog,6672177,259,140)
+  {
+   Filter="Образ диска (*.iso) |*.iso"
+   Title="Открыть образ диска ISO"
+   FileName=""
+   NoChangeDir=1
+   MakeTrans(Filter)
+   MakeTrans(Title)
+   link(onExecute,8455015:doString,[])
+  }
+  Add(ButtonRush,4916527,84,266)
+  {
+   Left=5
+   Top=245
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Назад в меню"
+   Data=Integer(0)
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Caption)
+   link(onClick,13164756:doEvent1,[(124,272)(124,265)])
+   link(onMouseEnter,10729726:onEvent5,[(383,279)(383,41)])
+  }
+  Add(Hub,5632138,217,98)
+  {
+   OutCount=4
+   link(onEvent1,10203831:In,[(238,104)(238,83)])
+   link(onEvent2,12698986:doStrCat,[(259,111)(259,104)])
+   link(onEvent3,6672177:doExecute,[(245,118)(245,146)])
+   link(onEvent4,733902:doEvent1,[(243,125)(243,149)(100,149)(100,174)])
+  }
+  Add(Hub,11037766,238,235)
+  {
+   OutCount=4
+   link(onEvent1,15188865:In,[(259,241)(259,227)])
+   link(onEvent2,7738804:doStrCat,[(284,248)(284,243)])
+   link(onEvent3,6812075:doExecute,[(284,255)(284,293)])
+   link(onEvent4,733902:doEvent2,[(264,262)(264,223)(100,223)(100,181)])
+  }
+  Add(StrCat,7738804,315,237)
+  {
+   Str2="tools\make_pkg.bat 82 ""
+   link(Str1,15576749:CurrentDir,[])
+  }
+  Add(Dir,15576749,315,194)
+  {
+  }
+  Add(Hub,733902,119,168)
+  {
+   InCount=7
+   OutCount=1
+   link(onEvent1,8069426:doClose,[(152,174)(152,146)(93,146)(93,118)])
+  }
+  Add(Hub,11719092,126,350)
+  {
+   OutCount=4
+   link(onEvent1,5790292:In,[(154,356)(154,321)])
+   link(onEvent2,11440789:doStrCat,[(206,363)(206,334)])
+   link(onEvent3,733902:doEvent3,[(145,370)(145,331)(100,331)(100,188)])
+   link(onEvent4,14492932:doExecute,[])
+  }
+  Add(FormatStr,8455015,371,140)
+  {
+   Mask="%1%2""
+   link(onFString,10729726:onEvent1,[(583,146)(583,13)])
+   link(Str1,12698986:Result,[(377,135)(293,135)])
+  }
+  Add(FormatStr,13058025,385,287)
+  {
+   Mask="%1%2""
+   link(onFString,10729726:onEvent2,[(509,293)(509,20)])
+   link(Str1,7738804:Result,[(391,279)(321,279)])
+  }
+  Add(Hub,9753225,105,448)
+  {
+   OutCount=8
+   link(onEvent1,8950525:In,[])
+   link(onEvent2,14556295:In,[])
+   link(onEvent3,2081784:In,[])
+   link(onEvent4,10056503:In,[])
+   link(onEvent5,10353446:In,[])
+   link(onEvent6,10287566:In,[(126,489)(126,496)])
+   link(onEvent8,4946913:In,[(126,503)(126,517)])
+  }
+  Add(LineBreak,13298528,105,70)
+  {
+   link(Out,10305373:doSetTheme,[(158,76)(158,104)])
+   Primary=[8950525,28,378]
+  }
+  Add(LineBreak,8720954,140,238)
+  {
+   link(Out,16335790:doSetTheme,[])
+   Primary=[14556295,-7,217]
+  }
+  Add(LineBreak,13316706,35,266)
+  {
+   link(Out,4916527:doSetTheme,[])
+   Primary=[2081784,98,196]
+  }
+  Add(LineBreak,14956701,35,350)
+  {
+   link(Out,10276303:doSetTheme,[])
+   Primary=[10056503,98,119]
+  }
+  Add(LineBreak,16065286,56,448)
+  {
+   link(Out,9753225:doEvent1,[])
+   Primary=[393094,-21,-420]
+  }
+  Add(LineBreak,1818474,749,63)
+  {
+   Caption="wav"
+   link(Out,10729726:onEvent7,[(769,69)(769,55)])
+   Primary=[15813687,-49,21]
+  }
+  Add(Hub,15067883,679,84)
+  {
+   InCount=7
+   OutCount=1
+   link(onEvent1,15813687:In,[])
+  }
+  Add(LineBreak,14829310,630,84)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent1,[])
+   Primary=[10203831,-385,-7]
+  }
+  Add(LineBreak,11984152,630,91)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent2,[])
+   Primary=[15188865,-364,130]
+  }
+  Add(LineBreak,1854623,630,105)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent3,[(666,111)(666,104)])
+   Primary=[5790292,-462,210]
+  }
+  Add(Hub,13164756,133,259)
+  {
+   link(onEvent1,5627802:In,[(157,265)(157,300)])
+   link(onEvent2,733902:doEvent4,[(159,272)(159,234)(100,234)(100,195)])
+  }
+  Add(LineBreak,16125780,630,105)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent4,[])
+   Primary=[5627802,-462,189]
+  }
+  Add(FileSearch,16754399,742,147)
+  {
+   Ext="*PKG"
+   SubDir=1
+   FullName=1
+   FullOtherName=1
+   link(onSearch,3945596:doCompare,[])
+   link(Dir,2307886:CurrentDir,[])
+  }
+  Add(Dir,2307886,749,84)
+  {
+  }
+  Add(StrMask,3945596,798,147)
+  {
+   Mask="EP*"
+   link(onTrue,7213527:doDelete,[(842,160)(842,167)])
+  }
+  Add(FileTools,7213527,854,147)
+  {
+  }
+  Add(Hub,10832575,35,112)
+  {
+   link(onEvent1,10923958:In,[(56,118)(56,97)])
+   link(onEvent2,8069426:doVisible,[])
+  }
+  Add(LineBreak,923202,700,147)
+  {
+   link(Out,16754399:doSearch,[])
+   Primary=[10923958,-637,-56]
+  }
+  Add(ButtonRush,8861134,522,226)
+  {
+   Left=5
+   Top=125
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   Hint="Выберите файл для распаковки"
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Распаковать PSARC"
+   Data=Integer(0)
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Caption)
+   link(onClick,1728938:doEvent1,[(572,232)(572,229)])
+   link(onMouseEnter,15343030:doWork2,[])
+  }
+  Add(LineBreak,7464925,481,240)
+  {
+   link(Out,8861134:doSetTheme,[(517,246)(517,232)])
+   Primary=[10353446,-348,236]
+  }
+  Add(Hub,1728938,593,223)
+  {
+   OutCount=4
+   link(onEvent1,3056976:In,[(614,229)(614,215)])
+   link(onEvent2,13888889:doStrCat,[(639,236)(639,230)])
+   link(onEvent3,5600582:doExecute,[(636,243)(636,279)])
+   link(onEvent4,15742755:In,[(592,250)(592,274)])
+  }
+  Add(LineBreak,13974182,630,119)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent5,[(679,125)])
+   Primary=[3056976,-9,90]
+  }
+  Add(Dir,6222894,670,182)
+  {
+  }
+  Add(StrCat,13888889,672,224)
+  {
+   Str2="tools\unpack.bat"
+   link(Str1,6222894:CurrentDir,[(678,219)(676,219)])
+  }
+  Add(FormatStr,6486690,738,275)
+  {
+   Mask=""%1" "%2""
+   link(onFString,3578807:doWork2,[(814,281)(814,286)])
+   link(Str1,13888889:Result,[(744,267)(678,267)])
+  }
+  Add(LineBreak,6557286,42,196)
+  {
+   link(Out,733902:doEvent5,[])
+   Primary=[15742755,557,72]
+  }
+  Add(LineBreak,10915403,411,353)
+  {
+   link(Out,3376058:doSetTheme,[(446,359)(446,358)])
+   Primary=[10287566,-278,137]
+  }
+  Add(ButtonRush,3376058,453,352)
+  {
+   Left=5
+   Top=165
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Упаковать в PSARC"
+   Data=Integer(0)
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Caption)
+   link(onClick,4958379:doEvent1,[(505,358)(505,348)])
+   link(onMouseEnter,15343030:doWork3,[(578,365)])
+  }
+  Add(Hub,4958379,525,342)
+  {
+   OutCount=4
+   link(onEvent1,9149875:In,[(553,348)])
+   link(onEvent2,6841025:doStrCat,[(571,355)(571,349)])
+   link(onEvent3,1989143:doBrowse,[(570,362)(570,400)])
+   link(onEvent4,14725054:In,[(549,369)(549,393)])
+  }
+  Add(LineBreak,7565175,630,133)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent6,[(668,139)(668,125)])
+   Primary=[9149875,-77,195]
+  }
+  Add(FormatStr,7288971,685,394)
+  {
+   DataCount=3
+   Mask=""%1" "%2""
+   link(onFString,3578807:doWork3,[(862,400)])
+   link(Str1,6841025:Result,[(691,386)(611,386)])
+  }
+  Add(LineBreak,16158167,42,217)
+  {
+   link(Out,733902:doEvent6,[(96,223)(96,209)])
+   Primary=[14725054,482,170]
+  }
+  Add(HubEx,15343030,574,233)
+  {
+   link(onEvent,10729726:onEvent8,[(624,239)(624,62)])
+  }
+  Add(ODialog,6812075,315,287)
+  {
+   Filter="Архивы *.001;*.zip;*.rar;*.7z|*.001;*.zip;*.rar;*.7z"
+   Title="Открыть архивы"
+   FileName=""
+   NoChangeDir=1
+   MakeTrans(Filter)
+   MakeTrans(Title)
+   link(onExecute,13058025:doString,[])
+  }
+  Add(StrCat,11440789,245,328)
+  {
+   Str2="tools\make_pkg.bat 83 ""
+   link(Str1,8943132:CurrentDir,[])
+  }
+  Add(Dir,8943132,245,285)
+  {
+  }
+  Add(ODialog,14492932,182,371)
+  {
+   Filter="*.pkg|*.pkg"
+   Title="Открыть pkg"
+   FileName=""
+   NoChangeDir=1
+   MakeTrans(Filter)
+   MakeTrans(Title)
+   link(onExecute,10211808:doString,[])
+  }
+  Add(FormatStr,10211808,245,371)
+  {
+   Mask="%1%2""
+   link(onFString,10729726:onEvent6,[(733,377)(733,48)])
+   link(Str1,11440789:Result,[])
+  }
+  Add(ButtonRush,10276303,77,350)
+  {
+   Left=5
+   Top=85
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   Hint="Выберите файл для распаковки"
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Распаковать PKG"
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Hint)
+   MakeTrans(Caption)
+   link(onClick,11719092:doEvent1,[])
+  }
+  Add(ODialog,5600582,665,273)
+  {
+   Filter="Архивы (*.psarc;*.mself) |*.psarc;*.mself| Все типы|*.*"
+   Title="Архивы "
+   FileName=""
+   NoChangeDir=1
+   MakeTrans(Filter)
+   MakeTrans(Title)
+   link(onExecute,6486690:doString,[(717,279)(717,281)])
+  }
+  Add(Dir,1355386,602,294)
+  {
+  }
+  Add(StrCat,6841025,605,343)
+  {
+   Str2="tools\pack.bat"
+   link(Str1,1355386:CurrentDir,[(611,338)(608,338)])
+  }
+  Add(Browse,1989143,567,394)
+  {
+   Title="Выберите папку для паковки"
+   NewStyle=0
+   NewDirButton=1
+   DefaultFolder="."
+   MakeTrans(Title)
+   link(onBrowse,7288971:doString,[])
+  }
+  Add(LineBreak,5754955,292,479)
+  {
+   link(Out,13806816:doSetTheme,[(327,485)(327,484)])
+   Primary=[4946913,-159,32]
+  }
+  Add(ButtonRush,13806816,334,478)
+  {
+   Left=5
+   Top=205
+   Width=300
+   Height=28
+   Font=[Tahoma,10,1,0,204]
+   Cursor=2
+   WinStyle=2
+   ColorFrom=-16777203
+   ColorText=-16777211
+   BorderColor=8388608
+   ColorShadow=-16777193
+   ShadowOffset=1
+   GradientStyle=0
+   ColorFromOver=15780518
+   ColorToOver=-16777214
+   GradientStyleOver=0
+   ColorShadowDis=8421504
+   Caption="Разделить и запаковать в PKG"
+   Data=Integer(0)
+   HAlign=0
+   Glyphs=[]
+   Point(onMouseEnter)
+   Point(doSetTheme)
+   MakeTrans(Caption)
+   link(onClick,7708732:doEvent1,[(386,484)(386,474)])
+  }
+  Add(Hub,7708732,406,468)
+  {
+   OutCount=4
+   link(onEvent1,11380000:In,[])
+   link(onEvent2,7171089:doStrCat,[(452,481)(452,475)])
+   link(onEvent3,13161289:doBrowse,[(451,488)(451,526)])
+   link(onEvent4,5436100:In,[(430,495)(430,519)])
+  }
+  Add(LineBreak,15384947,630,154)
+  {
+   Caption="wav"
+   link(Out,15067883:doEvent7,[(672,160)(672,132)])
+   Primary=[11380000,-210,286]
+  }
+  Add(FormatStr,2306607,566,520)
+  {
+   DataCount=3
+   Mask=""%1" "%2""
+   link(Str1,7171089:Result,[(572,512)(492,512)])
+  }
+  Add(LineBreak,5128114,42,231)
+  {
+   link(Out,733902:doEvent7,[(96,237)(96,216)])
+   Primary=[5436100,363,282]
+  }
+  Add(Dir,15047699,483,413)
+  {
+  }
+  Add(StrCat,7171089,486,469)
+  {
+   Str2="tools\pack.bat"
+   link(Str1,15047699:CurrentDir,[(492,457)(489,457)])
+  }
+  Add(Browse,13161289,448,520)
+  {
+   Title="Выберите папку для паковки"
+   NewStyle=0
+   NewDirButton=1
+   DefaultFolder="."
+   MakeTrans(Title)
+   link(onBrowse,2306607:doString,[])
+  }
+  Add(HubEx,3578807,858,280)
+  {
+   Angle=3
+   link(onEvent,10729726:onEvent9,[(862,69)])
+  }
+END_SDK
+Add(LineBreakEx,16643556,700,1267)
+{
+ Caption="s"
+}
+Add(Hub,3633378,672,1267)
+{
+ InCount=3
+ OutCount=1
+ link(onEvent1,16643556:doWork,[])
+}
+Add(LineBreakEx,1650188,686,1218)
+{
+ Caption="-"
+}
+Add(LineBreakEx,6315744,686,1239)
+{
+ Caption="-"
+}
+Add(LineBreakEx,12246552,679,1253)
+{
+ Caption="-"
+}
+Add(LineBreak,13857070,434,1274)
+{
+ Caption="colork"
+ link(Out,6605268:doEvent1,[(496,1280)(496,1290)(464,1290)(464,1301)])
+ Primary=[14377224,1316,-322]
+}
+Add(Hub,6605268,476,1295)
+{
+ link(onEvent1,5628235:doSetTheme,[(500,1301)(500,1280)])
+ link(onEvent2,16744967:doWork2,[(585,1308)(585,1231)])
+}
+Add(LineBreak,8068079,588,1309)
+{
+ Caption="color"
+ link(Out,16744967:doWork3,[(616,1315)(616,1298)(611,1298)(611,1238)])
+ Primary=[5077819,616,-1155]
+}
+Add(Hub,10057411,574,1204)
+{
+ InCount=3
+ link(onEvent1,1301109:In,[(602,1210)(602,1203)])
+ link(onEvent2,16744967:doWork1,[(606,1217)(606,1224)])
+}
+Add(GHotKey,12993105,441,1316)
+{
+ Point(doKey)
+ link(onEventHotKey,10057411:doEvent3,[(554,1322)(554,1224)])
+}
+Add(LineBreakEx,11205490,700,1295)
+{
+ Caption="-"
+}
+Add(LineBreak,1917528,784,749)
+{
+ Caption="wav"
+ link(Out,7460006:doEvent11,[])
+ Primary=[1301109,-175,448]
+}
+Add(LineBreak,13084058,784,756)
+{
+ Caption="wav"
+ link(Out,7460006:doEvent12,[])
+ Primary=[9104309,-91,560]
+}
+Add(InfoTip,6229010,329,1176)
+{
+ Info=#17:Меню PS3Extractor|
+ Font=[MS Sans Serif,8,1,0,1]
+ Width=533
+ Height=186
+}
+Add(StrCat,8908862,1428,574)
+{
+ Str2="tools\clean.bat"
+ link(onStrCat,13552483:doWork,[])
+ link(Str1,12174361:CurrentDir,[])
+}
+Add(Dir,12174361,1428,518)
+{
+}
+Add(LineBreakEx,13552483,1470,574)
+{
+}
+Add(LineBreak,6329831,1372,546)
+{
+ Caption="clean"
+ link(Out,8908862:doStrCat,[(1420,552)(1420,580)])
+ Primary=[7697387,203,-294]
+}
+Add(LineBreak,14178174,490,1204)
+{
+ Caption="tray"
+ link(Out,10057411:doEvent2,[(547,1210)(547,1217)])
+ Primary=[5742515,1589,-805]
 }
