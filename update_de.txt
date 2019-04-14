@@ -1,2 +1,7 @@
-MPHT 3.5.6;
- - PS3xploit-Kündiger aktualisiert;
+MPHT 3.6.0;
+ - Eine Reihe von Tools hinzugefügt (sehr viel aus PS3GameExtractor v1.8.7)
+ - Option hinzugefügt, um Tastenkombinationen zu aktivieren, zu deaktivieren;
+ - Konsolenmodus hinzugefügt. In diesem Modus werden statt der GUI alle Informationen in der Konsole angezeigt.
+ Zur besseren Kompatibilität hinzugefügt (falls Fehler in der grafischen Benutzeroberfläche auftreten);
+ - Batchdatei wurde im Teil der Namensbildung des Namens pkg umgeschrieben;
+ - andere Bearbeitungen;
