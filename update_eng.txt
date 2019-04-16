@@ -1,7 +1,2 @@
-MPHT 3.6.0;
- - Added a set of tools (much taken from PS3GameExtractor v1.8.7);
- - Added option to enable, disable hot keys;
- - Added console mode. In this mode, all information will be displayed in the console, instead of the GUI.
- Added for better compatibility (if errors occur in GUI);
- - Batch file rewritten in the part of the formation of the name pkg;
- - Other edits;
+MPHT 3.7.0;
+- Fixed a memory leak when processing a large number of * .rap
