@@ -1,2 +1,2 @@
-MPHT 3.7.0;
-- Ein Speicherleck bei der Verarbeitung einer großen Anzahl von * .rap wurde behoben
+MPHT 3.7.1;
+- Kleiner Fix für DLC
