@@ -29,8 +29,24 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 ### Requirements
 + For old version Windows need [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
 + Для старых версий Windows требуется [PowerShell 5.1](https://docs.microsoft.com/ru-ru/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell)
+
+Небольшой фикс в батнике при формировании имени
+Небольшой фикс в DLC
 	
 ### History:
+
+#### 3.7.1-2
+:white_check_mark: Небольшой фикс в батнике при формировании имени
+:white_check_mark: Небольшой фикс в DLC
+
+#### 3.7.0
+:white_check_mark: Исправлена утечка памяти при обработке большого количества *.rap
+
+#### 3.6.0
+:white_check_mark: Добавлен набор инструментов (многое взято из PS3GameExtractor v1.8.7).
+:white_check_mark: Переписан батник в части формирования имени pkg.
+:white_check_mark: Другие правки.
+
 #### 3.5.5
 :white_check_mark: Добавлено автоматическое извлечение 2P0001-PS2U10000_00-0000111122223333.rap ко всем классическим PS2 играм при создании RIF.
 
