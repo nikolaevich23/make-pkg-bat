@@ -1,2 +1,2 @@
-MPHT 3.7.1;
-- Small fix on DLC
+MPHT 3.7.2;
+- A small fix in the batch file when forming the name
