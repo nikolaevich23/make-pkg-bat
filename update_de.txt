@@ -1,2 +1,2 @@
-MPHT 3.7.2;
-- Eine kleine Korrektur in der Batchdatei, wenn der Name gebildet wird
+MPHT 3.7.3;
+- Die Einstellung wurde geändert, jetzt heißt es "Sign Package_List.pkg und rif*.pkg".
