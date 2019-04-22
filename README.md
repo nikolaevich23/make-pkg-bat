@@ -34,9 +34,12 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 Небольшой фикс в DLC
 	
 ### History:
+#### 3.7.3
+:white_check_mark: Изменена настройка, теперь она "Подписывать Package_List.pkg и rif*.pkg"
 
 #### 3.7.1-2
 :white_check_mark: Небольшой фикс в батнике при формировании имени
+
 :white_check_mark: Небольшой фикс в DLC
 
 #### 3.7.0
@@ -44,7 +47,9 @@ Some antivirus programs [falsely triggered](https://www.virustotal.com/ru/file/a
 
 #### 3.6.0
 :white_check_mark: Добавлен набор инструментов (многое взято из PS3GameExtractor v1.8.7).
+
 :white_check_mark: Переписан батник в части формирования имени pkg.
+
 :white_check_mark: Другие правки.
 
 #### 3.5.5
