@@ -1,2 +1,2 @@
-MPHT 3.7.3;
-- Changed the setting, now it is "Sign Package_List.pkg and rif*.pkg"
+MPHT 3.7.4;
+- Small change (* .rap from the Done folder is moved back);

@@ -1,2 +1,2 @@
-MPHT 3.7.3;
-- Die Einstellung wurde geändert, jetzt heißt es "Sign Package_List.pkg und rif*.pkg".
+MPHT 3.7.4;
+- Kleine Änderung (* .rap aus dem Done-Ordner wird nach hinten verschoben);
