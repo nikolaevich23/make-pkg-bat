@@ -1,2 +1,2 @@
-MPHT 3.7.4;
-- Kleine Änderung (* .rap aus dem Done-Ordner wird nach hinten verschoben);
+MPHT 3.8.0;
+- Benutzerdefinierte * .pkg-Verpackung hinzugefügt
