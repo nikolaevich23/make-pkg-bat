@@ -1,0 +1,64 @@
+2. Создать подписанный PKG|2. Make RETAIL PKG
+7. Создать pakage_list и запустить сервер |7. Create pkg list and run hfs server
+IP адрес :|IP adress:
+Создать не подписанный PKG|Make DEBUG PKG
+ для запуска в DEBUG HAN| for run in Debug HAN
+Создать подписанный PKG|Make RETAIL PKG
+ для запуска в HAN| for run in HAN
+Создать RIF|Make RIF PKG 
+ из файлов act.dat и idps.hex и из базы rap| from base act.dat and idps.hex and rap base
+Подписать все PKG|Just sign All PKG
+ которые находятся в директории| in dir
+Создать лист PKG|Create pkg list
+ на основе *.pkg файлов которые лежат рядом и запустить локальный сервер| and run hfs server
+Сконвертировать дисковую игру|Convert Disc Game
+ при наличии патча к игре| if have path
+Попробовать пофиксить CFW игру из PSN|Try fix PSN PKG CFW 
+ при наличии патча к игре.| (if game have update)
+Порт :|Port:
+1. Создать не подписанный PKG|1. Make DEBUG PKG 
+Изменить|Change
+6. Подписать все *.PKG|6. Just sign All PKG
+3. Создать RIF|3. Make RIF PKG 
+4. Попробовать пофиксить CFW игру|4. Try fix PSN PKG CFW
+5. Сконвертировать дисковую игру|5. Convert Disc Game
+Выберите папку игры PS3_GAME для конвертации|Chose dir PS3_GAME for conversion
+Подписать все PKG|Sign All *.pkg
+Проверить наличие патча|To check availability patch
+Меню конвертации|Conversion Menu
+Образ диска ISO|ISO image
+Открыть образ диска ISO|Open ISO image
+Подписать все PKG|Sign All pkg
+Выберите папку игры PS3_GAME для конвертации|Chose PS3_GAME dir
+Выберите PS3_GAME|Chose PS3_GAME
+PS3_GAME папка|PS3_GAME DIR
+Назад в меню|Back to menu
+Сохранить|Save
+ из файлов act.dat, idps.hex и из базы rap|from act.dat
+ idps.hex and rap base",'О программе'|About
+Скачиваю патч: |dowload path
+Сбросить настройки|Reset settings
+Цвет окна|The color of a window
+Фон|Background
+Консоль|Console
+Статус бар|Status bar
+Прогресс|Progress
+Цвет Текста|Text color
+Цвет кнопок|Color buttons
+Текст|Text
+Рамка|Frame
+Фон 2|Background 2
+Текст 2|Text 2
+Рамка 2|Frame 2
+Сбросить настройки по умолчанию?|Reset settings ?
+Готово|Done
+7. Создать package_list и запустить сервер |7. Create package_list and run hfs
+Обновить|Refresh
+Выбрать|Choose
+Авто определение IP|Auto
+Нужен act.dat / idps.hex. *.rap берется из базы при наличии игры в pkg. Можете сами создать папку RAPS и положить туда *.rap|Need act.dat / idps.hex. *.rap is taken from the base if there is a game in pkg. You can create a RAPS folder yourself and put * .rap there
+Сервер HFS|Server HFS
+Программа свернута в трей и продолжает работать.|The program is minimized to tray and continues to work.
+Операция успешно завершена.|Operation completed successfully.
+Закрыть программу?|Close the program?
+Операция выполняется, пожалуйста подождите|Operation in progress, please wait
