@@ -1,5 +1,5 @@
 # MPHT (Make Pkg Han Tools)
-make pkg made by in1975 and other.
+make pkg made by in1975 and other. [forum](https://www.pspx.ru/forum/showthread.php?t=108653).
 
 Many thanks to: hexcsl, BaseD and ErikPshat!
 
